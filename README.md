@@ -62,11 +62,12 @@ slot names, then rebuild.
 ## Publishing
 
 The included GitHub Actions workflow (`.github/workflows/deploy.yml`) builds
-and deploys `dist/` to GitHub Pages on every push to `main`. Enable Pages in
-the repository settings with "GitHub Actions" as the source. Set the
-`SITE_BASE_URL` environment variable (for example
-`https://sergiomarrero.github.io/imaginesouthslope`) in the workflow if you
-want absolute canonical and hreflang links.
+the site on every push to `main` and publishes `dist/` to the `gh-pages`
+branch, which GitHub Pages serves at
+https://sergiomarrero.github.io/imaginesouthslope/. If the page is not live,
+open the repository's Settings, choose Pages, and pick the `gh-pages` branch
+as the source. The workflow sets `SITE_BASE_URL` so canonical and hreflang
+links are absolute; change it there if the site moves to its own domain.
 
 To put one design live on the school's own domain, deploy the contents of
 `dist/sol/` or `dist/bosque/` plus `dist/images/` to any static host (Netlify,

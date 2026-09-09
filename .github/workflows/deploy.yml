@@ -1,4 +1,7 @@
-name: Build and deploy to GitHub Pages
+name: Build and publish to GitHub Pages
+
+# Builds the site and pushes it to the gh-pages branch, which GitHub Pages serves.
+# Nothing to configure: if Pages is off, turn it on under Settings > Pages and pick "gh-pages" as the branch.
 
 on:
   push:
@@ -6,39 +9,32 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+          node-version: 22
       - run: npm run check
       - run: npm run build
         env:
           SITE_BASE_URL: https://sergiomarrero.github.io/imaginesouthslope
       - run: npm run bundle
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish dist/ to the gh-pages branch
+        run: |
+          cd dist
+          git init -q
+          git checkout -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" commit -q -m "Publish site from ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
