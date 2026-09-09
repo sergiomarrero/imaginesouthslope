@@ -1,0 +1,17 @@
+{
+  "name": "imagine-south-slope-montessori",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first bilingual website for Imagine South Slope Montessori (two design variants) built from a single content file.",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "check": "node src/check.mjs",
+    "preview": "node src/serve.mjs",
+    "pull-site": "node scripts/pull-site.mjs",
+    "bundle": "node src/bundle.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
