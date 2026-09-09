@@ -22,8 +22,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - run: npm run check
       - run: npm run build
+        env:
+          SITE_BASE_URL: https://sergiomarrero.github.io/imaginesouthslope
+      - run: npm run bundle
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
