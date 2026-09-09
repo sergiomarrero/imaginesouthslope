@@ -1,4 +1,5 @@
-// Builds every design x page x language into dist/ from content/site.json.
+// Builds the chosen design (content/site.json "design", or DESIGNS=sol,bosque|all) x pages x languages into dist/.
+// One design lands at the root of dist/; several land in dist/<slug>/ with a chooser page.
 import { readFile, writeFile, mkdir, rm, readdir, copyFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -13,9 +14,11 @@ const imagesDir = path.join(ROOT, 'images');
 const imageFiles = new Set((await readdir(imagesDir)).filter((f) => /\.(jpe?g|png|webp|gif|svg|avif)$/i.test(f)));
 const sharedJs = await readFile(path.join(ROOT, 'src', 'shared', 'app.js'), 'utf8');
 
+const requested = String(process.env.DESIGNS || site.design || 'all').trim();
+const wanted = requested === 'all' ? null : requested.split(',').map((x) => x.trim()).filter(Boolean);
+
 await rm(DIST, { recursive: true, force: true });
-await mkdir(path.join(DIST, 'images'), { recursive: true });
-for (const f of imageFiles) await copyFile(path.join(imagesDir, f), path.join(DIST, 'images', f));
+await mkdir(DIST, { recursive: true });
 await writeFile(path.join(DIST, '.nojekyll'), '');
 
 const designsDir = path.join(ROOT, 'src', 'designs');
@@ -26,30 +29,41 @@ for (const d of (await readdir(designsDir, { withFileTypes: true })).sort((a, b)
   if (await stat(entry).then(() => true).catch(() => false)) designNames.push(d.name);
 }
 const designs = [];
-let pageCount = 0;
-
 for (const name of designNames) {
   const design = await import(pathToFileURL(path.join(designsDir, name, 'index.mjs')).href);
-  designs.push(design);
+  if (!wanted || wanted.includes(design.meta.slug)) designs.push(design);
+}
+if (wanted) for (const w of wanted) if (!designs.some((d) => d.meta.slug === w)) console.warn(`warning: no design named "${w}" in src/designs/`);
+if (!designs.length) throw new Error(`No design matched "${requested}". Available: ${designNames.join(', ')}`);
+const single = designs.length === 1;
+const manifest = [];
+let pageCount = 0;
+
+for (const design of designs) {
   const slug = design.meta.slug;
-  const outDir = path.join(DIST, slug);
+  const urlPrefix = single ? '' : `${slug}/`;
+  const outDir = path.join(DIST, urlPrefix);
   await mkdir(path.join(outDir, 'assets'), { recursive: true });
   await mkdir(path.join(outDir, 'es'), { recursive: true });
+  await mkdir(path.join(outDir, 'images'), { recursive: true });
+  for (const f of imageFiles) await copyFile(path.join(imagesDir, f), path.join(outDir, 'images', f));
   const assets = await design.assets({ sharedJs, root: ROOT });
   for (const [file, content] of Object.entries(assets)) await writeFile(path.join(outDir, 'assets', file), content);
   for (const lang of LANGS) {
     for (const page of PAGES) {
-      const ctx = makeCtx({ site, design, lang, page, imageFiles, baseUrl });
+      const ctx = makeCtx({ site, design, lang, page, imageFiles, baseUrl, urlPrefix });
       const html = design.render(ctx);
       const target = path.join(outDir, lang === 'es' ? 'es' : '', PAGE_FILE[page]);
       await writeFile(target, html);
       pageCount += 1;
     }
   }
+  manifest.push({ slug, name: design.meta.name, dir: urlPrefix });
 }
 
-await writeFile(path.join(DIST, 'index.html'), chooserHtml(designs, site));
-console.log(`Built ${pageCount} pages for ${designs.length} design(s) into dist/ (${imageFiles.size} photo(s) found${imageFiles.size ? '' : ', placeholders in use'}).`);
+await writeFile(path.join(DIST, '.designs.json'), JSON.stringify(manifest));
+if (!single) await writeFile(path.join(DIST, 'index.html'), chooserHtml(designs, site));
+console.log(`Built ${pageCount} pages for ${designs.map((d) => d.meta.name).join(' + ')} into dist/${single ? '' : ' (with a chooser page)'} (${imageFiles.size} photo(s) found${imageFiles.size ? '' : ', placeholders in use'}).`);
 
 function chooserHtml(list, site) {
   const cards = list

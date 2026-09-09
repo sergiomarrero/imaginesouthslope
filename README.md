@@ -1,30 +1,34 @@
 # Imagine South Slope Montessori — website remake
 
-Two mobile-first designs for [Imagine South Slope Montessori](https://southslopemontessori.com),
-the Spanish immersion Montessori preschool at Brooklyn Arts Exchange in Park Slope.
-Both designs share one content file, ship in English and Spanish, and need no
-framework, database or build tooling beyond Node.
+A mobile-first, bilingual website for [Imagine South Slope Montessori](https://southslopemontessori.com),
+the Montessori preschool taught entirely in Spanish at Brooklyn Arts Exchange in Park Slope.
+One content file drives every page in English and Spanish, and nothing beyond Node is needed to build it.
 
-| Design | Feel | Open |
-|---|---|---|
-| **Sol** | Warm, sunny, playful. Cream paper, marigold and terracotta, rounded photo stacks. | `dist/sol/index.html` · Spanish: `dist/sol/es/index.html` |
-| **Bosque** | Calm, modern, editorial. Paper and forest green, a big serif voice, full-bleed photos. | `dist/bosque/index.html` · Spanish: `dist/bosque/es/index.html` |
+**Live preview:** https://sergiomarrero.github.io/imaginesouthslope/ (Spanish: `/es/`)
 
-`dist/index.html` is a side-by-side chooser page.
+The site uses the **Sol** design: sunny and playful, butter-yellow paper, a marigold sun, cobalt buttons.
+A second direction, **Bosque** (calm, forest green, grotesk headlines), is kept in `src/designs/bosque`
+for reference. `DESIGNS=sol,bosque npm run build` builds both side by side with a chooser page;
+`content/site.json` > `design` picks the default.
+
+Who the site speaks to: Park Slope families raising young children with Spanish at home, who want a
+small, real Montessori classroom where the whole day happens in Spanish. Families new to Spanish are
+welcomed on every page, but the lead is Montessori quality first, then what a full day in Spanish does
+for a bilingual child.
 
 ## What is in the box
 
-- **Five pages per design:** Home, About, Our Program, Admissions, Contact. Every page in English and Spanish, with a one-tap language switch.
+- **Five pages:** Home, About, Our Program, Admissions, Contact. Every page in English and Spanish, with a one-tap language switch.
 - **All the original content**, recovered and recorded in `content/ORIGINAL-SITE-CONTENT.md`, plus new sections written to win over young parents: why Spanish immersion at 2–5, how immersion works, a sample day, schedules, tuition guidance, FAQ, parent quotes, directions.
 - **Made for phones first:** sticky call and tour buttons, thumb-sized tap targets, a full-screen menu, horizontal swipe cards, an accordion FAQ, a photo lightbox.
-- **Built for enrollment:** a tour request form on every design (email fallback, or Formspree when configured), click-to-call and click-to-email everywhere, a map, and `Preschool` structured data so the school shows up well in local search.
+- **Built for enrollment:** a tour request form (email fallback, or Formspree when configured), click-to-call and click-to-email everywhere, a map, and `Preschool` structured data so the school shows up well in local search.
 - **Easy for the founder:** one JSON file to edit, photos dropped into one folder, a checker that explains mistakes in plain language, and a GitHub Pages workflow that publishes on every push to `main`.
 
 ## Quick start
 
 ```bash
 npm run check      # validates content/site.json and lists items to confirm
-npm run build      # writes both designs to dist/
+npm run build      # writes the site to dist/ (DESIGNS=sol,bosque for both designs)
 npm run preview    # serves dist/ at http://localhost:4173
 ```
 
@@ -69,9 +73,9 @@ open the repository's Settings, choose Pages, and pick the `gh-pages` branch
 as the source. The workflow sets `SITE_BASE_URL` so canonical and hreflang
 links are absolute; change it there if the site moves to its own domain.
 
-To put one design live on the school's own domain, deploy the contents of
-`dist/sol/` or `dist/bosque/` plus `dist/images/` to any static host (Netlify,
-Vercel, Cloudflare Pages, GoDaddy static hosting).
+To put the site live on the school's own domain, deploy the contents of
+`dist/` to any static host (Netlify, Vercel, Cloudflare Pages, GoDaddy static
+hosting) and change `SITE_BASE_URL` in the workflow to the new address.
 
 ## Project layout
 
@@ -85,7 +89,7 @@ src/serve.mjs              local preview server
 src/lib.mjs                shared helpers: localization, links, SEO head, form, FAQ
 src/shared/app.js          shared front-end behaviors (menu, reveal, carousel, form, lightbox)
 src/shared/icons.mjs       line icon set
-src/designs/sol/           design A templates, styles, extras
-src/designs/bosque/        design B templates, styles, extras
+src/designs/sol/           the chosen design: templates, styles, extras
+src/designs/bosque/        alternative design kept for reference
 scripts/pull-site.mjs      downloads the live site's pages and images
 ```

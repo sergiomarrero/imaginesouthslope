@@ -39,7 +39,7 @@ export function icon(name, cls = '') {
   return `<svg class="icon${cls ? ' ' + cls : ''}" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${body}</svg>`;
 }
 
-export function makeCtx({ site, design, lang, page, imageFiles, baseUrl }) {
+export function makeCtx({ site, design, lang, page, imageFiles, baseUrl, urlPrefix = '' }) {
   const t = localizer(lang);
   const rel = lang === 'en' ? '' : '../';
   const file = PAGE_FILE[page];
@@ -55,12 +55,13 @@ export function makeCtx({ site, design, lang, page, imageFiles, baseUrl }) {
     icon,
     rel,
     baseUrl,
+    urlPrefix,
     otherLang: lang === 'en' ? 'es' : 'en',
     year: new Date().getFullYear(),
     href: (p, hash) => `${PAGE_FILE[p]}${hash ? '#' + hash : ''}`,
     altHref: () => (lang === 'en' ? `es/${file}` : `../${file}`),
     asset: (f) => `${rel}assets/${f}`,
-    imageSrc: (f) => `${rel}../images/${f}`,
+    imageSrc: (f) => `${rel}images/${f}`,
     tourHref: () => site.school.tourUrl || `${PAGE_FILE.contact}#tour`,
     tourExternal: () => Boolean(site.school.tourUrl),
     telHref: (p = site.school.phone) => telHref(p),
@@ -69,7 +70,7 @@ export function makeCtx({ site, design, lang, page, imageFiles, baseUrl }) {
     photo: (key) => site.photos.find((p) => p.file === key) || site.photos.find((p) => p.slot === key) || null,
     hasImage: (f) => imageFiles.has(f),
     nav: () => PAGES.map((p) => ({ page: p, label: t(site.ui.nav[p]), href: PAGE_FILE[p], active: p === page })),
-    absUrl: (p = page, l = lang) => (baseUrl ? `${baseUrl}/${design.meta.slug}/${l === 'es' ? 'es/' : ''}${PAGE_FILE[p]}` : ''),
+    absUrl: (p = page, l = lang) => (baseUrl ? `${baseUrl}/${urlPrefix}${l === 'es' ? 'es/' : ''}${PAGE_FILE[p]}` : ''),
     faqForHome: () => site.faq.filter((f) => f.home),
   };
   ctx.img = (key, opts = {}) => {
@@ -125,7 +126,7 @@ export function headHtml(ctx, { title, description }) {
   const fullTitle = `${title} | ${site.school.name}`;
   const canonical = ctx.absUrl();
   const alt = { en: ctx.absUrl(ctx.page, 'en'), es: ctx.absUrl(ctx.page, 'es') };
-  const ogImage = ctx.hasImage('hero.jpg') && ctx.baseUrl ? `${ctx.baseUrl}/images/hero.jpg` : '';
+  const ogImage = ctx.hasImage('hero.jpg') && ctx.baseUrl ? `${ctx.baseUrl}/${ctx.urlPrefix}images/hero.jpg` : '';
   return [
     '<meta charset="utf-8">',
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',

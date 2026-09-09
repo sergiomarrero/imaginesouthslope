@@ -139,15 +139,6 @@ function home(ctx) {
   </ul>
 </section>
 
-<section class="sec why" id="why">
-  <div class="wrap">
-    ${sectionHead(ctx, { eyebrow: h.why.eyebrow, title: h.why.title, text: h.why.intro })}
-    <div class="why__grid">
-      ${h.why.items.map((it, i) => `<article class="why__card" data-reveal style="--i:${i}"><span class="why__icon">${icon(it.icon)}</span><h3 class="why__title">${esc(t(it.title))}</h3><p>${esc(t(it.text))}</p></article>`).join('')}
-    </div>
-  </div>
-</section>
-
 ${wave('wave--sand')}
 <section class="sec mont" id="montessori">
   <div class="wrap mont__grid">
@@ -166,6 +157,15 @@ ${wave('wave--sand')}
   </div>
 </section>
 ${wave('wave--sand wave--flip')}
+
+<section class="sec why" id="why">
+  <div class="wrap">
+    ${sectionHead(ctx, { eyebrow: h.why.eyebrow, title: h.why.title, text: h.why.intro })}
+    <div class="why__grid">
+      ${h.why.items.map((it, i) => `<article class="why__card" data-reveal style="--i:${i}"><span class="why__icon">${icon(it.icon)}</span><h3 class="why__title">${esc(t(it.title))}</h3><p>${esc(t(it.text))}</p></article>`).join('')}
+    </div>
+  </div>
+</section>
 
 <section class="sec day" id="day">
   <div class="wrap">

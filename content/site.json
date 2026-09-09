@@ -6,12 +6,12 @@
     "founded": 2015,
     "siteUrl": "https://southslopemontessori.com",
     "tagline": {
-      "en": "A little school where Brooklyn kids grow up bilingual.",
-      "es": "Una pequeña escuela donde los niños de Brooklyn crecen bilingües."
+      "en": "The Montessori school where your child's Spanish keeps growing.",
+      "es": "La escuela Montessori donde el español de tu hijo sigue creciendo."
     },
     "description": {
-      "en": "Spanish immersion Montessori preschool for ages 2 to 5 in Park Slope, Brooklyn. Ten children max, three teachers, sunlit studio, part-time schedules. Book a tour.",
-      "es": "Preescolar Montessori de inmersión en español para niños de 2 a 5 años en Park Slope, Brooklyn. Máximo diez niños, tres maestras, estudio lleno de luz, horarios de medio tiempo. Agenda una visita."
+      "en": "Imagine South Slope Montessori is a small Montessori preschool in Park Slope, Brooklyn, taught entirely in Spanish. Ages 2 to 5, ten children max, three teachers. Made for families raising children in Spanish. Book a tour.",
+      "es": "Imagine South Slope Montessori es un preescolar Montessori pequeño en Park Slope, Brooklyn, enseñado completamente en español. De 2 a 5 años, máximo diez niños, tres maestras. Hecho para familias que crían a sus hijos en español. Agenda una visita."
     },
     "address": {
       "venue": "Brooklyn Arts Exchange (BAX)",
@@ -19,7 +19,10 @@
       "city": "Brooklyn",
       "state": "NY",
       "zip": "11215",
-      "crossStreet": { "en": "at 8th Street, Park Slope", "es": "en la calle 8, Park Slope" },
+      "crossStreet": {
+        "en": "at 8th Street, Park Slope",
+        "es": "en la calle 8, Park Slope"
+      },
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=421+5th+Ave+Brooklyn+NY+11215",
       "mapsEmbed": "https://www.google.com/maps?q=421+5th+Ave,+Brooklyn,+NY+11215&output=embed",
       "lat": 40.6683,
@@ -28,9 +31,15 @@
     "phone": "718-619-2285",
     "phoneAlt": "917-765-8376",
     "email": "info@southslopemontessori.com",
-    "hours": { "en": "Monday to Friday, 9:00 AM to 3:00 PM", "es": "Lunes a viernes, 9:00 AM a 3:00 PM" },
+    "hours": {
+      "en": "Monday to Friday, 9:00 AM to 3:00 PM",
+      "es": "Lunes a viernes, 9:00 AM a 3:00 PM"
+    },
     "hoursSchema": "Mo-Fr 09:00-15:00",
-    "ages": { "en": "Ages 2 to 5", "es": "De 2 a 5 años" },
+    "ages": {
+      "en": "Ages 2 to 5",
+      "es": "De 2 a 5 años"
+    },
     "social": {
       "facebook": "https://www.facebook.com/montessorisouthslope/",
       "instagram": "",
@@ -40,75 +49,206 @@
     "tourUrl": "",
     "_confirm": "formAction: paste a Formspree endpoint (https://formspree.io/f/xxxx) so the form sends email; until then the form opens the parent's email app. tourUrl: paste a Calendly or Google Form link to let parents self-book tours; until then the tour buttons go to the contact form. phoneAlt appears on Yelp and Nextdoor; delete it if it should not be public."
   },
-
   "ui": {
     "nav": {
-      "home": { "en": "Home", "es": "Inicio" },
-      "about": { "en": "About", "es": "Nosotros" },
-      "program": { "en": "Our Program", "es": "Programa" },
-      "admissions": { "en": "Admissions", "es": "Admisiones" },
-      "contact": { "en": "Contact", "es": "Contacto" }
+      "home": {
+        "en": "Home",
+        "es": "Inicio"
+      },
+      "about": {
+        "en": "About",
+        "es": "Nosotros"
+      },
+      "program": {
+        "en": "Our Program",
+        "es": "Programa"
+      },
+      "admissions": {
+        "en": "Admissions",
+        "es": "Admisiones"
+      },
+      "contact": {
+        "en": "Contact",
+        "es": "Contacto"
+      }
     },
     "cta": {
-      "tour": { "en": "Book a tour", "es": "Agenda una visita" },
-      "call": { "en": "Call us", "es": "Llámanos" },
-      "email": { "en": "Email us", "es": "Escríbenos" },
-      "directions": { "en": "Get directions", "es": "Cómo llegar" },
-      "apply": { "en": "Start an application", "es": "Comienza tu solicitud" },
-      "seeDay": { "en": "See a day at Imagine", "es": "Mira un día en Imagine" },
-      "seeProgram": { "en": "Explore the program", "es": "Conoce el programa" },
-      "meetEdith": { "en": "Meet Edith", "es": "Conoce a Edith" },
-      "readFaq": { "en": "Read the FAQ", "es": "Lee las preguntas frecuentes" },
-      "allPhotos": { "en": "See more photos", "es": "Ver más fotos" },
-      "howToEnroll": { "en": "How to enroll", "es": "Cómo inscribirse" }
+      "tour": {
+        "en": "Book a tour",
+        "es": "Agenda una visita"
+      },
+      "call": {
+        "en": "Call us",
+        "es": "Llámanos"
+      },
+      "email": {
+        "en": "Email us",
+        "es": "Escríbenos"
+      },
+      "directions": {
+        "en": "Get directions",
+        "es": "Cómo llegar"
+      },
+      "apply": {
+        "en": "Start an application",
+        "es": "Comienza tu solicitud"
+      },
+      "seeDay": {
+        "en": "See a day at Imagine",
+        "es": "Mira un día en Imagine"
+      },
+      "seeProgram": {
+        "en": "Explore the program",
+        "es": "Conoce el programa"
+      },
+      "meetEdith": {
+        "en": "Meet Edith",
+        "es": "Conoce a Edith"
+      },
+      "readFaq": {
+        "en": "Read the FAQ",
+        "es": "Lee las preguntas frecuentes"
+      },
+      "allPhotos": {
+        "en": "See more photos",
+        "es": "Ver más fotos"
+      },
+      "howToEnroll": {
+        "en": "How to enroll",
+        "es": "Cómo inscribirse"
+      }
     },
-    "langSwitch": { "en": "Español", "es": "English" },
-    "langSwitchAria": { "en": "Ver este sitio en español", "es": "View this site in English" },
-    "skipLink": { "en": "Skip to content", "es": "Ir al contenido" },
-    "menu": { "en": "Menu", "es": "Menú" },
-    "close": { "en": "Close", "es": "Cerrar" },
-    "sinceLabel": { "en": "Since 2015 in Park Slope", "es": "Desde 2015 en Park Slope" },
-    "sePablaEspanol": { "en": "Se habla español", "es": "We speak English too" },
+    "langSwitch": {
+      "en": "Español",
+      "es": "English"
+    },
+    "langSwitchAria": {
+      "en": "Ver este sitio en español",
+      "es": "View this site in English"
+    },
+    "skipLink": {
+      "en": "Skip to content",
+      "es": "Ir al contenido"
+    },
+    "menu": {
+      "en": "Menu",
+      "es": "Menú"
+    },
+    "close": {
+      "en": "Close",
+      "es": "Cerrar"
+    },
+    "sinceLabel": {
+      "en": "Since 2015 in Park Slope",
+      "es": "Desde 2015 en Park Slope"
+    },
+    "sePablaEspanol": {
+      "en": "Se habla español",
+      "es": "We speak English too"
+    },
     "footer": {
       "blurb": {
         "en": "Spanish immersion Montessori for ages 2 to 5, inside Brooklyn Arts Exchange in Park Slope.",
         "es": "Montessori de inmersión en español para niños de 2 a 5 años, dentro de Brooklyn Arts Exchange en Park Slope."
       },
-      "visit": { "en": "Visit", "es": "Visítanos" },
-      "hours": { "en": "Hours", "es": "Horario" },
-      "follow": { "en": "Follow along", "es": "Síguenos" },
-      "rights": { "en": "All rights reserved.", "es": "Todos los derechos reservados." },
+      "visit": {
+        "en": "Visit",
+        "es": "Visítanos"
+      },
+      "hours": {
+        "en": "Hours",
+        "es": "Horario"
+      },
+      "follow": {
+        "en": "Follow along",
+        "es": "Síguenos"
+      },
+      "rights": {
+        "en": "All rights reserved.",
+        "es": "Todos los derechos reservados."
+      },
       "privacy": {
         "en": "We only use the details you send us to reply to you.",
         "es": "Solo usamos los datos que nos envías para responderte."
       }
     },
     "form": {
-      "title": { "en": "Request a tour", "es": "Solicita una visita" },
+      "title": {
+        "en": "Request a tour",
+        "es": "Solicita una visita"
+      },
       "intro": {
         "en": "Tell us a little about your family and we'll reply within a day or two, in English or Spanish.",
         "es": "Cuéntanos un poco sobre tu familia y te respondemos en uno o dos días, en inglés o en español."
       },
-      "parentName": { "en": "Your name", "es": "Tu nombre" },
-      "email": { "en": "Email", "es": "Correo electrónico" },
-      "phone": { "en": "Phone", "es": "Teléfono" },
-      "childName": { "en": "Child's name", "es": "Nombre de tu hijo o hija" },
-      "childAge": { "en": "Child's age or birthday", "es": "Edad o fecha de nacimiento" },
-      "schedule": { "en": "Schedule you're considering", "es": "Horario que te interesa" },
+      "parentName": {
+        "en": "Your name",
+        "es": "Tu nombre"
+      },
+      "email": {
+        "en": "Email",
+        "es": "Correo electrónico"
+      },
+      "phone": {
+        "en": "Phone",
+        "es": "Teléfono"
+      },
+      "childName": {
+        "en": "Child's name",
+        "es": "Nombre de tu hijo o hija"
+      },
+      "childAge": {
+        "en": "Child's age or birthday",
+        "es": "Edad o fecha de nacimiento"
+      },
+      "schedule": {
+        "en": "Schedule you're considering",
+        "es": "Horario que te interesa"
+      },
       "scheduleOptions": [
-        { "en": "2 days a week", "es": "2 días por semana" },
-        { "en": "3 days a week", "es": "3 días por semana" },
-        { "en": "5 days a week", "es": "5 días por semana" },
-        { "en": "Not sure yet", "es": "Todavía no sé" }
+        {
+          "en": "2 days a week",
+          "es": "2 días por semana"
+        },
+        {
+          "en": "3 days a week",
+          "es": "3 días por semana"
+        },
+        {
+          "en": "5 days a week",
+          "es": "5 días por semana"
+        },
+        {
+          "en": "Not sure yet",
+          "es": "Todavía no sé"
+        }
       ],
-      "language": { "en": "Preferred language for our reply", "es": "Idioma para responderte" },
+      "language": {
+        "en": "Preferred language for our reply",
+        "es": "Idioma para responderte"
+      },
       "languageOptions": [
-        { "en": "English", "es": "Inglés" },
-        { "en": "Spanish", "es": "Español" }
+        {
+          "en": "English",
+          "es": "Inglés"
+        },
+        {
+          "en": "Spanish",
+          "es": "Español"
+        }
       ],
-      "message": { "en": "Anything you'd like us to know?", "es": "¿Algo más que quieras contarnos?" },
-      "submit": { "en": "Send my request", "es": "Enviar solicitud" },
-      "sending": { "en": "Sending…", "es": "Enviando…" },
+      "message": {
+        "en": "Anything you'd like us to know?",
+        "es": "¿Algo más que quieras contarnos?"
+      },
+      "submit": {
+        "en": "Send my request",
+        "es": "Enviar solicitud"
+      },
+      "sending": {
+        "en": "Sending…",
+        "es": "Enviando…"
+      },
       "success": {
         "en": "Thank you! We'll be in touch within a day or two.",
         "es": "¡Gracias! Te contactaremos en uno o dos días."
@@ -121,152 +261,289 @@
         "en": "Your email app will open with everything filled in. Just press send.",
         "es": "Se abrirá tu aplicación de correo con todo listo. Solo presiona enviar."
       },
-      "required": { "en": "Required", "es": "Obligatorio" }
+      "required": {
+        "en": "Required",
+        "es": "Obligatorio"
+      }
     },
-    "photoPlaceholder": { "en": "Photo coming soon", "es": "Foto próximamente" }
+    "photoPlaceholder": {
+      "en": "Photo coming soon",
+      "es": "Foto próximamente"
+    }
   },
-
   "home": {
     "meta": {
-      "title": { "en": "Spanish Immersion Montessori Preschool in Park Slope, Brooklyn", "es": "Preescolar Montessori en español en Park Slope, Brooklyn" }
+      "title": {
+        "en": "Spanish Montessori Preschool in Park Slope for Families Raising Bilingual Kids",
+        "es": "Preescolar Montessori en español en Park Slope para familias bilingües"
+      }
     },
     "hero": {
-      "eyebrow": { "en": "Spanish immersion Montessori · Ages 2–5 · Park Slope, Brooklyn", "es": "Montessori en español · 2 a 5 años · Park Slope, Brooklyn" },
-      "title": { "en": "A little school where Brooklyn kids grow up bilingual.", "es": "Una pequeña escuela donde los niños de Brooklyn crecen bilingües." },
-      "subtitle": {
-        "en": "Imagine South Slope Montessori is a Spanish immersion preschool for ages 2 to 5. Three warm teachers, ten children at most, and a sunlit studio where every day happens in Spanish. No Spanish at home required.",
-        "es": "Imagine South Slope Montessori es un preescolar Montessori de inmersión en español para niños de 2 a 5 años. Tres maestras cariñosas, máximo diez niños y un estudio lleno de luz donde cada día transcurre en español. No hace falta hablar español en casa."
+      "eyebrow": {
+        "en": "Montessori · Entirely in Spanish · Ages 2–5 · Park Slope, Brooklyn",
+        "es": "Montessori · Todo en español · 2 a 5 años · Park Slope, Brooklyn"
       },
-      "note": { "en": "Now enrolling · Part-time schedules available", "es": "Inscripciones abiertas · Horarios de medio tiempo" }
+      "title": {
+        "en": "The Montessori school where your child's Spanish keeps growing.",
+        "es": "La escuela Montessori donde el español de tu hijo sigue creciendo."
+      },
+      "subtitle": {
+        "en": "Imagine South Slope Montessori is a small preschool in Park Slope for ages 2 to 5, taught entirely in Spanish. Ten children at most, three teachers, real Montessori work, and a sunlit studio where the language you speak at home is the language of the whole day. Families new to Spanish are welcome too.",
+        "es": "Imagine South Slope Montessori es un preescolar pequeño en Park Slope para niños de 2 a 5 años, enseñado completamente en español. Máximo diez niños, tres maestras, trabajo Montessori de verdad y un estudio lleno de luz donde el idioma que hablan en casa es el idioma de todo el día. Las familias que apenas empiezan con el español también son bienvenidas."
+      },
+      "note": {
+        "en": "Now enrolling · Monday to Friday, 9 to 3",
+        "es": "Inscripciones abiertas · Lunes a viernes, de 9 a 3"
+      }
     },
     "stats": [
-      { "value": "10", "label": { "en": "children, max", "es": "niños como máximo" } },
-      { "value": "3", "label": { "en": "teachers in the room", "es": "maestras en el salón" } },
-      { "value": "2–5", "label": { "en": "years old, mixed ages", "es": "años, edades mixtas" } },
-      { "value": "100%", "label": { "en": "of the day in Spanish", "es": "del día en español" } }
+      {
+        "value": "10",
+        "label": {
+          "en": "children, max",
+          "es": "niños como máximo"
+        }
+      },
+      {
+        "value": "3",
+        "label": {
+          "en": "teachers in the room",
+          "es": "maestras en el salón"
+        }
+      },
+      {
+        "value": "2–5",
+        "label": {
+          "en": "years old, mixed ages",
+          "es": "años, edades mixtas"
+        }
+      },
+      {
+        "value": "100%",
+        "label": {
+          "en": "of the day in Spanish",
+          "es": "del día en español"
+        }
+      }
     ],
     "why": {
-      "eyebrow": { "en": "Why bilingual", "es": "Por qué bilingüe" },
-      "title": { "en": "Why Spanish immersion, and why now?", "es": "¿Por qué inmersión en español, y por qué ahora?" },
+      "eyebrow": {
+        "en": "For families raising kids in Spanish",
+        "es": "Para familias que crían en español"
+      },
+      "title": {
+        "en": "English will come on its own. Spanish needs a place to grow.",
+        "es": "El inglés llegará solo. El español necesita un lugar donde crecer."
+      },
       "intro": {
-        "en": "Ages two to five are the easiest years of a whole life to pick up a second language. Here is what that means for your child.",
-        "es": "De los dos a los cinco años es la etapa más fácil de toda la vida para aprender un segundo idioma. Esto es lo que significa para tu hijo o hija."
+        "en": "If Spanish is spoken at home, you already know the worry: once school starts, English takes over. Between 2 and 5, the language a child hears all day is the one that sticks. Here, that language is Spanish.",
+        "es": "Si en casa se habla español, ya conoces la preocupación: en cuanto empieza la escuela, el inglés se apodera de todo. Entre los 2 y los 5 años, el idioma que un niño escucha todo el día es el que se queda. Aquí, ese idioma es el español."
       },
       "items": [
         {
-          "icon": "window",
-          "title": { "en": "The window is wide open", "es": "La ventana está abierta de par en par" },
+          "icon": "speech",
+          "title": {
+            "en": "Real Spanish, all day",
+            "es": "Español de verdad, todo el día"
+          },
           "text": {
-            "en": "Before six, children absorb a second language the way they learned their first: through songs, routines, and play. No flashcards, no homework.",
-            "es": "Antes de los seis años, los niños absorben un segundo idioma igual que aprendieron el primero: con canciones, rutinas y juego. Sin tarjetas ni tareas."
+            "en": "Not a Spanish class. Songs, stories, jokes, the words for pouring and counting and making up after a squabble. Everything a two-year-old needs to say, said in Spanish by teachers who speak it with them from arrival to hasta mañana.",
+            "es": "No es una clase de español. Canciones, cuentos, chistes, las palabras para verter, contar y reconciliarse después de una pelea. Todo lo que un niño de dos años necesita decir, dicho en español por maestras que lo hablan con ellos desde la llegada hasta el hasta mañana."
           }
         },
         {
-          "icon": "home",
-          "title": { "en": "No Spanish at home? Perfect.", "es": "¿No hablan español en casa? Perfecto." },
+          "icon": "heart",
+          "title": {
+            "en": "Confident with abuela",
+            "es": "Sin timidez con la abuela"
+          },
           "text": {
-            "en": "Most of our families don't speak Spanish at home. Children understand their teachers within weeks and start answering in Spanish within months, and we keep you in the loop in English.",
-            "es": "La mayoría de nuestras familias no hablan español en casa. Los niños entienden a sus maestras en semanas y empiezan a responder en español en pocos meses, y a ti te mantenemos al tanto en inglés."
+            "en": "Children who use Spanish all day speak it without shyness: on the phone with grandparents, on the next trip home, at the dinner table. The language stays a bridge to family, not a school subject.",
+            "es": "Los niños que usan el español todo el día lo hablan sin timidez: por teléfono con los abuelos, en el próximo viaje a casa, en la mesa. El idioma sigue siendo un puente con la familia, no una materia escolar."
           }
         },
         {
-          "icon": "brain",
-          "title": { "en": "Two languages, one flexible mind", "es": "Dos idiomas, una mente flexible" },
+          "icon": "small",
+          "title": {
+            "en": "Friends who speak it too",
+            "es": "Amigos que también lo hablan"
+          },
           "text": {
-            "en": "Growing up bilingual is linked with stronger attention, flexible thinking, and an easy empathy for people who are different from you.",
-            "es": "Crecer bilingüe se asocia con mayor atención, pensamiento flexible y una empatía natural hacia quienes son diferentes."
-          }
-        },
-        {
-          "icon": "school",
-          "title": { "en": "A head start on dual-language school", "es": "Ventaja para la escuela bilingüe" },
-          "text": {
-            "en": "New York City has dozens of dual-language public programs. Our alumni walk in already at home in Spanish.",
-            "es": "La ciudad de Nueva York tiene decenas de programas públicos de doble idioma. Nuestros egresados llegan sintiéndose en casa con el español."
+            "en": "Most of our families speak Spanish at home. Your child grows up with playmates who do the same, and you gain a small community of parents raising bilingual kids in the Slope.",
+            "es": "La mayoría de nuestras familias hablan español en casa. Tu hijo o hija crece con amigos que hacen lo mismo, y tú ganas una pequeña comunidad de padres que crían niños bilingües en el Slope."
           }
         },
         {
           "icon": "globe",
-          "title": { "en": "A bigger world, starting on 5th Avenue", "es": "Un mundo más grande, desde la 5ta Avenida" },
+          "title": {
+            "en": "Traditions, not just vocabulary",
+            "es": "Tradiciones, no solo vocabulario"
+          },
           "text": {
-            "en": "Spanish is spoken by nearly 500 million people, including many of our neighbors. Your child grows up able to talk with all of them.",
-            "es": "Casi 500 millones de personas hablan español, incluidos muchos de nuestros vecinos. Tu hijo o hija crece pudiendo hablar con todos ellos."
+            "en": "Music, food, holidays and stories from across the Spanish-speaking world, so the culture behind the language comes along too.",
+            "es": "Música, comida, fiestas y cuentos de todo el mundo hispanohablante, para que la cultura detrás del idioma venga también."
+          }
+        },
+        {
+          "icon": "school",
+          "title": {
+            "en": "Ready for dual-language kindergarten",
+            "es": "Listos para el kínder de doble idioma"
+          },
+          "text": {
+            "en": "New York City has dozens of dual-language public programs. Our children walk in already at home in Spanish, with their first steps toward reading and writing in it.",
+            "es": "La ciudad de Nueva York tiene decenas de programas públicos de doble idioma. Nuestros niños llegan sintiéndose en casa con el español, con sus primeros pasos hacia la lectura y la escritura."
+          }
+        },
+        {
+          "icon": "home",
+          "title": {
+            "en": "New to Spanish at home? You're welcome here.",
+            "es": "¿El español es nuevo en casa? Aquí son bienvenidos."
+          },
+          "text": {
+            "en": "A few of our families don't speak Spanish at home. Children understand their teachers within weeks and start answering in Spanish within months, and we keep you in the loop in English.",
+            "es": "Algunas de nuestras familias no hablan español en casa. Los niños entienden a sus maestras en semanas y empiezan a responder en español en pocos meses, y a ti te mantenemos al tanto en inglés."
           }
         }
-      ]
+      ],
+      "_confirm": "The claim that most families speak Spanish at home comes from Sergio's conversation on Sep 8; confirm it matches the current class before launch."
     },
     "montessori": {
-      "eyebrow": { "en": "How it works", "es": "Cómo funciona" },
-      "title": { "en": "Montessori, in Spanish, all day long.", "es": "Montessori, en español, todo el día." },
+      "eyebrow": {
+        "en": "Montessori first",
+        "es": "Montessori ante todo"
+      },
+      "title": {
+        "en": "Real Montessori. Small by design. All in Spanish.",
+        "es": "Montessori de verdad. Pequeña a propósito. Todo en español."
+      },
       "text": {
-        "en": "Montessori classrooms are calm, orderly, and full of real work: pouring, sweeping, counting, tracing letters, caring for plants. Children choose their activity and repeat it until they've mastered it, with a teacher nearby to show the next step. At Imagine, every one of those moments happens in Spanish, so the language arrives the same way the skills do: naturally.",
-        "es": "Los salones Montessori son tranquilos, ordenados y llenos de trabajo real: verter, barrer, contar, trazar letras, cuidar plantas. Cada niño elige su actividad y la repite hasta dominarla, con una maestra cerca para mostrarle el siguiente paso. En Imagine, cada uno de esos momentos ocurre en español, así que el idioma llega igual que las habilidades: de forma natural."
+        "en": "Montessori classrooms are calm, orderly, and full of real work: pouring, sweeping, counting, tracing letters, caring for plants. Children choose their activity and repeat it until they've mastered it, with a teacher nearby to show the next step. With three teachers for at most ten children, nobody is a face in the crowd. And every one of those moments happens in Spanish.",
+        "es": "Los salones Montessori son tranquilos, ordenados y llenos de trabajo real: verter, barrer, contar, trazar letras, cuidar plantas. Cada niño elige su actividad y la repite hasta dominarla, con una maestra cerca para mostrarle el siguiente paso. Con tres maestras para máximo diez niños, nadie es una cara más en el grupo. Y cada uno de esos momentos ocurre en español."
       },
       "quote": {
         "en": "We strive to create a program which minimizes stress in a child's life and maximizes balance, self-respect, and inborn aptitudes.",
         "es": "Buscamos crear un programa que reduzca el estrés en la vida del niño y maximice el equilibrio, el respeto por sí mismo y sus aptitudes innatas."
       },
-      "quoteBy": { "en": "Our founding philosophy", "es": "Nuestra filosofía fundacional" },
+      "quoteBy": {
+        "en": "Our founding philosophy",
+        "es": "Nuestra filosofía fundacional"
+      },
       "points": [
-        { "en": "Calm, quiet room with classical music", "es": "Un salón tranquilo, con música clásica" },
-        { "en": "Real materials at child height", "es": "Materiales reales a la altura de los niños" },
-        { "en": "One-on-one lessons, at each child's pace", "es": "Lecciones individuales, al ritmo de cada niño" },
-        { "en": "Big kids lead, little kids follow", "es": "Los grandes guían, los pequeños siguen" }
+        {
+          "en": "Three teachers, ten children at most",
+          "es": "Tres maestras, máximo diez niños"
+        },
+        {
+          "en": "Real materials at child height, one-on-one lessons",
+          "es": "Materiales reales a la altura de los niños, lecciones individuales"
+        },
+        {
+          "en": "Teachers speak only Spanish with the children, all day",
+          "es": "Las maestras hablan solo español con los niños, todo el día"
+        },
+        {
+          "en": "Outside at JJ Byrne Playground whenever the weather allows",
+          "es": "Al aire libre en JJ Byrne Playground siempre que el clima lo permite"
+        },
+        {
+          "en": "A calm room with classical music, never a crowd",
+          "es": "Un salón tranquilo con música clásica, nunca una multitud"
+        }
       ]
     },
     "dayPreview": {
-      "eyebrow": { "en": "A day at Imagine", "es": "Un día en Imagine" },
-      "title": { "en": "Buenos días to hasta mañana.", "es": "De buenos días a hasta mañana." },
+      "eyebrow": {
+        "en": "A day at Imagine",
+        "es": "Un día en Imagine"
+      },
+      "title": {
+        "en": "Buenos días to hasta mañana.",
+        "es": "De buenos días a hasta mañana."
+      },
       "text": {
         "en": "Work cycle, snack and songs, the playground when the sun is out, lunch together, rest, then music, yoga, art or science. Here's the rhythm.",
         "es": "Ciclo de trabajo, merienda y canciones, el parque cuando hay sol, almuerzo juntos, descanso y luego música, yoga, arte o ciencia. Así es el ritmo."
       }
     },
     "edithTeaser": {
-      "eyebrow": { "en": "Meet the founder", "es": "Conoce a la fundadora" },
-      "title": { "en": "Edith is in the classroom every day.", "es": "Edith está en el salón todos los días." },
+      "eyebrow": {
+        "en": "Meet the founder",
+        "es": "Conoce a la fundadora"
+      },
+      "title": {
+        "en": "Edith is in the classroom every day.",
+        "es": "Edith está en el salón todos los días."
+      },
       "text": {
         "en": "Edith Villanueva founded Imagine in 2015 and still leads the classroom herself, with two assistant teachers beside her. Parents call her warm, patient, and endlessly creative.",
         "es": "Edith Villanueva fundó Imagine en 2015 y sigue guiando el salón personalmente, con dos maestras asistentes a su lado. Las familias la describen como cálida, paciente e infinitamente creativa."
       }
     },
-    "testimonialsTitle": { "en": "What Slope parents say", "es": "Lo que dicen las familias del Slope" },
-    "galleryTitle": { "en": "Inside our sunlit studio", "es": "Dentro de nuestro estudio lleno de luz" },
+    "testimonialsTitle": {
+      "en": "What Slope parents say",
+      "es": "Lo que dicen las familias del Slope"
+    },
+    "galleryTitle": {
+      "en": "Inside our sunlit studio",
+      "es": "Dentro de nuestro estudio lleno de luz"
+    },
     "galleryText": {
       "en": "A third-floor dance studio at Brooklyn Arts Exchange: wood floors, tall windows, light all day.",
       "es": "Un estudio de danza en el tercer piso de Brooklyn Arts Exchange: pisos de madera, ventanas altas y luz todo el día."
     },
     "visit": {
-      "title": { "en": "Come see it for yourself.", "es": "Ven a conocernos." },
+      "title": {
+        "en": "Come see it for yourself.",
+        "es": "Ven a conocernos."
+      },
       "text": {
-        "en": "Tours take about 30 minutes and children are welcome. We enroll year-round when there's space, and part-time schedules make it easy to start small.",
-        "es": "Las visitas duran unos 30 minutos y los niños son bienvenidos. Inscribimos durante todo el año cuando hay lugar, y los horarios de medio tiempo hacen fácil empezar poco a poco."
+        "en": "Tours take about 30 minutes and children are welcome. We enroll year-round when there's space in the classroom.",
+        "es": "Las visitas duran unos 30 minutos y los niños son bienvenidos. Inscribimos durante todo el año cuando hay lugar en el salón."
       }
     },
     "location": {
-      "title": { "en": "Find us in Park Slope", "es": "Encuéntranos en Park Slope" },
+      "title": {
+        "en": "Find us in Park Slope",
+        "es": "Encuéntranos en Park Slope"
+      },
       "text": {
         "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street, third floor, Studio C. A few blocks from the 4th Ave–9th St station (F, G, R) and on the B63 bus line.",
         "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8, tercer piso, Studio C. A pocas cuadras de la estación 4th Ave–9th St (F, G, R) y sobre la ruta del autobús B63."
       }
     }
   },
-
   "about": {
     "meta": {
-      "title": { "en": "About Imagine South Slope Montessori", "es": "Sobre Imagine South Slope Montessori" }
+      "title": {
+        "en": "About Imagine South Slope Montessori",
+        "es": "Sobre Imagine South Slope Montessori"
+      }
     },
     "hero": {
-      "eyebrow": { "en": "About us", "es": "Nosotros" },
-      "title": { "en": "Small, warm, and entirely in Spanish.", "es": "Pequeña, cálida y completamente en español." },
+      "eyebrow": {
+        "en": "About us",
+        "es": "Nosotros"
+      },
+      "title": {
+        "en": "Small, warm, and entirely in Spanish.",
+        "es": "Pequeña, cálida y completamente en español."
+      },
       "intro": {
-        "en": "Imagine South Slope Montessori opened in 2015 as the first Montessori preschool in New York taught entirely in Spanish. Ten years on, we're still one mixed-age classroom of at most ten children, led by our founder every single day.",
-        "es": "Imagine South Slope Montessori abrió en 2015 como el primer preescolar Montessori de Nueva York enseñado completamente en español. Diez años después, seguimos siendo un solo salón de edades mixtas con máximo diez niños, guiado por nuestra fundadora todos los días."
+        "en": "Imagine South Slope Montessori opened in 2015 as the first Montessori preschool in New York taught entirely in Spanish. Ten years on, we're still one mixed-age classroom of at most ten children, led by our founder every single day. Most of our families speak Spanish at home; some are just beginning. All of them wanted a small, warm, real Montessori classroom where the whole day happens in Spanish.",
+        "es": "Imagine South Slope Montessori abrió en 2015 como el primer preescolar Montessori de Nueva York enseñado completamente en español. Diez años después, seguimos siendo un solo salón de edades mixtas con máximo diez niños, guiado por nuestra fundadora todos los días. La mayoría de nuestras familias hablan español en casa; algunas apenas empiezan. Todas querían un salón Montessori pequeño, cálido y de verdad, donde todo el día transcurre en español."
       }
     },
     "philosophy": {
-      "eyebrow": { "en": "Our philosophy", "es": "Nuestra filosofía" },
-      "title": { "en": "The whole child, at their own pace.", "es": "El niño completo, a su propio ritmo." },
+      "eyebrow": {
+        "en": "Our philosophy",
+        "es": "Nuestra filosofía"
+      },
+      "title": {
+        "en": "The whole child, at their own pace.",
+        "es": "El niño completo, a su propio ritmo."
+      },
       "paragraphs": [
         {
           "en": "Imagine South Slope Montessori is a privately owned school which offers early childhood education and child care. Its philosophical foundation is the work of Dr. Maria Montessori, carried forth by educators with a specialty study in the Montessori Method.",
@@ -287,20 +564,89 @@
       ]
     },
     "values": {
-      "title": { "en": "What you'll notice on a visit", "es": "Lo que notarás en una visita" },
+      "title": {
+        "en": "What you'll notice on a visit",
+        "es": "Lo que notarás en una visita"
+      },
       "items": [
-        { "icon": "leaf", "title": { "en": "Calm", "es": "Calma" }, "text": { "en": "Soft voices, clear routines, classical music in the background. Children settle quickly because the room is predictable.", "es": "Voces suaves, rutinas claras, música clásica de fondo. Los niños se adaptan rápido porque el salón es predecible." } },
-        { "icon": "hands", "title": { "en": "Hands-on", "es": "Con las manos" }, "text": { "en": "Real materials, real work. Pouring water, slicing bananas, matching sounds to letters, building the pink tower.", "es": "Materiales reales, trabajo real. Verter agua, cortar plátanos, unir sonidos con letras, construir la torre rosa." } },
-        { "icon": "speech", "title": { "en": "Bilingual by living it", "es": "Bilingüe de tanto vivirlo" }, "text": { "en": "Every teacher speaks Spanish with the children all day. The language is never a lesson; it's the air in the room.", "es": "Todas las maestras hablan español con los niños todo el día. El idioma nunca es una lección: es el aire del salón." } },
-        { "icon": "small", "title": { "en": "Small on purpose", "es": "Pequeña a propósito" }, "text": { "en": "At most ten children and three adults. Every child is known, every parent gets a real update at pickup.", "es": "Máximo diez niños y tres adultas. Cada niño es conocido y cada familia recibe noticias reales a la salida." } },
-        { "icon": "sun", "title": { "en": "Outdoors often", "es": "Al aire libre seguido" }, "text": { "en": "On nice days we walk to JJ Byrne Playground. On wet days we move, dance and do yoga in the studio.", "es": "Cuando hace buen tiempo caminamos a JJ Byrne Playground. Cuando llueve, nos movemos, bailamos y hacemos yoga en el estudio." } },
-        { "icon": "heart", "title": { "en": "Parents as partners", "es": "Familias como aliadas" }, "text": { "en": "Flexible schedules, quick replies, and honest conversations about how your child is doing.", "es": "Horarios flexibles, respuestas rápidas y conversaciones honestas sobre cómo va tu hijo o hija." } }
+        {
+          "icon": "leaf",
+          "title": {
+            "en": "Calm",
+            "es": "Calma"
+          },
+          "text": {
+            "en": "Soft voices, clear routines, classical music in the background. Children settle quickly because the room is predictable.",
+            "es": "Voces suaves, rutinas claras, música clásica de fondo. Los niños se adaptan rápido porque el salón es predecible."
+          }
+        },
+        {
+          "icon": "hands",
+          "title": {
+            "en": "Hands-on",
+            "es": "Con las manos"
+          },
+          "text": {
+            "en": "Real materials, real work. Pouring water, slicing bananas, matching sounds to letters, building the pink tower.",
+            "es": "Materiales reales, trabajo real. Verter agua, cortar plátanos, unir sonidos con letras, construir la torre rosa."
+          }
+        },
+        {
+          "icon": "speech",
+          "title": {
+            "en": "Bilingual by living it",
+            "es": "Bilingüe de tanto vivirlo"
+          },
+          "text": {
+            "en": "Every teacher speaks Spanish with the children all day. The language is never a lesson; it's the air in the room.",
+            "es": "Todas las maestras hablan español con los niños todo el día. El idioma nunca es una lección: es el aire del salón."
+          }
+        },
+        {
+          "icon": "small",
+          "title": {
+            "en": "Small on purpose",
+            "es": "Pequeña a propósito"
+          },
+          "text": {
+            "en": "At most ten children and three adults. Every child is known, every parent gets a real update at pickup.",
+            "es": "Máximo diez niños y tres adultas. Cada niño es conocido y cada familia recibe noticias reales a la salida."
+          }
+        },
+        {
+          "icon": "sun",
+          "title": {
+            "en": "Outdoors often",
+            "es": "Al aire libre seguido"
+          },
+          "text": {
+            "en": "On nice days we walk to JJ Byrne Playground. On wet days we move, dance and do yoga in the studio.",
+            "es": "Cuando hace buen tiempo caminamos a JJ Byrne Playground. Cuando llueve, nos movemos, bailamos y hacemos yoga en el estudio."
+          }
+        },
+        {
+          "icon": "heart",
+          "title": {
+            "en": "Parents as partners",
+            "es": "Familias como aliadas"
+          },
+          "text": {
+            "en": "Flexible schedules, quick replies, and honest conversations about how your child is doing.",
+            "es": "Horarios flexibles, respuestas rápidas y conversaciones honestas sobre cómo va tu hijo o hija."
+          }
+        }
       ]
     },
     "edith": {
-      "eyebrow": { "en": "Founder", "es": "Fundadora" },
+      "eyebrow": {
+        "en": "Founder",
+        "es": "Fundadora"
+      },
       "name": "Edith Villanueva",
-      "role": { "en": "Founder, Director & Head Teacher", "es": "Fundadora, directora y maestra principal" },
+      "role": {
+        "en": "Founder, Director & Head Teacher",
+        "es": "Fundadora, directora y maestra principal"
+      },
       "bio": [
         {
           "en": "Edith opened Imagine South Slope Montessori in 2015 with one idea: the calm, hands-on Montessori classroom she trained in, lived entirely in Spanish. It was the first program of its kind in New York.",
@@ -314,7 +660,10 @@
       "_confirm": "Add Edith's Montessori training, where she is from, and years in early childhood education."
     },
     "team": {
-      "title": { "en": "Our teachers", "es": "Nuestras maestras" },
+      "title": {
+        "en": "Our teachers",
+        "es": "Nuestras maestras"
+      },
       "text": {
         "en": "Three adults are in the room every day, all speaking Spanish with the children: Edith and two assistant teachers. A music teacher joins us once a week.",
         "es": "Tres adultas están en el salón cada día, todas hablando español con los niños: Edith y dos maestras asistentes. Una maestra de música nos acompaña una vez por semana."
@@ -322,273 +671,904 @@
       "_confirm": "Add assistant teacher names and short bios if they would like to be on the site."
     },
     "space": {
-      "eyebrow": { "en": "Our space", "es": "Nuestro espacio" },
-      "title": { "en": "A dance studio full of light", "es": "Un estudio de danza lleno de luz" },
+      "eyebrow": {
+        "en": "Our space",
+        "es": "Nuestro espacio"
+      },
+      "title": {
+        "en": "A dance studio full of light",
+        "es": "Un estudio de danza lleno de luz"
+      },
       "text": {
         "en": "Our classroom is on the third floor of Brooklyn Arts Exchange, a beloved neighborhood arts center on 5th Avenue: wood floors, tall windows, and light all day. Low shelves hold the Montessori materials at child height, a rug marks circle time, and JJ Byrne Playground is a short walk away.",
         "es": "Nuestro salón está en el tercer piso de Brooklyn Arts Exchange, un querido centro de artes del barrio en la 5ta Avenida: pisos de madera, ventanas altas y luz todo el día. Estantes bajos guardan los materiales Montessori a la altura de los niños, una alfombra marca el círculo, y JJ Byrne Playground está a pocos pasos."
       }
     },
     "story": {
-      "title": { "en": "Our story", "es": "Nuestra historia" },
+      "title": {
+        "en": "Our story",
+        "es": "Nuestra historia"
+      },
       "milestones": [
-        { "year": "2015", "text": { "en": "Imagine South Slope Montessori opens at BAX, the first Montessori preschool in New York taught entirely in Spanish.", "es": "Imagine South Slope Montessori abre en BAX, el primer preescolar Montessori de Nueva York enseñado completamente en español." } },
-        { "year": "2018", "text": { "en": "Our first graduates head to dual-language kindergartens across Brooklyn.", "es": "Nuestros primeros egresados llegan a kínders de doble idioma por todo Brooklyn." } },
-        { "year": "2026", "text": { "en": "Still one small classroom, still led by Edith, still entirely in Spanish. Now enrolling.", "es": "Seguimos siendo un salón pequeño, guiado por Edith y completamente en español. Inscripciones abiertas." } }
+        {
+          "year": "2015",
+          "text": {
+            "en": "Imagine South Slope Montessori opens at BAX, the first Montessori preschool in New York taught entirely in Spanish.",
+            "es": "Imagine South Slope Montessori abre en BAX, el primer preescolar Montessori de Nueva York enseñado completamente en español."
+          }
+        },
+        {
+          "year": "2018",
+          "text": {
+            "en": "Our first graduates head to dual-language kindergartens across Brooklyn.",
+            "es": "Nuestros primeros egresados llegan a kínders de doble idioma por todo Brooklyn."
+          }
+        },
+        {
+          "year": "2026",
+          "text": {
+            "en": "Still one small classroom, still led by Edith, still entirely in Spanish. Now enrolling.",
+            "es": "Seguimos siendo un salón pequeño, guiado por Edith y completamente en español. Inscripciones abiertas."
+          }
+        }
       ],
       "_confirm": "The 2018 milestone is illustrative; replace with real milestones (moves, awards, graduates, the pandemic year, etc.)."
     }
   },
-
   "program": {
     "meta": {
-      "title": { "en": "Our Program: Spanish Immersion Montessori for Ages 2 to 5", "es": "Nuestro programa: Montessori en español para niños de 2 a 5 años" }
+      "title": {
+        "en": "Our Program: Spanish Immersion Montessori for Ages 2 to 5",
+        "es": "Nuestro programa: Montessori en español para niños de 2 a 5 años"
+      }
     },
     "hero": {
-      "eyebrow": { "en": "Our program", "es": "Nuestro programa" },
-      "title": { "en": "One classroom, ages 2 to 5, all in Spanish.", "es": "Un salón, de 2 a 5 años, todo en español." },
+      "eyebrow": {
+        "en": "Our program",
+        "es": "Nuestro programa"
+      },
+      "title": {
+        "en": "One classroom, ages 2 to 5, all in Spanish.",
+        "es": "Un salón, de 2 a 5 años, todo en español."
+      },
       "intro": {
         "en": "A mixed-age Montessori classroom lets the little ones learn from the big ones, and the big ones learn by leading. With at most ten children and three teachers, every child is known.",
         "es": "Un salón Montessori de edades mixtas permite que los pequeños aprendan de los grandes, y que los grandes aprendan guiando. Con máximo diez niños y tres maestras, cada niño es conocido."
       }
     },
     "immersion": {
-      "eyebrow": { "en": "How immersion works", "es": "Cómo funciona la inmersión" },
-      "title": { "en": "From listening to thinking in Spanish", "es": "De escuchar a pensar en español" },
+      "eyebrow": {
+        "en": "How immersion works",
+        "es": "Cómo funciona la inmersión"
+      },
+      "title": {
+        "en": "From listening to thinking in Spanish",
+        "es": "De escuchar a pensar en español"
+      },
       "steps": [
-        { "title": { "en": "Listen", "es": "Escuchar" }, "text": { "en": "In the first weeks, routines, songs, gestures and pictures make Spanish understandable even to a brand-new two-year-old.", "es": "En las primeras semanas, las rutinas, canciones, gestos e imágenes hacen que el español sea comprensible incluso para un niño de dos años recién llegado." } },
-        { "title": { "en": "Understand", "es": "Entender" }, "text": { "en": "Within weeks children follow instructions, stories and jokes. Understanding always comes before speaking, and that is exactly right.", "es": "En pocas semanas los niños siguen instrucciones, cuentos y chistes. Entender siempre llega antes que hablar, y así debe ser." } },
-        { "title": { "en": "Speak", "es": "Hablar" }, "text": { "en": "Single words, then phrases, then whole sentences, usually within months. We never pressure; we celebrate.", "es": "Primero palabras, luego frases, luego oraciones completas, casi siempre en pocos meses. Nunca presionamos; celebramos." } },
-        { "title": { "en": "Think", "es": "Pensar" }, "text": { "en": "By the second year, many children switch between English and Spanish without noticing. That flexibility is the gift.", "es": "Para el segundo año, muchos niños cambian entre inglés y español sin darse cuenta. Esa flexibilidad es el regalo." } }
+        {
+          "title": {
+            "en": "Listen",
+            "es": "Escuchar"
+          },
+          "text": {
+            "en": "In the first weeks, routines, songs, gestures and pictures make Spanish understandable even to a brand-new two-year-old.",
+            "es": "En las primeras semanas, las rutinas, canciones, gestos e imágenes hacen que el español sea comprensible incluso para un niño de dos años recién llegado."
+          }
+        },
+        {
+          "title": {
+            "en": "Understand",
+            "es": "Entender"
+          },
+          "text": {
+            "en": "Within weeks children follow instructions, stories and jokes. Understanding always comes before speaking, and that is exactly right.",
+            "es": "En pocas semanas los niños siguen instrucciones, cuentos y chistes. Entender siempre llega antes que hablar, y así debe ser."
+          }
+        },
+        {
+          "title": {
+            "en": "Speak",
+            "es": "Hablar"
+          },
+          "text": {
+            "en": "Single words, then phrases, then whole sentences, usually within months. We never pressure; we celebrate.",
+            "es": "Primero palabras, luego frases, luego oraciones completas, casi siempre en pocos meses. Nunca presionamos; celebramos."
+          }
+        },
+        {
+          "title": {
+            "en": "Think",
+            "es": "Pensar"
+          },
+          "text": {
+            "en": "By the second year, many children switch between English and Spanish without noticing. That flexibility is the gift.",
+            "es": "Para el segundo año, muchos niños cambian entre inglés y español sin darse cuenta. Esa flexibilidad es el regalo."
+          }
+        }
       ]
     },
     "areas": {
-      "eyebrow": { "en": "What children learn", "es": "Qué aprenden los niños" },
-      "title": { "en": "The Montessori curriculum, en español", "es": "El currículo Montessori, en español" },
+      "eyebrow": {
+        "en": "What children learn",
+        "es": "Qué aprenden los niños"
+      },
+      "title": {
+        "en": "The Montessori curriculum, en español",
+        "es": "El currículo Montessori, en español"
+      },
       "items": [
-        { "icon": "pour", "title": { "en": "Practical life", "es": "Vida práctica" }, "text": { "en": "Pouring, buttoning, sweeping, preparing snack. Independence, concentration, and confident hands.", "es": "Verter, abotonar, barrer, preparar la merienda. Independencia, concentración y manos seguras." } },
-        { "icon": "shapes", "title": { "en": "Sensorial", "es": "Sensorial" }, "text": { "en": "Materials that isolate size, color, weight, sound and texture, so children learn to notice and compare.", "es": "Materiales que aíslan tamaño, color, peso, sonido y textura, para aprender a observar y comparar." } },
-        { "icon": "abc", "title": { "en": "Language", "es": "Lenguaje" }, "text": { "en": "Rich Spanish vocabulary, sound games, sandpaper letters and the first steps into reading and writing.", "es": "Vocabulario rico en español, juegos de sonidos, letras de lija y los primeros pasos hacia la lectura y la escritura." } },
-        { "icon": "math", "title": { "en": "Math", "es": "Matemáticas" }, "text": { "en": "Counting beads, number rods and the decimal system, held in the hands before it lives in the head.", "es": "Cuentas para contar, barras numéricas y el sistema decimal, en las manos antes que en la cabeza." } },
-        { "icon": "globe", "title": { "en": "Culture & science", "es": "Cultura y ciencia" }, "text": { "en": "Maps, animals, plants, the seasons, and the traditions of the Spanish-speaking world.", "es": "Mapas, animales, plantas, las estaciones y las tradiciones del mundo hispanohablante." } },
-        { "icon": "music", "title": { "en": "Music", "es": "Música" }, "text": { "en": "Singing every day, and a visiting music teacher once a week.", "es": "Cantamos todos los días, y una maestra de música nos visita una vez por semana." } },
-        { "icon": "yoga", "title": { "en": "Yoga & meditation", "es": "Yoga y meditación" }, "text": { "en": "Simple poses and quiet breathing, so children learn to find calm in their own bodies.", "es": "Posturas sencillas y respiración tranquila, para que los niños aprendan a encontrar la calma en su propio cuerpo." } },
-        { "icon": "art", "title": { "en": "Art", "es": "Arte" }, "text": { "en": "Paint, clay, collage and plenty of process over product.", "es": "Pintura, arcilla, collage y mucho proceso por encima del resultado." } },
-        { "icon": "sun", "title": { "en": "Outdoor play", "es": "Juego al aire libre" }, "text": { "en": "JJ Byrne Playground on nice days, and big movement indoors when the weather says no.", "es": "JJ Byrne Playground cuando hace buen tiempo, y mucho movimiento adentro cuando el clima dice que no." } }
+        {
+          "icon": "pour",
+          "title": {
+            "en": "Practical life",
+            "es": "Vida práctica"
+          },
+          "text": {
+            "en": "Pouring, buttoning, sweeping, preparing snack. Independence, concentration, and confident hands.",
+            "es": "Verter, abotonar, barrer, preparar la merienda. Independencia, concentración y manos seguras."
+          }
+        },
+        {
+          "icon": "shapes",
+          "title": {
+            "en": "Sensorial",
+            "es": "Sensorial"
+          },
+          "text": {
+            "en": "Materials that isolate size, color, weight, sound and texture, so children learn to notice and compare.",
+            "es": "Materiales que aíslan tamaño, color, peso, sonido y textura, para aprender a observar y comparar."
+          }
+        },
+        {
+          "icon": "abc",
+          "title": {
+            "en": "Language",
+            "es": "Lenguaje"
+          },
+          "text": {
+            "en": "Rich Spanish vocabulary, sound games, sandpaper letters and the first steps into reading and writing.",
+            "es": "Vocabulario rico en español, juegos de sonidos, letras de lija y los primeros pasos hacia la lectura y la escritura."
+          }
+        },
+        {
+          "icon": "math",
+          "title": {
+            "en": "Math",
+            "es": "Matemáticas"
+          },
+          "text": {
+            "en": "Counting beads, number rods and the decimal system, held in the hands before it lives in the head.",
+            "es": "Cuentas para contar, barras numéricas y el sistema decimal, en las manos antes que en la cabeza."
+          }
+        },
+        {
+          "icon": "globe",
+          "title": {
+            "en": "Culture & science",
+            "es": "Cultura y ciencia"
+          },
+          "text": {
+            "en": "Maps, animals, plants, the seasons, and the traditions of the Spanish-speaking world.",
+            "es": "Mapas, animales, plantas, las estaciones y las tradiciones del mundo hispanohablante."
+          }
+        },
+        {
+          "icon": "music",
+          "title": {
+            "en": "Music",
+            "es": "Música"
+          },
+          "text": {
+            "en": "Singing every day, and a visiting music teacher once a week.",
+            "es": "Cantamos todos los días, y una maestra de música nos visita una vez por semana."
+          }
+        },
+        {
+          "icon": "yoga",
+          "title": {
+            "en": "Yoga & meditation",
+            "es": "Yoga y meditación"
+          },
+          "text": {
+            "en": "Simple poses and quiet breathing, so children learn to find calm in their own bodies.",
+            "es": "Posturas sencillas y respiración tranquila, para que los niños aprendan a encontrar la calma en su propio cuerpo."
+          }
+        },
+        {
+          "icon": "art",
+          "title": {
+            "en": "Art",
+            "es": "Arte"
+          },
+          "text": {
+            "en": "Paint, clay, collage and plenty of process over product.",
+            "es": "Pintura, arcilla, collage y mucho proceso por encima del resultado."
+          }
+        },
+        {
+          "icon": "sun",
+          "title": {
+            "en": "Outdoor play",
+            "es": "Juego al aire libre"
+          },
+          "text": {
+            "en": "JJ Byrne Playground on nice days, and big movement indoors when the weather says no.",
+            "es": "JJ Byrne Playground cuando hace buen tiempo, y mucho movimiento adentro cuando el clima dice que no."
+          }
+        }
       ]
     },
     "day": {
-      "eyebrow": { "en": "A day at Imagine", "es": "Un día en Imagine" },
-      "title": { "en": "The rhythm of a day", "es": "El ritmo de un día" },
-      "note": { "en": "A typical day. Times are approximate and follow the children.", "es": "Un día típico. Los horarios son aproximados y siguen a los niños." },
+      "eyebrow": {
+        "en": "A day at Imagine",
+        "es": "Un día en Imagine"
+      },
+      "title": {
+        "en": "The rhythm of a day",
+        "es": "El ritmo de un día"
+      },
+      "note": {
+        "en": "A typical day. Times are approximate and follow the children.",
+        "es": "Un día típico. Los horarios son aproximados y siguen a los niños."
+      },
       "items": [
-        { "time": "9:00", "title": { "en": "Buenos días", "es": "Buenos días" }, "text": { "en": "Arrival, hang up your coat, greet your friends in Spanish.", "es": "Llegada, colgar el abrigo, saludar a los amigos en español." } },
-        { "time": "9:15", "title": { "en": "Work cycle", "es": "Ciclo de trabajo" }, "text": { "en": "Children choose Montessori materials; teachers give one-on-one lessons.", "es": "Los niños eligen materiales Montessori; las maestras dan lecciones individuales." } },
-        { "time": "10:30", "title": { "en": "Snack & circle", "es": "Merienda y círculo" }, "text": { "en": "Songs, the calendar, and a story in Spanish.", "es": "Canciones, el calendario y un cuento en español." } },
-        { "time": "11:00", "title": { "en": "Outside", "es": "Al aire libre" }, "text": { "en": "The playground on nice days; movement and yoga in the studio when it rains.", "es": "El parque cuando hace buen tiempo; movimiento y yoga en el estudio cuando llueve." } },
-        { "time": "12:00", "title": { "en": "Lunch together", "es": "Almuerzo juntos" }, "text": { "en": "Packed from home, eaten together at the table, in Spanish.", "es": "Traído de casa y compartido en la mesa, en español." } },
-        { "time": "12:45", "title": { "en": "Rest & quiet work", "es": "Descanso y trabajo tranquilo" }, "text": { "en": "Younger children rest; older children keep working.", "es": "Los más pequeños descansan; los mayores siguen trabajando." } },
-        { "time": "1:45", "title": { "en": "Music, art, culture or science", "es": "Música, arte, cultura o ciencia" }, "text": { "en": "The special of the day, from our music teacher to hands-on experiments.", "es": "La actividad especial del día, desde la maestra de música hasta experimentos con las manos." } },
-        { "time": "2:45", "title": { "en": "Story & hasta mañana", "es": "Cuento y hasta mañana" }, "text": { "en": "A last story, then pickup at 3:00 with a real update for parents.", "es": "Un último cuento y salida a las 3:00 con noticias reales para las familias." } }
+        {
+          "time": "9:00",
+          "title": {
+            "en": "Buenos días",
+            "es": "Buenos días"
+          },
+          "text": {
+            "en": "Arrival, hang up your coat, greet your friends in Spanish.",
+            "es": "Llegada, colgar el abrigo, saludar a los amigos en español."
+          }
+        },
+        {
+          "time": "9:15",
+          "title": {
+            "en": "Work cycle",
+            "es": "Ciclo de trabajo"
+          },
+          "text": {
+            "en": "Children choose Montessori materials; teachers give one-on-one lessons.",
+            "es": "Los niños eligen materiales Montessori; las maestras dan lecciones individuales."
+          }
+        },
+        {
+          "time": "10:30",
+          "title": {
+            "en": "Snack & circle",
+            "es": "Merienda y círculo"
+          },
+          "text": {
+            "en": "Songs, the calendar, and a story in Spanish.",
+            "es": "Canciones, el calendario y un cuento en español."
+          }
+        },
+        {
+          "time": "11:00",
+          "title": {
+            "en": "Outside",
+            "es": "Al aire libre"
+          },
+          "text": {
+            "en": "The playground on nice days; movement and yoga in the studio when it rains.",
+            "es": "El parque cuando hace buen tiempo; movimiento y yoga en el estudio cuando llueve."
+          }
+        },
+        {
+          "time": "12:00",
+          "title": {
+            "en": "Lunch together",
+            "es": "Almuerzo juntos"
+          },
+          "text": {
+            "en": "Packed from home, eaten together at the table, in Spanish.",
+            "es": "Traído de casa y compartido en la mesa, en español."
+          }
+        },
+        {
+          "time": "12:45",
+          "title": {
+            "en": "Rest & quiet work",
+            "es": "Descanso y trabajo tranquilo"
+          },
+          "text": {
+            "en": "Younger children rest; older children keep working.",
+            "es": "Los más pequeños descansan; los mayores siguen trabajando."
+          }
+        },
+        {
+          "time": "1:45",
+          "title": {
+            "en": "Music, art, culture or science",
+            "es": "Música, arte, cultura o ciencia"
+          },
+          "text": {
+            "en": "The special of the day, from our music teacher to hands-on experiments.",
+            "es": "La actividad especial del día, desde la maestra de música hasta experimentos con las manos."
+          }
+        },
+        {
+          "time": "2:45",
+          "title": {
+            "en": "Story & hasta mañana",
+            "es": "Cuento y hasta mañana"
+          },
+          "text": {
+            "en": "A last story, then pickup at 3:00 with a real update for parents.",
+            "es": "Un último cuento y salida a las 3:00 con noticias reales para las familias."
+          }
+        }
       ],
       "_confirm": "Adjust times and activities to match the real day. Confirm whether lunch is packed from home and whether snack is provided."
     },
     "schedules": {
-      "eyebrow": { "en": "Schedules", "es": "Horarios" },
-      "title": { "en": "Schedules that fit real families", "es": "Horarios para familias reales" },
+      "eyebrow": {
+        "en": "Schedules",
+        "es": "Horarios"
+      },
+      "title": {
+        "en": "One calm day, 9 to 3",
+        "es": "Un día tranquilo, de 9 a 3"
+      },
       "text": {
-        "en": "Part-time and full-week options, 9:00 AM to 3:00 PM. Many families start with two or three days and add more as their child settles in.",
-        "es": "Opciones de medio tiempo y semana completa, de 9:00 AM a 3:00 PM. Muchas familias empiezan con dos o tres días y agregan más cuando su hijo o hija se adapta."
+        "en": "Our day runs Monday to Friday from 9:00 AM to 3:00 PM. It's short on purpose: long enough for a full Montessori work cycle, lunch, rest and time outside, and short enough that two- and three-year-olds go home happy rather than exhausted. We don't offer early drop-off or extended day. Families choose two, three or five days a week.",
+        "es": "Nuestro día va de lunes a viernes, de 9:00 AM a 3:00 PM. Es corto a propósito: suficiente para un ciclo de trabajo Montessori completo, almuerzo, descanso y tiempo al aire libre, y lo bastante corto para que los niños de dos y tres años vuelvan a casa contentos y no agotados. No ofrecemos entrada temprana ni horario extendido. Las familias eligen dos, tres o cinco días por semana."
       },
       "options": [
-        { "days": "2", "label": { "en": "days a week", "es": "días por semana" }, "note": { "en": "A gentle start for two-year-olds", "es": "Un comienzo suave para los de dos años" } },
-        { "days": "3", "label": { "en": "days a week", "es": "días por semana" }, "note": { "en": "Our most popular schedule", "es": "Nuestro horario más popular" } },
-        { "days": "5", "label": { "en": "days a week", "es": "días por semana" }, "note": { "en": "Full immersion, full week", "es": "Inmersión completa, semana completa" } }
+        {
+          "days": "2",
+          "label": {
+            "en": "days a week",
+            "es": "días por semana"
+          },
+          "note": {
+            "en": "A gentle start for two-year-olds",
+            "es": "Un comienzo suave para los de dos años"
+          }
+        },
+        {
+          "days": "3",
+          "label": {
+            "en": "days a week",
+            "es": "días por semana"
+          },
+          "note": {
+            "en": "Our most popular schedule",
+            "es": "Nuestro horario más popular"
+          }
+        },
+        {
+          "days": "5",
+          "label": {
+            "en": "days a week",
+            "es": "días por semana"
+          },
+          "note": {
+            "en": "Full immersion, full week",
+            "es": "Inmersión completa, semana completa"
+          }
+        }
       ],
-      "_confirm": "Confirm which day combinations are offered (e.g. Tue/Thu, Mon/Wed/Fri) and whether early drop-off or extended day exists."
+      "_confirm": "Hours 9 to 3 with no early drop-off or extended day came from Sergio's Sep 8 conversation. Confirm the day combinations offered (e.g. Tue/Thu, Mon/Wed/Fri)."
     },
     "tuition": {
-      "title": { "en": "Tuition", "es": "Colegiatura" },
+      "title": {
+        "en": "Tuition",
+        "es": "Colegiatura"
+      },
       "text": {
         "en": "Tuition depends on the schedule you choose. Parents often tell us we're among the most reasonable options in the Slope. Ask for the current rate sheet when you book a tour.",
         "es": "La colegiatura depende del horario que elijas. Las familias suelen decirnos que somos una de las opciones más razonables del Slope. Pide la lista de precios actual cuando agendes tu visita."
       },
-      "fee": { "en": "$125 non-refundable registration fee with your application.", "es": "Cuota de inscripción de $125, no reembolsable, con tu solicitud." },
+      "fee": {
+        "en": "$125 non-refundable registration fee with your application.",
+        "es": "Cuota de inscripción de $125, no reembolsable, con tu solicitud."
+      },
       "_confirm": "Add actual monthly or annual tuition per schedule if you want it public. Listing prices tends to increase inquiries."
     },
     "bring": {
-      "title": { "en": "What to bring", "es": "Qué traer" },
+      "title": {
+        "en": "What to bring",
+        "es": "Qué traer"
+      },
       "items": [
-        { "en": "A packed lunch and a water bottle", "es": "Almuerzo de casa y una botella de agua" },
-        { "en": "A full change of clothes", "es": "Una muda completa de ropa" },
-        { "en": "Comfortable indoor shoes", "es": "Zapatos cómodos para adentro" },
-        { "en": "Diapers or pull-ups if your child still uses them", "es": "Pañales si tu hijo o hija todavía los usa" }
+        {
+          "en": "A packed lunch and a water bottle",
+          "es": "Almuerzo de casa y una botella de agua"
+        },
+        {
+          "en": "A full change of clothes",
+          "es": "Una muda completa de ropa"
+        },
+        {
+          "en": "Comfortable indoor shoes",
+          "es": "Zapatos cómodos para adentro"
+        },
+        {
+          "en": "Diapers or pull-ups if your child still uses them",
+          "es": "Pañales si tu hijo o hija todavía los usa"
+        }
       ],
       "_confirm": "Confirm this list with the real welcome packet."
     }
   },
-
   "admissions": {
     "meta": {
-      "title": { "en": "Admissions: How to Enroll", "es": "Admisiones: cómo inscribirse" }
+      "title": {
+        "en": "Admissions: How to Enroll",
+        "es": "Admisiones: cómo inscribirse"
+      }
     },
     "hero": {
-      "eyebrow": { "en": "Admissions", "es": "Admisiones" },
-      "title": { "en": "Joining Imagine is simple.", "es": "Unirse a Imagine es sencillo." },
+      "eyebrow": {
+        "en": "Admissions",
+        "es": "Admisiones"
+      },
+      "title": {
+        "en": "Joining Imagine is simple.",
+        "es": "Unirse a Imagine es sencillo."
+      },
       "intro": {
         "en": "We enroll year-round whenever there's space in the classroom, and we keep the process short so you can spend your time getting to know us.",
         "es": "Inscribimos durante todo el año cuando hay lugar en el salón, y mantenemos el proceso corto para que dediques tu tiempo a conocernos."
       }
     },
     "steps": {
-      "title": { "en": "Four steps", "es": "Cuatro pasos" },
+      "title": {
+        "en": "Four steps",
+        "es": "Cuatro pasos"
+      },
       "items": [
-        { "title": { "en": "Visit", "es": "Visita" }, "text": { "en": "Book a tour or come to an open house. Bring your child; the classroom is the best way to feel whether it's a fit.", "es": "Agenda una visita o ven a una casa abierta. Trae a tu hijo o hija; el salón es la mejor forma de sentir si es el lugar correcto." } },
-        { "title": { "en": "Apply", "es": "Solicita" }, "text": { "en": "Complete the enrollment application form and pay the $125 non-refundable registration fee.", "es": "Completa el formulario de solicitud de inscripción y paga la cuota de inscripción de $125, no reembolsable." } },
-        { "title": { "en": "Meet", "es": "Conócenos" }, "text": { "en": "Once your completed application and fee are received, our admission office will contact you to set up a child interview and classroom observation.", "es": "Cuando recibamos tu solicitud completa y la cuota, nuestra oficina de admisiones te contactará para programar una entrevista con tu hijo o hija y una observación en el salón." } },
-        { "title": { "en": "Enroll", "es": "Inscríbete" }, "text": { "en": "We confirm your schedule and start date, send a short welcome packet, and plan a gentle phase-in for the first days.", "es": "Confirmamos tu horario y fecha de inicio, enviamos un breve paquete de bienvenida y planeamos una adaptación suave para los primeros días." } }
+        {
+          "title": {
+            "en": "Visit",
+            "es": "Visita"
+          },
+          "text": {
+            "en": "Book a tour or come to an open house. Bring your child; the classroom is the best way to feel whether it's a fit.",
+            "es": "Agenda una visita o ven a una casa abierta. Trae a tu hijo o hija; el salón es la mejor forma de sentir si es el lugar correcto."
+          }
+        },
+        {
+          "title": {
+            "en": "Apply",
+            "es": "Solicita"
+          },
+          "text": {
+            "en": "Complete the enrollment application form and pay the $125 non-refundable registration fee.",
+            "es": "Completa el formulario de solicitud de inscripción y paga la cuota de inscripción de $125, no reembolsable."
+          }
+        },
+        {
+          "title": {
+            "en": "Meet",
+            "es": "Conócenos"
+          },
+          "text": {
+            "en": "Once your completed application and fee are received, our admission office will contact you to set up a child interview and classroom observation.",
+            "es": "Cuando recibamos tu solicitud completa y la cuota, nuestra oficina de admisiones te contactará para programar una entrevista con tu hijo o hija y una observación en el salón."
+          }
+        },
+        {
+          "title": {
+            "en": "Enroll",
+            "es": "Inscríbete"
+          },
+          "text": {
+            "en": "We confirm your schedule and start date, send a short welcome packet, and plan a gentle phase-in for the first days.",
+            "es": "Confirmamos tu horario y fecha de inicio, enviamos un breve paquete de bienvenida y planeamos una adaptación suave para los primeros días."
+          }
+        }
       ]
     },
     "requirements": {
-      "title": { "en": "Requirements", "es": "Requisitos" },
+      "title": {
+        "en": "Requirements",
+        "es": "Requisitos"
+      },
       "items": [
-        { "en": "Children must be between 2 and 5 years old to be part of our program.", "es": "Los niños deben tener entre 2 y 5 años para formar parte de nuestro programa." },
-        { "en": "All children must be vaccinated as per NYC Department of Health requirements.", "es": "Todos los niños deben estar vacunados según los requisitos del Departamento de Salud de NYC." },
-        { "en": "A completed enrollment application and the $125 registration fee.", "es": "La solicitud de inscripción completa y la cuota de inscripción de $125." },
-        { "en": "Immunization record and emergency contact form before the first day.", "es": "Cartilla de vacunación y formulario de contactos de emergencia antes del primer día." }
+        {
+          "en": "Children must be between 2 and 5 years old to be part of our program.",
+          "es": "Los niños deben tener entre 2 y 5 años para formar parte de nuestro programa."
+        },
+        {
+          "en": "All children must be vaccinated as per NYC Department of Health requirements.",
+          "es": "Todos los niños deben estar vacunados según los requisitos del Departamento de Salud de NYC."
+        },
+        {
+          "en": "A completed enrollment application and the $125 registration fee.",
+          "es": "La solicitud de inscripción completa y la cuota de inscripción de $125."
+        },
+        {
+          "en": "Immunization record and emergency contact form before the first day.",
+          "es": "Cartilla de vacunación y formulario de contactos de emergencia antes del primer día."
+        }
       ],
       "_confirm": "Confirm the document list (medical form, allergy form, etc.)."
     },
     "openHouse": {
-      "title": { "en": "Open houses & tours", "es": "Casas abiertas y visitas" },
+      "title": {
+        "en": "Open houses & tours",
+        "es": "Casas abiertas y visitas"
+      },
       "text": {
         "en": "We host small open houses through the year, and private tours any week. Ask about the next date or pick a time that suits you.",
         "es": "Organizamos pequeñas casas abiertas durante el año, y visitas privadas cualquier semana. Pregunta por la próxima fecha o elige un horario que te convenga."
       },
       "_confirm": "Add the next open house date here or in tourUrl."
     },
-    "faqTitle": { "en": "Questions parents ask", "es": "Preguntas que hacen las familias" }
+    "faqTitle": {
+      "en": "Questions parents ask",
+      "es": "Preguntas que hacen las familias"
+    }
   },
-
   "contact": {
     "meta": {
-      "title": { "en": "Contact & Visit", "es": "Contacto y visitas" }
+      "title": {
+        "en": "Contact & Visit",
+        "es": "Contacto y visitas"
+      }
     },
     "hero": {
-      "eyebrow": { "en": "Contact", "es": "Contacto" },
-      "title": { "en": "Say hola.", "es": "Di hola." },
+      "eyebrow": {
+        "en": "Contact",
+        "es": "Contacto"
+      },
+      "title": {
+        "en": "Say hola.",
+        "es": "Di hola."
+      },
       "intro": {
         "en": "Call, email, or send the form. We reply within a day or two, in English or Spanish.",
         "es": "Llama, escribe o envía el formulario. Respondemos en uno o dos días, en inglés o en español."
       }
     },
     "labels": {
-      "phone": { "en": "Phone", "es": "Teléfono" },
-      "phoneAlt": { "en": "Also try", "es": "También" },
-      "email": { "en": "Email", "es": "Correo" },
-      "hours": { "en": "Hours", "es": "Horario" },
-      "address": { "en": "Address", "es": "Dirección" }
+      "phone": {
+        "en": "Phone",
+        "es": "Teléfono"
+      },
+      "phoneAlt": {
+        "en": "Also try",
+        "es": "También"
+      },
+      "email": {
+        "en": "Email",
+        "es": "Correo"
+      },
+      "hours": {
+        "en": "Hours",
+        "es": "Horario"
+      },
+      "address": {
+        "en": "Address",
+        "es": "Dirección"
+      }
     },
     "directions": {
-      "title": { "en": "Getting here", "es": "Cómo llegar" },
+      "title": {
+        "en": "Getting here",
+        "es": "Cómo llegar"
+      },
       "items": [
-        { "en": "Subway: F, G or R to 4th Ave–9th St, then two blocks up 8th Street. F or G to 7th Avenue also works.", "es": "Metro: F, G o R hasta 4th Ave–9th St, luego dos cuadras por la calle 8. F o G hasta 7th Avenue también funciona." },
-        { "en": "Bus: B63 along 5th Avenue stops at the door.", "es": "Autobús: el B63 por la 5ta Avenida para en la puerta." },
-        { "en": "Enter through the BAX lobby and take the stairs or elevator to the 3rd floor, Studio C.", "es": "Entra por el vestíbulo de BAX y sube por las escaleras o el elevador al tercer piso, Studio C." },
-        { "en": "Strollers are welcome; there's room to park them inside.", "es": "Las carriolas son bienvenidas; hay espacio para dejarlas adentro." }
+        {
+          "en": "Subway: F, G or R to 4th Ave–9th St, then two blocks up 8th Street. F or G to 7th Avenue also works.",
+          "es": "Metro: F, G o R hasta 4th Ave–9th St, luego dos cuadras por la calle 8. F o G hasta 7th Avenue también funciona."
+        },
+        {
+          "en": "Bus: B63 along 5th Avenue stops at the door.",
+          "es": "Autobús: el B63 por la 5ta Avenida para en la puerta."
+        },
+        {
+          "en": "Enter through the BAX lobby and take the stairs or elevator to the 3rd floor, Studio C.",
+          "es": "Entra por el vestíbulo de BAX y sube por las escaleras o el elevador al tercer piso, Studio C."
+        },
+        {
+          "en": "Strollers are welcome; there's room to park them inside.",
+          "es": "Las carriolas son bienvenidas; hay espacio para dejarlas adentro."
+        }
       ],
       "_confirm": "Confirm the elevator and stroller details with BAX."
     }
   },
-
   "faq": [
     {
-      "q": { "en": "We don't speak Spanish at home. Will my child be lost?", "es": "No hablamos español en casa. ¿Mi hijo se va a perder?" },
-      "a": { "en": "No. Most of our families speak only English at home. Teachers use routines, songs, gestures and pictures so a brand-new child understands from day one, and comprehension grows within weeks. You'll get updates in English (or Spanish, if you prefer).", "es": "No. La mayoría de nuestras familias solo hablan inglés en casa. Las maestras usan rutinas, canciones, gestos e imágenes para que un niño recién llegado entienda desde el primer día, y la comprensión crece en semanas. Recibirás noticias en inglés (o en español, si prefieres)." },
+      "q": {
+        "en": "We speak Spanish at home. What does Imagine add?",
+        "es": "Hablamos español en casa. ¿Qué aporta Imagine?"
+      },
+      "a": {
+        "en": "A whole day in Spanish, with other children, at the age when it matters most. At home your child hears Spanish from one or two people; here they hear it from three teachers and nine friends, in songs, stories, negotiations over the pink tower, and the words for everything in the room. Most children's Spanish jumps within a few months, and it stays theirs once English arrives.",
+        "es": "Un día completo en español, con otros niños, a la edad en que más importa. En casa tu hijo escucha español de una o dos personas; aquí lo escucha de tres maestras y nueve amigos, en canciones, cuentos, negociaciones por la torre rosa y las palabras de todo lo que hay en el salón. El español de la mayoría de los niños da un salto en pocos meses, y sigue siendo suyo cuando llega el inglés."
+      },
       "home": true
     },
     {
-      "q": { "en": "What ages do you take?", "es": "¿Qué edades reciben?" },
-      "a": { "en": "Children join us between ages 2 and 5 and share one mixed-age classroom. Younger children learn by watching the older ones; older children learn by helping.", "es": "Los niños se unen entre los 2 y los 5 años y comparten un solo salón de edades mixtas. Los más pequeños aprenden observando a los mayores; los mayores aprenden ayudando." },
+      "q": {
+        "en": "Do the teachers really speak only Spanish with the children?",
+        "es": "¿Las maestras de verdad hablan solo español con los niños?"
+      },
+      "a": {
+        "en": "Yes, all day, from buenos días to hasta mañana. Updates to parents come in Spanish or English, whichever you prefer.",
+        "es": "Sí, todo el día, desde buenos días hasta hasta mañana. Las noticias para las familias llegan en español o en inglés, como prefieras."
+      },
       "home": true
     },
     {
-      "q": { "en": "How big is the class?", "es": "¿Qué tan grande es el grupo?" },
-      "a": { "en": "At most ten children, with three adults in the room: Edith and two assistant teachers.", "es": "Máximo diez niños, con tres adultas en el salón: Edith y dos maestras asistentes." },
+      "q": {
+        "en": "How big is the class?",
+        "es": "¿Qué tan grande es el grupo?"
+      },
+      "a": {
+        "en": "At most ten children, with three adults in the room: Edith and two assistant teachers.",
+        "es": "Máximo diez niños, con tres adultas en el salón: Edith y dos maestras asistentes."
+      },
       "home": true
     },
     {
-      "q": { "en": "Do you offer part-time schedules?", "es": "¿Ofrecen horarios de medio tiempo?" },
-      "a": { "en": "Yes. Families choose two, three or five days a week, 9:00 AM to 3:00 PM. Many start with two days and add more later.", "es": "Sí. Las familias eligen dos, tres o cinco días por semana, de 9:00 AM a 3:00 PM. Muchas empiezan con dos días y agregan más después." },
+      "q": {
+        "en": "Do you offer early drop-off or late pickup?",
+        "es": "¿Ofrecen entrada temprana o salida tarde?"
+      },
+      "a": {
+        "en": "Not right now. Our day is 9:00 AM to 3:00 PM, Monday to Friday. If your family needs longer hours, tell us on the tour and we'll talk through what could work.",
+        "es": "Por ahora no. Nuestro día es de 9:00 AM a 3:00 PM, de lunes a viernes. Si tu familia necesita más horas, cuéntanos en la visita y conversamos qué podría funcionar."
+      },
       "home": true,
+      "_confirm": "Confirm there is no early drop-off or extended day, and whether Edith wants to offer it."
+    },
+    {
+      "q": {
+        "en": "We don't speak Spanish at home. Will my child be lost?",
+        "es": "No hablamos español en casa. ¿Mi hijo se va a perder?"
+      },
+      "a": {
+        "en": "No. Most of our families speak only English at home. Teachers use routines, songs, gestures and pictures so a brand-new child understands from day one, and comprehension grows within weeks. You'll get updates in English (or Spanish, if you prefer).",
+        "es": "No. La mayoría de nuestras familias solo hablan inglés en casa. Las maestras usan rutinas, canciones, gestos e imágenes para que un niño recién llegado entienda desde el primer día, y la comprensión crece en semanas. Recibirás noticias en inglés (o en español, si prefieres)."
+      },
+      "home": false
+    },
+    {
+      "q": {
+        "en": "What ages do you take?",
+        "es": "¿Qué edades reciben?"
+      },
+      "a": {
+        "en": "Children join us between ages 2 and 5 and share one mixed-age classroom. Younger children learn by watching the older ones; older children learn by helping.",
+        "es": "Los niños se unen entre los 2 y los 5 años y comparten un solo salón de edades mixtas. Los más pequeños aprenden observando a los mayores; los mayores aprenden ayudando."
+      },
+      "home": false
+    },
+    {
+      "q": {
+        "en": "Do you offer part-time schedules?",
+        "es": "¿Ofrecen horarios de medio tiempo?"
+      },
+      "a": {
+        "en": "Yes. Families choose two, three or five days a week, always 9:00 AM to 3:00 PM. Many start with two days and add more later.",
+        "es": "Sí. Las familias eligen dos, tres o cinco días por semana, siempre de 9:00 AM a 3:00 PM. Muchas empiezan con dos días y agregan más después."
+      },
+      "home": false,
       "_confirm": "Match to the real schedule options."
     },
     {
-      "q": { "en": "Does my child need to be potty trained?", "es": "¿Mi hijo necesita saber ir al baño?" },
-      "a": { "en": "No. Many two-year-olds join us in diapers. Toileting is part of Montessori practical life, and we support it gently and in step with you.", "es": "No. Muchos niños de dos años llegan con pañal. Aprender a ir al baño es parte de la vida práctica Montessori, y lo apoyamos con calma y en coordinación contigo." },
-      "_confirm": "Confirm the toileting policy."
+      "q": {
+        "en": "Is there outdoor time?",
+        "es": "¿Salen al aire libre?"
+      },
+      "a": {
+        "en": "Yes, as often as the weather allows. We walk to JJ Byrne Playground in Washington Park, a few minutes away, and on rainy days we dance, move and do yoga in our big studio.",
+        "es": "Sí, siempre que el clima lo permite. Caminamos a JJ Byrne Playground en Washington Park, a unos minutos, y cuando llueve bailamos, nos movemos y hacemos yoga en nuestro amplio estudio."
+      },
+      "home": false
     },
     {
-      "q": { "en": "Is there outdoor time?", "es": "¿Salen al aire libre?" },
-      "a": { "en": "Yes. On nice days we walk to JJ Byrne Playground in Washington Park, a few minutes away. On rainy days we dance, move and do yoga in our big studio.", "es": "Sí. Cuando hace buen tiempo caminamos a JJ Byrne Playground en Washington Park, a unos minutos. Cuando llueve, bailamos, nos movemos y hacemos yoga en nuestro amplio estudio." }
+      "q": {
+        "en": "Does my child need to be potty trained?",
+        "es": "¿Mi hijo necesita saber ir al baño?"
+      },
+      "a": {
+        "en": "No. Many two-year-olds join us in diapers. Toileting is part of Montessori practical life, and we support it gently and in step with you.",
+        "es": "No. Muchos niños de dos años llegan con pañal. Aprender a ir al baño es parte de la vida práctica Montessori, y lo apoyamos con calma y en coordinación contigo."
+      },
+      "_confirm": "Confirm the toileting policy.",
+      "home": false
     },
     {
-      "q": { "en": "What about lunch and snacks?", "es": "¿Y el almuerzo y la merienda?" },
-      "a": { "en": "Children bring a packed lunch from home and eat together at the table. Helping to prepare and serve snack is one of the children's favorite practical-life jobs.", "es": "Los niños traen su almuerzo de casa y comen juntos en la mesa. Ayudar a preparar y servir la merienda es uno de los trabajos de vida práctica favoritos de los niños." },
-      "_confirm": "Confirm whether snack is provided by the school."
+      "q": {
+        "en": "What about lunch and snacks?",
+        "es": "¿Y el almuerzo y la merienda?"
+      },
+      "a": {
+        "en": "Children bring a packed lunch from home and eat together at the table. Helping to prepare and serve snack is one of the children's favorite practical-life jobs.",
+        "es": "Los niños traen su almuerzo de casa y comen juntos en la mesa. Ayudar a preparar y servir la merienda es uno de los trabajos de vida práctica favoritos de los niños."
+      },
+      "_confirm": "Confirm whether snack is provided by the school.",
+      "home": false
     },
     {
-      "q": { "en": "How much is tuition?", "es": "¿Cuánto cuesta la colegiatura?" },
-      "a": { "en": "It depends on the schedule. Ask for the current rate sheet when you book a tour. There is a $125 non-refundable registration fee with your application.", "es": "Depende del horario. Pide la lista de precios actual cuando agendes tu visita. Hay una cuota de inscripción de $125, no reembolsable, con tu solicitud." }
+      "q": {
+        "en": "How much is tuition?",
+        "es": "¿Cuánto cuesta la colegiatura?"
+      },
+      "a": {
+        "en": "It depends on the schedule. Ask for the current rate sheet when you book a tour. There is a $125 non-refundable registration fee with your application.",
+        "es": "Depende del horario. Pide la lista de precios actual cuando agendes tu visita. Hay una cuota de inscripción de $125, no reembolsable, con tu solicitud."
+      },
+      "home": false
     },
     {
-      "q": { "en": "How do I apply?", "es": "¿Cómo me inscribo?" },
-      "a": { "en": "Visit, then complete the enrollment application and pay the registration fee. We'll contact you to set up a child interview and classroom observation, then confirm your start date.", "es": "Visítanos, luego completa la solicitud de inscripción y paga la cuota. Te contactaremos para programar una entrevista con tu hijo o hija y una observación en el salón, y después confirmamos la fecha de inicio." }
+      "q": {
+        "en": "How do I apply?",
+        "es": "¿Cómo me inscribo?"
+      },
+      "a": {
+        "en": "Visit, then complete the enrollment application and pay the registration fee. We'll contact you to set up a child interview and classroom observation, then confirm your start date.",
+        "es": "Visítanos, luego completa la solicitud de inscripción y paga la cuota. Te contactaremos para programar una entrevista con tu hijo o hija y una observación en el salón, y después confirmamos la fecha de inicio."
+      },
+      "home": false
     },
     {
-      "q": { "en": "Where exactly are you?", "es": "¿Dónde están exactamente?" },
-      "a": { "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street in Park Slope, third floor, Studio C. The 4th Ave–9th St station (F, G, R) is a few blocks away and the B63 bus stops outside.", "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8 en Park Slope, tercer piso, Studio C. La estación 4th Ave–9th St (F, G, R) está a pocas cuadras y el autobús B63 para afuera." }
+      "q": {
+        "en": "Where exactly are you?",
+        "es": "¿Dónde están exactamente?"
+      },
+      "a": {
+        "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street in Park Slope, third floor, Studio C. The 4th Ave–9th St station (F, G, R) is a few blocks away and the B63 bus stops outside.",
+        "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8 en Park Slope, tercer piso, Studio C. La estación 4th Ave–9th St (F, G, R) está a pocas cuadras y el autobús B63 para afuera."
+      },
+      "home": false
     },
     {
-      "q": { "en": "What happens after Imagine?", "es": "¿Qué pasa después de Imagine?" },
-      "a": { "en": "Our children go on to public, dual-language and independent kindergartens across Brooklyn. They arrive confident, independent, and comfortable in two languages.", "es": "Nuestros niños continúan en kínders públicos, de doble idioma e independientes por todo Brooklyn. Llegan seguros, independientes y cómodos en dos idiomas." }
+      "q": {
+        "en": "What happens after Imagine?",
+        "es": "¿Qué pasa después de Imagine?"
+      },
+      "a": {
+        "en": "Our children go on to public, dual-language and independent kindergartens across Brooklyn. They arrive confident, independent, and comfortable in two languages.",
+        "es": "Nuestros niños continúan en kínders públicos, de doble idioma e independientes por todo Brooklyn. Llegan seguros, independientes y cómodos en dos idiomas."
+      },
+      "home": false
     }
   ],
-
   "testimonials": [
     {
-      "quote": { "en": "A hidden gem. A special place with the sweetest people, where our kids learned Spanish even though we don't speak it at home.", "es": "Una joya escondida. Un lugar especial con la gente más dulce, donde nuestros hijos aprendieron español aunque no lo hablamos en casa." },
-      "by": { "en": "Parent review, Park Slope Parents", "es": "Reseña de una familia, Park Slope Parents" }
+      "quote": {
+        "en": "Loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents.",
+        "es": "Cariñosas, juguetonas, creativas, atentas y pacientes con los niños, y comunicativas y flexibles con los padres."
+      },
+      "by": {
+        "en": "Parent review, Park Slope Parents",
+        "es": "Reseña de una familia, Park Slope Parents"
+      }
     },
     {
-      "quote": { "en": "Loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents.", "es": "Cariñosas, juguetonas, creativas, atentas y pacientes con los niños, y comunicativas y flexibles con los padres." },
-      "by": { "en": "Parent review, Park Slope Parents", "es": "Reseña de una familia, Park Slope Parents" }
+      "quote": {
+        "en": "Calm and caring, with a real balance of educational play and fun, imaginative stuff. And a very reasonable price.",
+        "es": "Tranquila y cariñosa, con un verdadero equilibrio entre juego educativo y cosas divertidas e imaginativas. Y un precio muy razonable."
+      },
+      "by": {
+        "en": "Parent review, Park Slope Parents",
+        "es": "Reseña de una familia, Park Slope Parents"
+      }
     },
     {
-      "quote": { "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.", "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras." },
-      "by": { "en": "Parent review, Park Slope Parents", "es": "Reseña de una familia, Park Slope Parents" }
+      "quote": {
+        "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.",
+        "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
+      },
+      "by": {
+        "en": "Parent review, Park Slope Parents",
+        "es": "Reseña de una familia, Park Slope Parents"
+      }
     },
     {
-      "quote": { "en": "My daughter's Spanish comprehension has really grown from attending just two days a week.", "es": "La comprensión del español de mi hija ha crecido muchísimo con solo dos días por semana." },
-      "by": { "en": "Parent review, Park Slope Parents", "es": "Reseña de una familia, Park Slope Parents" }
+      "quote": {
+        "en": "A hidden gem. A special place with the sweetest people, where our kids learned Spanish even though we don't speak it at home.",
+        "es": "Una joya escondida. Un lugar especial con la gente más dulce, donde nuestros hijos aprendieron español aunque no lo hablamos en casa."
+      },
+      "by": {
+        "en": "Parent review, Park Slope Parents",
+        "es": "Reseña de una familia, Park Slope Parents"
+      }
     },
     {
-      "quote": { "en": "Calm and caring, with a real balance of educational play and fun, imaginative stuff. And a very reasonable price.", "es": "Tranquila y cariñosa, con un verdadero equilibrio entre juego educativo y cosas divertidas e imaginativas. Y un precio muy razonable." },
-      "by": { "en": "Parent review, Park Slope Parents", "es": "Reseña de una familia, Park Slope Parents" }
+      "quote": {
+        "en": "My daughter's Spanish comprehension has really grown from attending just two days a week.",
+        "es": "La comprensión del español de mi hija ha crecido muchísimo con solo dos días por semana."
+      },
+      "by": {
+        "en": "Parent review, Park Slope Parents",
+        "es": "Reseña de una familia, Park Slope Parents"
+      }
     }
   ],
   "_testimonialsConfirm": "These are excerpts from public reviews on Park Slope Parents. Confirm you are comfortable quoting them, or replace them with quotes from current families (with their permission).",
-
   "photos": [
-    { "file": "hero.jpg", "slot": "hero", "alt": { "en": "Children working with Montessori materials in the sunlit studio", "es": "Niños trabajando con materiales Montessori en el estudio lleno de luz" } },
-    { "file": "classroom-1.jpg", "slot": "classroom", "alt": { "en": "Low shelves with Montessori materials at child height", "es": "Estantes bajos con materiales Montessori a la altura de los niños" } },
-    { "file": "classroom-2.jpg", "slot": "classroom", "alt": { "en": "A child pouring water during practical life work", "es": "Un niño vertiendo agua durante el trabajo de vida práctica" } },
-    { "file": "circle.jpg", "slot": "circle", "alt": { "en": "Circle time with songs and a story in Spanish", "es": "Hora del círculo con canciones y un cuento en español" } },
-    { "file": "playground.jpg", "slot": "outdoor", "alt": { "en": "Outdoor play at JJ Byrne Playground", "es": "Juego al aire libre en JJ Byrne Playground" } },
-    { "file": "music.jpg", "slot": "music", "alt": { "en": "Music class with our visiting music teacher", "es": "Clase de música con nuestra maestra invitada" } },
-    { "file": "edith.jpg", "slot": "edith", "alt": { "en": "Edith Villanueva, founder and head teacher", "es": "Edith Villanueva, fundadora y maestra principal" } },
-    { "file": "studio.jpg", "slot": "space", "alt": { "en": "The studio at Brooklyn Arts Exchange with wood floors and tall windows", "es": "El estudio en Brooklyn Arts Exchange con pisos de madera y ventanas altas" } },
-    { "file": "materials.jpg", "slot": "materials", "alt": { "en": "Montessori sensorial materials on a work rug", "es": "Materiales sensoriales Montessori sobre un tapete de trabajo" } },
-    { "file": "art.jpg", "slot": "art", "alt": { "en": "Painting at the art table", "es": "Pintando en la mesa de arte" } }
-  ]
+    {
+      "file": "hero.jpg",
+      "slot": "hero",
+      "alt": {
+        "en": "Children working with Montessori materials in the sunlit studio",
+        "es": "Niños trabajando con materiales Montessori en el estudio lleno de luz"
+      }
+    },
+    {
+      "file": "classroom-1.jpg",
+      "slot": "classroom",
+      "alt": {
+        "en": "Low shelves with Montessori materials at child height",
+        "es": "Estantes bajos con materiales Montessori a la altura de los niños"
+      }
+    },
+    {
+      "file": "classroom-2.jpg",
+      "slot": "classroom",
+      "alt": {
+        "en": "A child pouring water during practical life work",
+        "es": "Un niño vertiendo agua durante el trabajo de vida práctica"
+      }
+    },
+    {
+      "file": "circle.jpg",
+      "slot": "circle",
+      "alt": {
+        "en": "Circle time with songs and a story in Spanish",
+        "es": "Hora del círculo con canciones y un cuento en español"
+      }
+    },
+    {
+      "file": "playground.jpg",
+      "slot": "outdoor",
+      "alt": {
+        "en": "Outdoor play at JJ Byrne Playground",
+        "es": "Juego al aire libre en JJ Byrne Playground"
+      }
+    },
+    {
+      "file": "music.jpg",
+      "slot": "music",
+      "alt": {
+        "en": "Music class with our visiting music teacher",
+        "es": "Clase de música con nuestra maestra invitada"
+      }
+    },
+    {
+      "file": "edith.jpg",
+      "slot": "edith",
+      "alt": {
+        "en": "Edith Villanueva, founder and head teacher",
+        "es": "Edith Villanueva, fundadora y maestra principal"
+      }
+    },
+    {
+      "file": "studio.jpg",
+      "slot": "space",
+      "alt": {
+        "en": "The studio at Brooklyn Arts Exchange with wood floors and tall windows",
+        "es": "El estudio en Brooklyn Arts Exchange con pisos de madera y ventanas altas"
+      }
+    },
+    {
+      "file": "materials.jpg",
+      "slot": "materials",
+      "alt": {
+        "en": "Montessori sensorial materials on a work rug",
+        "es": "Materiales sensoriales Montessori sobre un tapete de trabajo"
+      }
+    },
+    {
+      "file": "art.jpg",
+      "slot": "art",
+      "alt": {
+        "en": "Painting at the art table",
+        "es": "Pintando en la mesa de arte"
+      }
+    }
+  ],
+  "design": "sol",
+  "_designNote": "Sol is the chosen design. Bosque stays in src/designs for reference; build both with DESIGNS=sol,bosque npm run build."
 }

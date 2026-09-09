@@ -11,17 +11,17 @@ const fragment = process.argv.includes('--fragment');
 const site = JSON.parse(await readFile(path.join(ROOT, 'content', 'site.json'), 'utf8'));
 
 const MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.avif': 'image/avif' };
-const imageData = new Map();
-for (const f of await readdir(path.join(DIST, 'images')).catch(() => [])) {
-  const ext = path.extname(f).toLowerCase();
-  if (!MIME[ext]) continue;
-  const buf = await readFile(path.join(DIST, 'images', f));
-  if (buf.length < 1.5e6) imageData.set(f, `data:${MIME[ext]};base64,${buf.toString('base64')}`);
-}
-
-const designs = (await readdir(DIST, { withFileTypes: true })).filter((d) => d.isDirectory() && d.name !== 'images').map((d) => d.name);
-for (const slug of designs) {
-  const dir = path.join(DIST, slug);
+const manifest = JSON.parse(await readFile(path.join(DIST, '.designs.json'), 'utf8').catch(() => '[]'));
+if (!manifest.length) throw new Error('Nothing built yet. Run `npm run build` first.');
+for (const { slug, name, dir: sub } of manifest) {
+  const dir = path.join(DIST, sub);
+  const imageData = new Map();
+  for (const f of await readdir(path.join(dir, 'images')).catch(() => [])) {
+    const ext = path.extname(f).toLowerCase();
+    if (!MIME[ext]) continue;
+    const buf = await readFile(path.join(dir, 'images', f));
+    if (buf.length < 1.5e6) imageData.set(f, `data:${MIME[ext]};base64,${buf.toString('base64')}`);
+  }
   const css = await readFile(path.join(dir, 'assets', 'styles.css'), 'utf8');
   const js = await readFile(path.join(dir, 'assets', 'app.js'), 'utf8');
   const favicon = await readFile(path.join(dir, 'assets', 'favicon.svg'), 'utf8');
@@ -44,7 +44,7 @@ for (const slug of designs) {
         const p = page === 'index' ? 'home' : page;
         return `href="#/${targetLang}/${p}${hash ? '/' + hash.slice(1) : ''}"`;
       });
-      body = body.replace(/(src|href)="([^"]*?)\.\.\/images\/([^"]+)"/g, (m, attr, pre, f) => (imageData.has(f) ? `${attr}="${imageData.get(f)}"` : m));
+      body = body.replace(/(src|href)="(?:\.\.\/)?images\/([^"]+)"/g, (m, attr, f) => (imageData.has(f) ? `${attr}="${imageData.get(f)}"` : m));
       pages[`${lang}/${page}`] = { title, bodyClass, body, lang };
     }
   }
@@ -70,7 +70,7 @@ for (const slug of designs) {
   window.addEventListener('hashchange', route);
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', route); else route();
 })();`;
-  const designName = slug.charAt(0).toUpperCase() + slug.slice(1);
+  const designName = name || slug;
   const head = `<title>${designName} for ${site.school.shortName}</title>
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent(favicon)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
