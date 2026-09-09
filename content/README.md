@@ -24,6 +24,7 @@ line to look at.
 | You want to change | Look for |
 |---|---|
 | Phone, email, address, hours | `"school"` at the top |
+| Which design builds by default | `"design"` at the bottom (`sol`) |
 | Contact form destination | `"school" > "formAction"` (paste a Formspree URL) |
 | Tour booking link | `"school" > "tourUrl"` (paste a Calendly or Google Form link) |
 | Home page headline and sections | `"home"` |
