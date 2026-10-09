@@ -147,7 +147,7 @@ button { font: inherit; color: inherit; }
 .why__card:nth-child(5n+3) .why__icon { background: var(--cobalt); color: #fff; }
 .why__card:nth-child(5n+4) .why__icon { background: var(--sky); color: var(--ink); }
 .why__card:nth-child(5n+5) .why__icon { background: var(--plum); color: #fff; }
-.why__title { font-size: 1.25rem; }
+.why__title { font-size: 1.25rem; text-wrap: balance; }
 .why__card p { margin: 0; color: var(--cocoa); }
 
 /* Montessori */
