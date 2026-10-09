@@ -105,10 +105,15 @@ ${body}
 }
 
 /* ---------- Home ---------- */
+// Prefer photos that exist over placeholders, keeping the preferred order within each group.
+const existingFirst = (ctx, files) => [...files].sort((a, b) => Number(ctx.hasImage(b)) - Number(ctx.hasImage(a)));
+
 function home(ctx) {
   const { t, site, school, ui } = ctx;
   const h = site.home;
   const day = site.program.day;
+  const collage = existingFirst(ctx, ['classroom-2.jpg', 'circle.jpg', 'studio.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 2);
+  const gallery = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'classroom-1.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg']);
   const body = `
 <section class="hero" data-hero>
   <div class="hero__sun" data-sun aria-hidden="true">${sunMark}</div>
@@ -125,8 +130,8 @@ function home(ctx) {
     </div>
     <div class="collage" aria-hidden="false">
       <figure class="polaroid polaroid--a">${ctx.img('hero.jpg', { loading: 'eager' })}</figure>
-      <figure class="polaroid polaroid--b">${ctx.img('classroom-2.jpg')}</figure>
-      <figure class="polaroid polaroid--c">${ctx.img('circle.jpg')}</figure>
+      <figure class="polaroid polaroid--b">${ctx.img(collage[0])}</figure>
+      <figure class="polaroid polaroid--c">${ctx.img(collage[1])}</figure>
       <span class="sticker sticker--hola" aria-hidden="true">¡Hola!</span>
       <span class="sticker sticker--ages" aria-hidden="true">${esc(t(school.ages))}</span>
     </div>
@@ -214,7 +219,7 @@ ${wave('wave--sand wave--flip')}
   <div class="wrap">
     ${sectionHead(ctx, { title: h.galleryTitle, text: h.galleryText })}
     <div class="gallery__grid" data-reveal>
-      ${['classroom-1.jpg', 'classroom-2.jpg', 'circle.jpg', 'playground.jpg', 'studio.jpg', 'materials.jpg'].map((f, i) => `<figure class="gallery__item gallery__item--${i}" data-lightbox>${ctx.img(f)}</figure>`).join('')}
+      ${gallery.map((f, i) => `<figure class="gallery__item gallery__item--${i}" data-lightbox>${ctx.img(f)}</figure>`).join('')}
     </div>
   </div>
 </section>
@@ -344,7 +349,7 @@ function program(ctx) {
       <p class="phero__intro">${esc(t(p.hero.intro))}</p>
       <div class="hero__cta">${tourBtn(ctx)}<a class="btn btn--ghost" href="#day">${esc(t(ui.cta.seeDay))}</a></div>
     </div>
-    <figure class="phero__photo polaroid polaroid--solo">${ctx.img('materials.jpg', { loading: 'eager' })}</figure>
+    <figure class="phero__photo polaroid polaroid--solo">${ctx.img(ctx.hasImage('materials.jpg') ? 'materials.jpg' : 'hero.jpg', { loading: 'eager' })}</figure>
   </div>
 </section>
 

@@ -44,13 +44,15 @@ for (const { slug, name, dir: sub } of manifest) {
         const p = page === 'index' ? 'home' : page;
         return `href="#/${targetLang}/${p}${hash ? '/' + hash.slice(1) : ''}"`;
       });
-      body = body.replace(/(src|href)="(?:\.\.\/)?images\/([^"]+)"/g, (m, attr, f) => (imageData.has(f) ? `${attr}="${imageData.get(f)}"` : m));
+      // Keep images/<file> paths in the stored HTML; the router swaps them for data URIs stored once.
+      body = body.replace(/(src|href)="(?:\.\.\/)?images\/([^"]+)"/g, (m, attr, f) => `${attr}="images/${f}"`);
       pages[`${lang}/${page}`] = { title, bodyClass, body, lang };
     }
   }
   const router = `
 (function () {
   var PAGES = ${JSON.stringify(pages)};
+  var IMAGES = ${JSON.stringify(Object.fromEntries(imageData))};
   document.documentElement.classList.add('js');
   var app = document.getElementById('app');
   function route() {
@@ -63,6 +65,10 @@ for (const { slug, name, dir: sub } of manifest) {
     document.title = p.title;
     document.body.className = p.bodyClass;
     app.innerHTML = p.body;
+    app.querySelectorAll('img[src^="images/"]').forEach(function (img) {
+      var f = img.getAttribute('src').slice(7);
+      if (IMAGES[f]) img.src = IMAGES[f];
+    });
     if (window.initApp) window.initApp();
     if (anchor) { var el = document.getElementById(anchor); if (el) { el.scrollIntoView(); return; } }
     window.scrollTo(0, 0);
