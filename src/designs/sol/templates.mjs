@@ -112,8 +112,8 @@ function home(ctx) {
   const { t, site, school, ui } = ctx;
   const h = site.home;
   const day = site.program.day;
-  // Collage order: top (large), right, bottom. The landscape studio shot leads; the tracing photo sits at the bottom.
-  const collage = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'hero.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 3);
+  // Collage order: top (large), middle (right), bottom. Strawberries lead, tracing in the middle, studio at the bottom.
+  const collage = existingFirst(ctx, ['classroom-2.jpg', 'hero.jpg', 'studio.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 3);
   const gallery = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'classroom-1.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg']);
   const body = `
 <section class="hero" data-hero>
