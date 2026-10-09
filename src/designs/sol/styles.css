@@ -108,7 +108,7 @@ button { font: inherit; color: inherit; }
 
 .collage { position: relative; aspect-ratio: 1 / .92; max-width: 520px; margin: .5rem auto 0; width: 100%; }
 .polaroid { background: #fff; padding: 8px 8px 12px; border-radius: 14px; box-shadow: var(--shadow); }
-.polaroid img, .polaroid .ph { border-radius: 8px; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.polaroid img, .polaroid .ph { border-radius: 8px; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 30%; }
 .collage .polaroid { position: absolute; }
 .polaroid--a { left: 0; top: 0; width: 70%; transform: rotate(-3deg); z-index: 2; }
 .polaroid--b { right: 0; top: 30%; width: 56%; transform: rotate(4deg); z-index: 3; }
@@ -197,7 +197,7 @@ button { font: inherit; color: inherit; }
 /* Gallery */
 .gallery__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
 .gallery__item { border-radius: var(--r); overflow: hidden; aspect-ratio: 1; cursor: zoom-in; box-shadow: var(--shadow-sm); }
-.gallery__item img, .gallery__item .ph { width: 100%; height: 100%; object-fit: cover; }
+.gallery__item img, .gallery__item .ph { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 .gallery__item--0 { grid-column: span 2; aspect-ratio: 16 / 10; }
 .lightbox { border: 0; padding: 0; background: transparent; max-width: min(96vw, 1000px); }
 .lightbox::backdrop { background: rgba(42, 33, 24, .85); }

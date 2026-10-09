@@ -74,6 +74,7 @@ The page also refers to open houses, applications, and interviews.
   the first in New York to offer Montessori entirely in Spanish.
 - All teachers speak exclusively in Spanish with the children.
 - Head teacher plus two assistant teachers (three adults), class size capped at ten.
+  (Edith, October 2026: the cap is now twelve; the site says twelve.)
 - Part-time schedules available; one family attended two days a week.
 - The room is a dance studio at BAX with wood floors, big windows and full light.
 - Lots of playground time on nice days (JJ Byrne Playground / Washington Park).
