@@ -106,16 +106,17 @@ button { font: inherit; color: inherit; }
 .pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--sage); box-shadow: 0 0 0 0 rgba(124,169,130,.6); animation: pulse 2s infinite; }
 @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(124,169,130,0); } 100% { box-shadow: 0 0 0 0 rgba(124,169,130,0); } }
 
-.collage { position: relative; aspect-ratio: 1 / .92; max-width: 520px; margin: .5rem auto 0; width: 100%; }
+.collage { position: relative; aspect-ratio: 1 / 1.22; max-width: 460px; margin: .5rem auto 0; width: 100%; }
 .polaroid { background: #fff; padding: 8px 8px 12px; border-radius: 14px; box-shadow: var(--shadow); }
 .polaroid img, .polaroid .ph { border-radius: 8px; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 30%; }
 .collage .polaroid { position: absolute; }
-.polaroid--a { left: 0; top: 0; width: 70%; transform: rotate(-3deg); z-index: 2; }
-.polaroid--b { right: 0; top: 30%; width: 56%; transform: rotate(4deg); z-index: 3; }
-.polaroid--c { left: 6%; bottom: 0; width: 52%; transform: rotate(-6deg); z-index: 1; }
-.sticker { position: absolute; z-index: 4; background: var(--marigold); color: var(--ink); font-family: var(--font-display); font-weight: 700; padding: .45rem .9rem; border-radius: 999px; box-shadow: var(--shadow-sm); font-size: 1.05rem; font-variation-settings: "SOFT" 100, "WONK" 1; }
+.polaroid--a { left: 0; top: 0; width: 68%; transform: rotate(-3deg); z-index: 2; }
+.polaroid--b { right: 0; top: 25%; width: 56%; transform: rotate(4deg); z-index: 3; }
+/* The bottom card sits below the middle one and in front, so its photo stays fully visible. */
+.polaroid--c { left: 3%; bottom: 0; width: 54%; transform: rotate(-4deg); z-index: 4; }
+.sticker { position: absolute; z-index: 5; background: var(--marigold); color: var(--ink); font-family: var(--font-display); font-weight: 700; padding: .45rem .9rem; border-radius: 999px; box-shadow: var(--shadow-sm); font-size: 1.05rem; font-variation-settings: "SOFT" 100, "WONK" 1; }
 .sticker--hola { right: 4%; top: 6%; transform: rotate(8deg); background: var(--cobalt); color: #fff; }
-.sticker--ages { left: 40%; bottom: 8%; transform: rotate(-6deg); background: var(--sage); color: #fff; }
+.sticker--ages { right: 3%; bottom: 13%; transform: rotate(-6deg); background: var(--sage); color: #fff; }
 
 /* Stats */
 .stats-wrap { padding: 1.5rem 0 0; }
