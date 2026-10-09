@@ -112,7 +112,8 @@ function home(ctx) {
   const { t, site, school, ui } = ctx;
   const h = site.home;
   const day = site.program.day;
-  const collage = existingFirst(ctx, ['classroom-2.jpg', 'circle.jpg', 'studio.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 2);
+  // Collage order: top (large), right, bottom. The landscape studio shot leads; the tracing photo sits at the bottom.
+  const collage = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'hero.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 3);
   const gallery = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'classroom-1.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg']);
   const body = `
 <section class="hero" data-hero>
@@ -129,9 +130,9 @@ function home(ctx) {
       <p class="hero__note"><span class="pulse" aria-hidden="true"></span>${esc(t(h.hero.note))}</p>
     </div>
     <div class="collage" aria-hidden="false">
-      <figure class="polaroid polaroid--a">${ctx.img('hero.jpg', { loading: 'eager' })}</figure>
-      <figure class="polaroid polaroid--b">${ctx.img(collage[0])}</figure>
-      <figure class="polaroid polaroid--c">${ctx.img(collage[1])}</figure>
+      <figure class="polaroid polaroid--a">${ctx.img(collage[0], { loading: 'eager' })}</figure>
+      <figure class="polaroid polaroid--b">${ctx.img(collage[1])}</figure>
+      <figure class="polaroid polaroid--c">${ctx.img(collage[2])}</figure>
       <span class="sticker sticker--hola" aria-hidden="true">¡Hola!</span>
       <span class="sticker sticker--ages" aria-hidden="true">${esc(t(school.ages))}</span>
     </div>
