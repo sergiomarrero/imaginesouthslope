@@ -102,3 +102,14 @@ The page also refers to open houses, applications, and interviews.
 
 These excerpts are used as testimonials in the remake. The founder should
 confirm she is comfortable quoting them, or replace them with her own.
+
+## Park Slope Parents reviews (October 2026)
+
+Source: https://www.parkslopeparents.com/reviews/imagine-south-slope-montessori
+The page lists 20 reviews (a category page shows 18). The build environment
+could not open it, so the excerpts used on the site were recovered from
+search-engine snippets of that page and must be checked against it for exact
+wording, dates and order. Only two dates surfaced: a July 2026 review and a
+May 2026 post. One mixed review, about a child whose needs changed as he got
+older, is left out on purpose because it discusses the child's diagnosis.
+The site quotes one short sentence per review and links to the full page.

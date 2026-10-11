@@ -112,6 +112,9 @@ function home(ctx) {
   const { t, site, school, ui } = ctx;
   const h = site.home;
   const day = site.program.day;
+  const rv = h.reviews;
+  const reviews = site.testimonials;
+  const reviewCount = (n) => t(ui.reviews.counter).replace('{n}', n).replace('{total}', reviews.length);
   // Collage order: top (large), middle (right), bottom. Strawberries lead, tracing in the middle, studio at the bottom.
   const collage = existingFirst(ctx, ['classroom-2.jpg', 'hero.jpg', 'studio.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 3);
   // Six photos not already in the collage: the wide room leads, the rest fill a 2-column grid on phones and 3 columns on desktop.
@@ -203,16 +206,23 @@ ${wave('wave--sand wave--flip')}
   </div>
 </section>
 
-<section class="sec voices">
-  <div class="wrap">${sectionHead(ctx, { title: h.testimonialsTitle })}</div>
-  <div class="carousel" data-carousel>
-    <ul class="carousel__track voices__track" data-carousel-track>
-      ${site.testimonials.map((q) => `<li class="bubble"><blockquote class="bubble__q">${esc(t(q.quote))}</blockquote><p class="bubble__by">${esc(t(q.by))}</p></li>`).join('')}
-    </ul>
-    <div class="wrap carousel__bar carousel__bar--below">
-      <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous">${icon('chevron-left')}</button>
-      <div class="carousel__dots" data-carousel-dots></div>
-      <button class="carousel__btn" type="button" data-carousel-next aria-label="Next">${icon('chevron-right')}</button>
+<section class="sec voices" id="reviews">
+  <div class="wrap voices__grid">
+    <div class="voices__head" data-reveal>
+      <p class="eyebrow">${esc(t(rv.eyebrow))}</p>
+      <h2 class="sec__title">${esc(t(h.testimonialsTitle))}</h2>
+      <p class="sec__text">${esc(t(rv.intro))}</p>
+    </div>
+    <div class="review" data-carousel data-carousel-loop data-reveal role="region" aria-roledescription="carousel" aria-label="${esc(t(ui.reviews.region))}">
+      <ul class="review__track" data-carousel-track>
+        ${reviews.map((q, i) => `<li class="review__slide" role="group" aria-roledescription="slide" aria-label="${esc(reviewCount(i + 1))}"><figure class="review__card">${icon('quote', 'review__mark')}<blockquote class="review__q">“${esc(t(q.quote))}”</blockquote><figcaption class="review__by"><span>${esc(t(q.by))}</span>${q.date ? `<span class="review__date">${esc(t(q.date))}</span>` : ''}</figcaption></figure></li>`).join('')}
+      </ul>
+      <div class="review__bar">
+        <button class="carousel__btn" type="button" data-carousel-prev aria-label="${esc(t(ui.reviews.prev))}">${icon('chevron-left')}</button>
+        <span class="review__count" data-carousel-counter data-template="${esc(t(ui.reviews.counter))}" aria-live="polite">${esc(reviewCount(1))}</span>
+        <button class="carousel__btn" type="button" data-carousel-next aria-label="${esc(t(ui.reviews.next))}">${icon('chevron-right')}</button>
+      </div>
+      <p class="review__source"><a href="${esc(rv.sourceUrl)}" target="_blank" rel="noopener">${esc(t(rv.sourceLabel))}${icon('arrow-up-right', 'btn__icon')}</a><span class="review__note">${esc(t(rv.note))}</span></p>
     </div>
   </div>
 </section>

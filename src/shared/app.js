@@ -74,8 +74,32 @@
         return items[0].getBoundingClientRect().width + parseFloat(cs.columnGap || cs.gap || 0);
       };
       var go = function (dir) { track.scrollBy({ left: dir * step(), behavior: reduceMotion ? 'auto' : 'smooth' }); };
-      if (prev) prev.addEventListener('click', function () { go(-1); });
-      if (next) next.addEventListener('click', function () { go(1); });
+      var loop = car.hasAttribute('data-carousel-loop');
+      var current = function () { return Math.round(track.scrollLeft / Math.max(step(), 1)); };
+      // Looping carousels show one item at a time and wrap from the last back to the first.
+      var goTo = function (i) {
+        var n = items.length;
+        i = loop ? (i + n) % n : Math.max(0, Math.min(n - 1, i));
+        track.scrollTo({ left: i * step(), behavior: reduceMotion ? 'auto' : 'smooth' });
+      };
+      if (prev) prev.addEventListener('click', function () { loop ? goTo(current() - 1) : go(-1); });
+      if (next) next.addEventListener('click', function () { loop ? goTo(current() + 1) : go(1); });
+      if (loop) {
+        car.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current() - 1); }
+          if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current() + 1); }
+        });
+      }
+      var counter = $('[data-carousel-counter]', car);
+      if (counter && counter.hasAttribute('data-template')) {
+        var tpl = counter.getAttribute('data-template');
+        var setCount = function () {
+          var text = tpl.replace('{n}', String(Math.min(current() + 1, items.length))).replace('{total}', String(items.length));
+          if (counter.textContent !== text) counter.textContent = text;
+        };
+        track.addEventListener('scroll', setCount, { passive: true });
+        setCount();
+      }
       if (dots) {
         items.forEach(function (_, i) {
           var b = document.createElement('button');

@@ -269,6 +269,24 @@
     "photoPlaceholder": {
       "en": "Photo coming soon",
       "es": "Foto próximamente"
+    },
+    "reviews": {
+      "region": {
+        "en": "Parent reviews",
+        "es": "Reseñas de familias"
+      },
+      "counter": {
+        "en": "{n} of {total}",
+        "es": "{n} de {total}"
+      },
+      "prev": {
+        "en": "Previous review",
+        "es": "Reseña anterior"
+      },
+      "next": {
+        "en": "Next review",
+        "es": "Siguiente reseña"
+      }
     }
   },
   "home": {
@@ -511,6 +529,25 @@
       "text": {
         "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street, third floor, Studio C. A few blocks from the 4th Ave–9th St station (F, G, R) and on the B63 bus line.",
         "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8, tercer piso, Studio C. A pocas cuadras de la estación 4th Ave–9th St (F, G, R) y sobre la ruta del autobús B63."
+      }
+    },
+    "reviews": {
+      "eyebrow": {
+        "en": "Parent reviews",
+        "es": "Reseñas de familias"
+      },
+      "intro": {
+        "en": "This is how families describe Imagine on Park Slope Parents, the neighborhood parenting community. Tap through to read them.",
+        "es": "Así describen Imagine las familias en Park Slope Parents, la comunidad de padres del barrio. Desliza para leerlas."
+      },
+      "sourceUrl": "https://www.parkslopeparents.com/reviews/imagine-south-slope-montessori",
+      "sourceLabel": {
+        "en": "Read all the reviews on Park Slope Parents",
+        "es": "Lee todas las reseñas en Park Slope Parents"
+      },
+      "note": {
+        "en": "Short excerpts, quoted from Park Slope Parents.",
+        "es": "Extractos breves de Park Slope Parents, traducidos del inglés."
       }
     }
   },
@@ -1441,38 +1478,22 @@
         "es": "Cariñosas, juguetonas, creativas, atentas y pacientes con los niños, y comunicativas y flexibles con los padres."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      },
+      "date": {
+        "en": "July 2026",
+        "es": "julio de 2026"
       }
     },
     {
       "quote": {
-        "en": "Calm and caring, with a real balance of educational play and fun, imaginative stuff. And a very reasonable price.",
-        "es": "Tranquila y cariñosa, con un verdadero equilibrio entre juego educativo y cosas divertidas e imaginativas. Y un precio muy razonable."
+        "en": "Run by Edith who has incredible passion and talent for nurturing children.",
+        "es": "Dirigida por Edith, que tiene una pasión y un talento increíbles para cuidar a los niños."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
-    },
-    {
-      "quote": {
-        "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.",
-        "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
-      },
-      "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
-    },
-    {
-      "quote": {
-        "en": "A hidden gem. A special place with the sweetest people, where our kids learned Spanish even though we don't speak it at home.",
-        "es": "Una joya escondida. Un lugar especial con la gente más dulce, donde nuestros hijos aprendieron español aunque no lo hablamos en casa."
-      },
-      "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
       }
     },
     {
@@ -1481,12 +1502,76 @@
         "es": "La comprensión del español de mi hija ha crecido muchísimo con solo dos días por semana."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      }
+    },
+    {
+      "quote": {
+        "en": "Two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish.",
+        "es": "Niños de dos años cantando, de tres años sumando y de cuatro años leyendo, todo en español."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      }
+    },
+    {
+      "quote": {
+        "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.",
+        "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      }
+    },
+    {
+      "quote": {
+        "en": "Edith sets the mood with classical music, and the teachers set up very cute and fun stations and rotate the materials frequently.",
+        "es": "Edith crea el ambiente con música clásica, y las maestras preparan estaciones muy bonitas y divertidas y rotan los materiales con frecuencia."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      }
+    },
+    {
+      "quote": {
+        "en": "The space itself is a beautiful dance studio with wood floors, full light and big windows.",
+        "es": "El espacio en sí es un hermoso estudio de danza con pisos de madera, mucha luz y ventanas grandes."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      }
+    },
+    {
+      "quote": {
+        "en": "The part-time scheduling options and mixed age group format drew us here.",
+        "es": "Las opciones de horario de medio tiempo y el formato de edades mixtas fueron lo que nos trajo aquí."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
+      },
+      "date": {
+        "en": "May 2026",
+        "es": "mayo de 2026"
+      }
+    },
+    {
+      "quote": {
+        "en": "A special place with the sweetest people.",
+        "es": "Un lugar especial con la gente más dulce."
+      },
+      "by": {
+        "en": "Park Slope Parents review",
+        "es": "Reseña en Park Slope Parents"
       }
     }
   ],
-  "_testimonialsConfirm": "These are excerpts from public reviews on Park Slope Parents. Confirm you are comfortable quoting them, or replace them with quotes from current families (with their permission).",
+  "_testimonialsConfirm": "Short excerpts from the Park Slope Parents reviews page (20 reviews). The build environment could not open that page, so these were recovered from search-engine snippets: check each against the page for exact wording and add dates where known (only July 2026 and May 2026 are filled in). One mixed review that discusses a child's diagnosis is deliberately left out. Spanish versions are translations.",
   "photos": [
     {
       "file": "hero.jpg",
