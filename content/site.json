@@ -528,8 +528,8 @@
       }
     },
     "testimonialsTitle": {
-      "en": "What Slope parents say",
-      "es": "Lo que dicen las familias del Slope"
+      "en": "What parents say",
+      "es": "Lo que dicen las familias"
     },
     "galleryTitle": {
       "en": "Inside our sunlit studio",
@@ -565,17 +565,8 @@
         "es": "Reseñas de familias"
       },
       "intro": {
-        "en": "In their own words: what families have written about Imagine on Park Slope Parents, the neighborhood parenting community.",
-        "es": "En sus propias palabras: lo que las familias han escrito sobre Imagine en Park Slope Parents, la comunidad de padres del barrio."
-      },
-      "sourceUrl": "https://www.parkslopeparents.com/reviews/imagine-south-slope-montessori",
-      "sourceLabel": {
-        "en": "Read all the reviews on Park Slope Parents",
-        "es": "Lee todas las reseñas en Park Slope Parents"
-      },
-      "note": {
-        "en": "Short excerpts from parent reviews. Tap “Read the full review” to see each one in full.",
-        "es": "Extractos breves de reseñas de familias. Toca “Leer la reseña completa” para verla entera."
+        "en": "In their own words: what families have written about Imagine on Park Slope Parents.",
+        "es": "En sus propias palabras: lo que las familias han escrito sobre Imagine en Park Slope Parents."
       }
     }
   },
@@ -1502,8 +1493,8 @@
   "testimonials": [
     {
       "quote": {
-        "en": "It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy. We chose it even over really good free pre-k...it's simply the best experience you can find.",
-        "es": "Es increíble ver a niños de dos años cantando, de tres años sumando y de cuatro años leyendo, todo en español y con alegría. La elegimos incluso por encima de un pre-K gratuito muy bueno... es simplemente la mejor experiencia que se puede encontrar."
+        "en": "It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy.",
+        "es": "Es increíble ver a niños de dos años cantando, de tres años sumando y de cuatro años leyendo, todo en español y con alegría."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1519,8 +1510,8 @@
     },
     {
       "quote": {
-        "en": "Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves. It was one of the best decisions we’ve ever made for our family.",
-        "es": "Nuestra hija además habla español con fluidez, algo increíble porque nosotros no lo hablamos. Fue una de las mejores decisiones que hemos tomado como familia."
+        "en": "Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves.",
+        "es": "Nuestra hija además habla español con fluidez, algo increíble porque nosotros no lo hablamos."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1536,8 +1527,8 @@
     },
     {
       "quote": {
-        "en": "We don't speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school.",
-        "es": "No hablamos español en casa, pero nuestros hijos sí lo hablan después de ir a esta escuela, y uno de ellos ahora va a una escuela pública de doble idioma."
+        "en": "We don’t speak Spanish at home but our kids do after attending this school.",
+        "es": "No hablamos español en casa, pero nuestros hijos sí lo hablan después de ir a esta escuela."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1553,8 +1544,8 @@
     },
     {
       "quote": {
-        "en": "The teachers are loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents. If you can afford it over public 3/Pre-K, by all means it is worth it for your child's joy, development, and Spanish fluency.",
-        "es": "Las maestras son cariñosas, juguetonas, creativas, atentas y pacientes con los niños, y comunicativas y flexibles con los padres. Si pueden pagarla en lugar del 3-K o pre-K público, sin duda vale la pena por la alegría, el desarrollo y la fluidez en español de su hijo."
+        "en": "The teachers are loving, playful, creative, thoughtful, and patient with the kids.",
+        "es": "Las maestras son cariñosas, juguetonas, creativas, atentas y pacientes con los niños."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1570,8 +1561,8 @@
     },
     {
       "quote": {
-        "en": "We love this school beyond words. Edith, the director, truly connects with each child as an individual and strives to adapt to their needs.",
-        "es": "Amamos esta escuela más de lo que las palabras pueden decir. Edith, la directora, conecta de verdad con cada niño como individuo y se esfuerza por adaptarse a sus necesidades."
+        "en": "We love this school beyond words.",
+        "es": "Amamos esta escuela más de lo que las palabras pueden decir."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1587,8 +1578,8 @@
     },
     {
       "quote": {
-        "en": "Imagine South Slope Montessori is run by Edith who has incredible passion and talent for nurturing children. My daughter now reads and writes in Spanish.",
-        "es": "Imagine South Slope Montessori la dirige Edith, que tiene una pasión y un talento increíbles para cuidar a los niños. Mi hija ahora lee y escribe en español."
+        "en": "My daughter now reads and writes in Spanish.",
+        "es": "Mi hija ahora lee y escribe en español."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1604,8 +1595,8 @@
     },
     {
       "quote": {
-        "en": "I recommend it without hesitation! It is truly a hidden gem. … Edith always kept them challenged and engaged, and they each got to be the big kid on campus for a year.",
-        "es": "¡La recomiendo sin dudarlo! Es una verdadera joya escondida. … Edith siempre los mantuvo motivados y con retos, y cada uno pudo ser el niño grande del salón durante un año."
+        "en": "I recommend it without hesitation! It is truly a hidden gem.",
+        "es": "¡La recomiendo sin dudarlo! Es una verdadera joya escondida."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1638,8 +1629,8 @@
     },
     {
       "quote": {
-        "en": "Socially, it was incredible. So much that our kids are still friends with kids from two separate families we met there.",
-        "es": "En lo social, fue increíble. Tanto que nuestros hijos todavía son amigos de niños de dos familias que conocimos allí."
+        "en": "Socially, it was incredible.",
+        "es": "En lo social, fue increíble."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1706,8 +1697,8 @@
     },
     {
       "quote": {
-        "en": "The educators speak Spanish natively and professionally. They get a good school-ready pre-education there.",
-        "es": "Las educadoras hablan español como lengua materna y de forma profesional. Allí reciben una buena preparación para la escuela."
+        "en": "The educators speak Spanish natively and professionally.",
+        "es": "Las educadoras hablan español como lengua materna y de forma profesional."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1723,8 +1714,8 @@
     },
     {
       "quote": {
-        "en": "I've found it to be an incredibly warm place that understands the changing needs of individual families and children.",
-        "es": "Me ha parecido un lugar increíblemente cálido, que entiende las necesidades cambiantes de cada familia y cada niño."
+        "en": "It is such a special place … My daughter loves it there.",
+        "es": "Es un lugar muy especial… A mi hija le encanta."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1740,8 +1731,8 @@
     },
     {
       "quote": {
-        "en": "We're so happy! It's a very small group of children, 19 months to 4 years old, and they have 3 teachers with them.",
-        "es": "Estamos súper felices! Es un grupo súper pequeño de niños de 19meses-4 años y tienen 3 maestras con ellos."
+        "en": "We’re so happy! It’s a very small group of children … and they have 3 teachers with them.",
+        "es": "Estamos súper felices! Es un grupo súper pequeño de niños … y tienen 3 maestras con ellos."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1757,8 +1748,8 @@
     },
     {
       "quote": {
-        "en": "Both of my children went to Imagine South Slope Montessori. Edith, the director, is wonderful. I recommend it.",
-        "es": "Mis dos hijos fueron a Imagine South Slope Montessori. Edith la directora es maravillosa. Lo recomiendo."
+        "en": "Edith, the director, is wonderful. I recommend it.",
+        "es": "Edith la directora es maravillosa. Lo recomiendo."
       },
       "by": {
         "en": "Park Slope Parents",
@@ -1774,8 +1765,8 @@
     },
     {
       "quote": {
-        "en": "It's a teeny little Spanish immersion school in the BAX building … and we LOVE it.",
-        "es": "Es una escuelita de inmersión en español en el edificio de BAX … y nos ENCANTA."
+        "en": "It’s a teeny little Spanish immersion school … and we LOVE it.",
+        "es": "Es una escuelita de inmersión en español … y nos ENCANTA."
       },
       "by": {
         "en": "Park Slope Parents",

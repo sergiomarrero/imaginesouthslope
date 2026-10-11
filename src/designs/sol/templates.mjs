@@ -222,7 +222,6 @@ ${wave('wave--sand wave--flip')}
         <span class="review__count" data-carousel-counter data-template="${esc(t(ui.reviews.counter))}" aria-live="polite">${esc(reviewCount(1))}</span>
         <button class="carousel__btn" type="button" data-carousel-next aria-label="${esc(t(ui.reviews.next))}">${icon('chevron-right')}</button>
       </div>
-      <p class="review__source"><a href="${esc(rv.sourceUrl)}" target="_blank" rel="noopener">${esc(t(rv.sourceLabel))}${icon('arrow-up-right', 'btn__icon')}</a><span class="review__note">${esc(t(rv.note))}</span></p>
     </div>
     ${reviews.map((q, i) => {
       if (!q.full) return '';
