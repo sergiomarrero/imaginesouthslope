@@ -201,9 +201,18 @@ button { font: inherit; color: inherit; }
 .review__card { margin: 0; flex: 1; display: flex; flex-direction: column; min-height: 15rem; background: var(--paper); border-radius: var(--r-lg); padding: 1.5rem 1.4rem 1.3rem; box-shadow: var(--shadow-sm); }
 .review__mark { width: 34px; height: 34px; color: var(--marigold-2); margin-bottom: .5rem; }
 .review__q { margin: 0 0 1.2rem; font-family: var(--font-display); font-size: 1.25rem; line-height: 1.35; text-wrap: pretty; font-variation-settings: "SOFT" 80, "WONK" 1, "opsz" 48; }
-.review__by { margin-top: auto; display: flex; flex-wrap: wrap; gap: .2rem .6rem; font-weight: 700; font-size: .88rem; color: var(--cocoa); }
-.review__date { color: var(--muted); font-weight: 600; }
-.review__date::before { content: "·"; margin-right: .6rem; }
+.review__by { margin-top: auto; margin-bottom: .2rem; display: flex; flex-wrap: wrap; gap: .2rem .6rem; font-weight: 700; font-size: .88rem; color: var(--cocoa); }
+.review__more { align-self: flex-start; display: inline-flex; align-items: center; gap: .4rem; margin-top: .6rem; min-height: 44px; padding: 0; border: 0; background: none; color: var(--cobalt-2); font: inherit; font-weight: 800; font-size: .95rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.review__more:hover { color: var(--cobalt); }
+.review-full { width: min(92vw, 640px); max-height: 86vh; padding: 0; border: 0; border-radius: var(--r-lg); background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+.review-full::backdrop { background: rgba(42, 33, 24, .55); }
+.review-full__in { padding: 1.4rem 1.4rem 1.6rem; }
+.review-full__top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .6rem; }
+.review-full__title { margin: 0; font-size: 1.3rem; }
+.review-full__close { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--line); background: var(--cream); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.review-full__label { margin: 0 0 .8rem; color: var(--muted); font-style: italic; font-weight: 600; font-size: .88rem; }
+.review-full__text p { margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--cocoa); }
+.review-full__meta { margin: 1.2rem 0 0; padding-top: .9rem; border-top: 2px dotted var(--line); color: var(--muted); font-size: .84rem; font-weight: 600; }
 .review__tr { flex-basis: 100%; color: var(--muted); font-weight: 600; font-style: italic; font-size: .82rem; }
 .review__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; }
 .review__count { font-weight: 800; color: var(--cocoa); font-variant-numeric: tabular-nums; }

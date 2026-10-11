@@ -215,7 +215,7 @@ ${wave('wave--sand wave--flip')}
     </div>
     <div class="review" data-carousel data-carousel-loop data-reveal role="region" aria-roledescription="carousel" aria-label="${esc(t(ui.reviews.region))}">
       <ul class="review__track" data-carousel-track>
-        ${reviews.map((q, i) => `<li class="review__slide" role="group" aria-roledescription="slide" aria-label="${esc(reviewCount(i + 1))}"><figure class="review__card">${icon('quote', 'review__mark')}<blockquote class="review__q"${q.lang && q.lang !== ctx.lang ? '' : ` lang="${q.lang || ctx.lang}"`}>“${esc(t(q.quote))}”</blockquote><figcaption class="review__by"><span>${esc(t(q.by))}</span>${q.date ? `<time class="review__date"${q.iso ? ` datetime="${esc(q.iso)}"` : ''}>${esc(t(q.date))}</time>` : ''}${q.lang && q.lang !== ctx.lang ? `<span class="review__tr">${esc(t(ui.reviews.translated))}</span>` : ''}</figcaption></figure></li>`).join('')}
+        ${reviews.map((q, i) => `<li class="review__slide" role="group" aria-roledescription="slide" aria-label="${esc(reviewCount(i + 1))}"><figure class="review__card">${icon('quote', 'review__mark')}<blockquote class="review__q"${q.lang === ctx.lang ? ` lang="${q.lang}"` : ''}>“${esc(t(q.quote))}”</blockquote><figcaption class="review__by"><span>${esc(t(q.by))}</span>${q.lang && q.lang !== ctx.lang ? `<span class="review__tr">${esc(t(ui.reviews.translated))}</span>` : ''}</figcaption>${q.full ? `<button class="review__more" type="button" data-dialog-open="review-full-${i + 1}">${esc(t(ui.reviews.readFull))}${icon('arrow-right', 'btn__icon')}</button>` : ''}</figure></li>`).join('')}
       </ul>
       <div class="review__bar">
         <button class="carousel__btn" type="button" data-carousel-prev aria-label="${esc(t(ui.reviews.prev))}">${icon('chevron-left')}</button>
@@ -224,6 +224,20 @@ ${wave('wave--sand wave--flip')}
       </div>
       <p class="review__source"><a href="${esc(rv.sourceUrl)}" target="_blank" rel="noopener">${esc(t(rv.sourceLabel))}${icon('arrow-up-right', 'btn__icon')}</a><span class="review__note">${esc(t(rv.note))}</span></p>
     </div>
+    ${reviews.map((q, i) => {
+      if (!q.full) return '';
+      const fullLang = q.lang === 'es' ? (ctx.lang === 'es' ? 'es' : 'en') : 'en';
+      const label = q.lang === 'es' && ctx.lang === 'en' ? t(ui.reviews.translatedFull) : q.lang === 'en' && ctx.lang === 'es' ? t(ui.reviews.originalEnglish) : '';
+      const day = q.posted ? new Date(q.posted + 'T12:00:00Z').toLocaleDateString(ctx.lang === 'es' ? 'es-US' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }) : '';
+      return `<dialog class="review-full" id="review-full-${i + 1}" aria-labelledby="review-full-${i + 1}-title">
+      <div class="review-full__in">
+        <div class="review-full__top"><h3 class="review-full__title" id="review-full-${i + 1}-title">${esc(t(ui.reviews.fullTitle))}</h3><button class="review-full__close" type="button" data-dialog-close aria-label="${esc(t(ui.reviews.close))}">${icon('close')}</button></div>
+        ${label ? `<p class="review-full__label">${esc(label)}</p>` : ''}
+        <div class="review-full__text" lang="${fullLang}"><p>${esc(t(q.full))}</p></div>
+        <p class="review-full__meta">${esc(t(ui.reviews.posted))}${day ? `, ${esc(day)}` : ''}</p>
+      </div>
+    </dialog>`;
+    }).join('')}
   </div>
 </section>
 

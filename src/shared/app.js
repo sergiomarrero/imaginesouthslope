@@ -182,6 +182,24 @@
       });
     });
 
+    /* Dialogs: [data-dialog-open="id"] opens <dialog id>, [data-dialog-close] or a backdrop click closes it */
+    if (!window.__appDialogBound) {
+      window.__appDialogBound = true;
+      var opener = null;
+      document.addEventListener('click', function (e) {
+        var o = e.target.closest('[data-dialog-open]');
+        if (o) {
+          var dlg = document.getElementById(o.getAttribute('data-dialog-open'));
+          if (dlg && typeof dlg.showModal === 'function') { opener = o; dlg.showModal(); }
+          return;
+        }
+        var c = e.target.closest('[data-dialog-close]');
+        if (c) { var cd = c.closest('dialog'); if (cd) cd.close(); return; }
+        if (e.target.tagName === 'DIALOG' && e.target.open && !e.target.classList.contains('lightbox')) e.target.close();
+      });
+      document.addEventListener('close', function (e) { if (opener && e.target.tagName === 'DIALOG') { opener.focus({ preventScroll: true }); opener = null; } }, true);
+    }
+
     /* Smooth-scroll for same-page anchors */
     if (!window.__appAnchorBound) {
       window.__appAnchorBound = true;
