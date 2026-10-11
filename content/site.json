@@ -1478,6 +1478,22 @@
   "testimonials": [
     {
       "quote": {
+        "en": "It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy. We chose it even over really good free pre-k...it's simply the best experience you can find.",
+        "es": "Es increíble ver a niños de dos años cantando, de tres años sumando y de cuatro años leyendo, todo en español y con alegría. La elegimos incluso por encima de un pre-K gratuito muy bueno... es simplemente la mejor experiencia que se puede encontrar."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "date": {
+        "en": "July 22, 2026",
+        "es": "22 de julio de 2026"
+      },
+      "iso": "2026-07-22",
+      "lang": "en"
+    },
+    {
+      "quote": {
         "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.",
         "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
       },
