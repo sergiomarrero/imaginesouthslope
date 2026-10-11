@@ -79,7 +79,9 @@ export function makeCtx({ site, design, lang, page, imageFiles, baseUrl, urlPref
     const alt = photo ? t(photo.alt) : opts.alt || '';
     if (imageFiles.has(f)) {
       const cls = opts.class ? ` class="${esc(opts.class)}"` : '';
-      return `<img src="${ctx.imageSrc(f)}" alt="${esc(alt)}"${cls} loading="${opts.loading || 'lazy'}" decoding="async">`;
+      // Optional "focus" in site.json ("50% 60%") picks which part of the photo stays visible when it is cropped.
+      const focus = photo && photo.focus && /^\d{1,3}% \d{1,3}%$/.test(photo.focus) ? ` style="object-position: ${photo.focus}"` : '';
+      return `<img src="${ctx.imageSrc(f)}" alt="${esc(alt)}"${cls}${focus} loading="${opts.loading || 'lazy'}" decoding="async">`;
     }
     return design.placeholder({ photo, file: f, alt, ctx, opts });
   };

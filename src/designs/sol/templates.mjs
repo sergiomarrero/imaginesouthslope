@@ -114,7 +114,8 @@ function home(ctx) {
   const day = site.program.day;
   // Collage order: top (large), middle (right), bottom. Strawberries lead, tracing in the middle, studio at the bottom.
   const collage = existingFirst(ctx, ['classroom-2.jpg', 'hero.jpg', 'studio.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg', 'art.jpg']).slice(0, 3);
-  const gallery = existingFirst(ctx, ['studio.jpg', 'classroom-2.jpg', 'classroom-1.jpg', 'circle.jpg', 'playground.jpg', 'materials.jpg']);
+  // Six photos not already in the collage: the wide room leads, the rest fill a 2-column grid on phones and 3 columns on desktop.
+  const gallery = existingFirst(ctx, ['room.jpg', 'art.jpg', 'materials.jpg', 'books.jpg', 'movement.jpg', 'culture.jpg', 'classroom-1.jpg', 'circle.jpg', 'playground.jpg']).slice(0, 6);
   const body = `
 <section class="hero" data-hero>
   <div class="hero__sun" data-sun aria-hidden="true">${sunMark}</div>
@@ -261,6 +262,7 @@ ${ctaBand(ctx)}
 function about(ctx) {
   const { t, site, ui } = ctx;
   const a = site.about;
+  const spacePics = existingFirst(ctx, ['classroom-1.jpg', 'movement.jpg', 'playground.jpg']);
   const body = `
 <section class="phero" data-hero>
   <div class="wrap phero__grid">
@@ -269,7 +271,7 @@ function about(ctx) {
       <h1 class="phero__title">${esc(t(a.hero.title))}</h1>
       <p class="phero__intro">${esc(t(a.hero.intro))}</p>
     </div>
-    <figure class="phero__photo polaroid polaroid--solo">${ctx.img('studio.jpg', { loading: 'eager' })}</figure>
+    <figure class="phero__photo polaroid polaroid--solo">${ctx.img(existingFirst(ctx, ['room.jpg', 'studio.jpg'])[0], { loading: 'eager' })}</figure>
   </div>
 </section>
 
@@ -318,8 +320,8 @@ ${wave('wave--sand wave--flip')}
       <p class="sec__text">${esc(t(a.space.text))}</p>
     </div>
     <div class="space__photos" data-reveal>
-      <figure class="polaroid polaroid--tilt-l" data-lightbox>${ctx.img('classroom-1.jpg')}</figure>
-      <figure class="polaroid polaroid--tilt-r" data-lightbox>${ctx.img('playground.jpg')}</figure>
+      <figure class="polaroid polaroid--tilt-l" data-lightbox>${ctx.img(spacePics[0])}</figure>
+      <figure class="polaroid polaroid--tilt-r" data-lightbox>${ctx.img(spacePics[1])}</figure>
     </div>
   </div>
 </section>
@@ -380,7 +382,7 @@ ${wave('wave--sand wave--flip')}
       <p class="eyebrow">${esc(t(p.day.eyebrow))}</p>
       <h2 class="sec__title">${esc(t(p.day.title))}</h2>
       <p class="sec__text">${esc(t(p.day.note))}</p>
-      <figure class="polaroid polaroid--tilt-l tl-sec__photo" data-lightbox>${ctx.img('circle.jpg')}</figure>
+      <figure class="polaroid polaroid--tilt-l tl-sec__photo" data-lightbox>${ctx.img(existingFirst(ctx, ['circle.jpg', 'books.jpg'])[0])}</figure>
     </div>
     <ol class="tl">
       ${p.day.items.map((d) => `<li class="tl__item" data-reveal><span class="tl__time">${esc(d.time)}</span><div class="tl__body"><h3>${esc(t(d.title))}</h3><p>${esc(t(d.text))}</p></div></li>`).join('')}
