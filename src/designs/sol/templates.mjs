@@ -215,7 +215,7 @@ ${wave('wave--sand wave--flip')}
     </div>
     <div class="review" data-carousel data-carousel-loop data-reveal role="region" aria-roledescription="carousel" aria-label="${esc(t(ui.reviews.region))}">
       <ul class="review__track" data-carousel-track>
-        ${reviews.map((q, i) => `<li class="review__slide" role="group" aria-roledescription="slide" aria-label="${esc(reviewCount(i + 1))}"><figure class="review__card">${icon('quote', 'review__mark')}<blockquote class="review__q">“${esc(t(q.quote))}”</blockquote><figcaption class="review__by"><span>${esc(t(q.by))}</span>${q.date ? `<span class="review__date">${esc(t(q.date))}</span>` : ''}</figcaption></figure></li>`).join('')}
+        ${reviews.map((q, i) => `<li class="review__slide" role="group" aria-roledescription="slide" aria-label="${esc(reviewCount(i + 1))}"><figure class="review__card">${icon('quote', 'review__mark')}<blockquote class="review__q"${q.lang && q.lang !== ctx.lang ? '' : ` lang="${q.lang || ctx.lang}"`}>“${esc(t(q.quote))}”</blockquote><figcaption class="review__by"><span>${esc(t(q.by))}</span>${q.date ? `<time class="review__date"${q.iso ? ` datetime="${esc(q.iso)}"` : ''}>${esc(t(q.date))}</time>` : ''}${q.lang && q.lang !== ctx.lang ? `<span class="review__tr">${esc(t(ui.reviews.translated))}</span>` : ''}</figcaption></figure></li>`).join('')}
       </ul>
       <div class="review__bar">
         <button class="carousel__btn" type="button" data-carousel-prev aria-label="${esc(t(ui.reviews.prev))}">${icon('chevron-left')}</button>

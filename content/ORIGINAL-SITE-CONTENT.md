@@ -106,10 +106,10 @@ confirm she is comfortable quoting them, or replace them with her own.
 ## Park Slope Parents reviews (October 2026)
 
 Source: https://www.parkslopeparents.com/reviews/imagine-south-slope-montessori
-The page lists 20 reviews (a category page shows 18). The build environment
-could not open it, so the excerpts used on the site were recovered from
-search-engine snippets of that page and must be checked against it for exact
-wording, dates and order. Only two dates surfaced: a July 2026 review and a
-May 2026 post. One mixed review, about a child whose needs changed as he got
-older, is left out on purpose because it discusses the child's diagnosis.
-The site quotes one short sentence per review and links to the full page.
+Full review text came from Sergio's phone screenshots of that page. Dated
+posts seen: 21 Dec 2019; 20 Dec 2020; 23 Aug 2022; 6 Oct 2022; three on
+21 Jan 2023 (in Spanish); 16 and 19 Aug 2023; 25 Feb 2024; 21 May 2024;
+three on 8 Jan 2025; 28 Jan 2025; 18 Feb 2026; 31 May 2026. The site quotes
+one or two exact sentences from each and links to the page. The 8 Jan 2025
+review about a child's diagnosis is left out on purpose. Children's and
+family members' names in the reviews are not used.
