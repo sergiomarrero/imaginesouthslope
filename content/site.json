@@ -1500,8 +1500,8 @@
       "file": "classroom-1.jpg",
       "slot": "classroom",
       "alt": {
-        "en": "Low shelves with Montessori materials at child height",
-        "es": "Estantes bajos con materiales Montessori a la altura de los niños"
+        "en": "Low shelves of puzzles and Montessori materials at child height",
+        "es": "Estantes bajos con rompecabezas y materiales Montessori a la altura de los niños"
       }
     },
     {
@@ -1556,17 +1556,52 @@
       "file": "materials.jpg",
       "slot": "materials",
       "alt": {
-        "en": "Montessori sensorial materials on a work rug",
-        "es": "Materiales sensoriales Montessori sobre un tapete de trabajo"
+        "en": "A child working with the knobbed cylinders, a Montessori sensorial material",
+        "es": "Un niño trabajando con los cilindros con botón, un material sensorial Montessori"
       }
     },
     {
       "file": "art.jpg",
       "slot": "art",
       "alt": {
-        "en": "Painting at the art table",
-        "es": "Pintando en la mesa de arte"
+        "en": "A child painting a wooden fire truck at the art table",
+        "es": "Una niña pintando un camión de bomberos de madera en la mesa de arte"
       }
+    },
+    {
+      "file": "room.jpg",
+      "slot": "space",
+      "alt": {
+        "en": "The classroom at Brooklyn Arts Exchange: tall windows, wood floors and child-sized tables",
+        "es": "El salón en Brooklyn Arts Exchange: ventanas altas, pisos de madera y mesas a la medida de los niños"
+      }
+    },
+    {
+      "file": "books.jpg",
+      "slot": "library",
+      "alt": {
+        "en": "Our Spanish library of picture books and early readers",
+        "es": "Nuestra biblioteca en español, con libros ilustrados y primeros lectores"
+      },
+      "focus": "50% 55%"
+    },
+    {
+      "file": "movement.jpg",
+      "slot": "movement",
+      "alt": {
+        "en": "A child climbing the wooden arch during movement time",
+        "es": "Un niño trepando el arco de madera durante el tiempo de movimiento"
+      },
+      "focus": "50% 45%"
+    },
+    {
+      "file": "culture.jpg",
+      "slot": "culture",
+      "alt": {
+        "en": "The world map corner for geography and culture",
+        "es": "El rincón del mapamundi para geografía y cultura"
+      },
+      "focus": "50% 60%"
     }
   ],
   "design": "sol",

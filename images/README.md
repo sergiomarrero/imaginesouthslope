@@ -15,7 +15,13 @@ never looks broken.
 | `edith.jpg` | Home, About | Portrait of Edith, ideally in the classroom, square crop works |
 | `studio.jpg` | About, Contact | The empty studio: wood floors, tall windows |
 | `materials.jpg` | Program | Sensorial materials on a rug |
-| `art.jpg` | Program | Art table |
+| `art.jpg` | Home gallery | Art table |
+| `room.jpg` | About hero, home gallery lead | The whole classroom: windows, floors, tables |
+| `books.jpg` | Home gallery, Program day | The Spanish book rack |
+| `movement.jpg` | Home gallery, About | Climbing or movement indoors |
+| `culture.jpg` | Home gallery | The world map corner |
+
+To choose which part of a photo stays visible when it is cropped, add `"focus": "50% 60%"` to its entry in `content/site.json` (left-right, then top-bottom).
 
 Tips: JPG or WebP, at least 1600 px on the long side, under 500 KB each if
 possible. Get written permission from families before publishing children's
