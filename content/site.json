@@ -269,6 +269,52 @@
     "photoPlaceholder": {
       "en": "Photo coming soon",
       "es": "Foto próximamente"
+    },
+    "reviews": {
+      "region": {
+        "en": "Parent reviews",
+        "es": "Reseñas de familias"
+      },
+      "counter": {
+        "en": "{n} of {total}",
+        "es": "{n} de {total}"
+      },
+      "prev": {
+        "en": "Previous review",
+        "es": "Reseña anterior"
+      },
+      "next": {
+        "en": "Next review",
+        "es": "Siguiente reseña"
+      },
+      "translated": {
+        "en": "Translated from Spanish",
+        "es": "Traducida del inglés"
+      },
+      "readFull": {
+        "en": "Read the full review",
+        "es": "Leer la reseña completa"
+      },
+      "fullTitle": {
+        "en": "Parent review",
+        "es": "Reseña de una familia"
+      },
+      "posted": {
+        "en": "Posted on Park Slope Parents",
+        "es": "Publicada en Park Slope Parents"
+      },
+      "originalEnglish": {
+        "en": "Original review, in English",
+        "es": "Reseña original, en inglés"
+      },
+      "translatedFull": {
+        "en": "Translated from Spanish",
+        "es": "Traducida del español"
+      },
+      "close": {
+        "en": "Close",
+        "es": "Cerrar"
+      }
     }
   },
   "home": {
@@ -482,8 +528,8 @@
       }
     },
     "testimonialsTitle": {
-      "en": "What Slope parents say",
-      "es": "Lo que dicen las familias del Slope"
+      "en": "What parents say",
+      "es": "Lo que dicen las familias"
     },
     "galleryTitle": {
       "en": "Inside our sunlit studio",
@@ -511,6 +557,16 @@
       "text": {
         "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street, third floor, Studio C. A few blocks from the 4th Ave–9th St station (F, G, R) and on the B63 bus line.",
         "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8, tercer piso, Studio C. A pocas cuadras de la estación 4th Ave–9th St (F, G, R) y sobre la ruta del autobús B63."
+      }
+    },
+    "reviews": {
+      "eyebrow": {
+        "en": "Parent reviews",
+        "es": "Reseñas de familias"
+      },
+      "intro": {
+        "en": "In their own words: what families have written about Imagine on Park Slope Parents.",
+        "es": "En sus propias palabras: lo que las familias han escrito sobre Imagine en Park Slope Parents."
       }
     }
   },
@@ -1437,23 +1493,122 @@
   "testimonials": [
     {
       "quote": {
-        "en": "Loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents.",
-        "es": "Cariñosas, juguetonas, creativas, atentas y pacientes con los niños, y comunicativas y flexibles con los padres."
+        "en": "It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy.",
+        "es": "Es increíble ver a niños de dos años cantando, de tres años sumando y de cuatro años leyendo, todo en español y con alegría."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2026-07-22",
+      "lang": "en",
+      "full": {
+        "en": "Imagine South Slope Montessori has been perfect for our kids and all the other lovely families we have known there. The teachers are loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents. It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy. We chose it even over really good free pre-k...it's simply the best experience you can find.",
+        "es": "Imagine South Slope Montessori has been perfect for our kids and all the other lovely families we have known there. The teachers are loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents. It is amazing to see two year olds singing, three year olds doing addition, and four year olds reading, all in Spanish and with joy. We chose it even over really good free pre-k...it's simply the best experience you can find."
+      },
+      "posted": "2026-07-22"
     },
     {
       "quote": {
-        "en": "Calm and caring, with a real balance of educational play and fun, imaginative stuff. And a very reasonable price.",
-        "es": "Tranquila y cariñosa, con un verdadero equilibrio entre juego educativo y cosas divertidas e imaginativas. Y un precio muy razonable."
+        "en": "Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves.",
+        "es": "Nuestra hija además habla español con fluidez, algo increíble porque nosotros no lo hablamos."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2024-02-25",
+      "lang": "en",
+      "full": {
+        "en": "Edith’s Spanish Immersion Montessori is incredible. Our daughter just got accepted into Hunter College Elementary for kindergarten and I credited Edith a lot for this. Edith and her teachers are caring, intelligent, warm and focused on each child’s individual needs. Edith nurtured our daughter’s intellectual curiosity and desire to be challenged academically. Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves. The space is wonderful and light filled with dual aspect windows. It is a mixed aged class, which we love as allows for different roles as your child ages. It’s a small school with maximum 12 kids across 3 teachers and very flexible on scheduling. We did full time 5 days a week, which worked for us and really maximized the benefits for our daughter. We’ve also found a wonderful community of other parents. It really flies under the radar as a school and it deserves more recognition given how incredible it is. It was one of the best decisions we’ve ever made for our family.",
+        "es": "Edith’s Spanish Immersion Montessori is incredible. Our daughter just got accepted into Hunter College Elementary for kindergarten and I credited Edith a lot for this. Edith and her teachers are caring, intelligent, warm and focused on each child’s individual needs. Edith nurtured our daughter’s intellectual curiosity and desire to be challenged academically. Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves. The space is wonderful and light filled with dual aspect windows. It is a mixed aged class, which we love as allows for different roles as your child ages. It’s a small school with maximum 12 kids across 3 teachers and very flexible on scheduling. We did full time 5 days a week, which worked for us and really maximized the benefits for our daughter. We’ve also found a wonderful community of other parents. It really flies under the radar as a school and it deserves more recognition given how incredible it is. It was one of the best decisions we’ve ever made for our family."
+      },
+      "posted": "2024-02-25"
+    },
+    {
+      "quote": {
+        "en": "We don’t speak Spanish at home but our kids do after attending this school.",
+        "es": "No hablamos español en casa, pero nuestros hijos sí lo hablan después de ir a esta escuela."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2026-02-18",
+      "lang": "en",
+      "full": {
+        "en": "We also sent our kids here! Such a true hidden gem. We don’t speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school. It’s truly a special place with the sweetest people. The environment is so clam and caring. They balance some educational play with fun imaginative stuff. I can’t recommend this place enough!",
+        "es": "We also sent our kids here! Such a true hidden gem. We don’t speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school. It’s truly a special place with the sweetest people. The environment is so clam and caring. They balance some educational play with fun imaginative stuff. I can’t recommend this place enough!"
+      },
+      "posted": "2026-02-18"
+    },
+    {
+      "quote": {
+        "en": "The teachers are loving, playful, creative, thoughtful, and patient with the kids.",
+        "es": "Las maestras son cariñosas, juguetonas, creativas, atentas y pacientes con los niños."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2025-01-28",
+      "lang": "en",
+      "full": {
+        "en": "South Slope Montessori has been perfect for our kids and all the other lovely families we have known there. The teachers are loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents. If you can afford it over public 3/Pre-K, by all means it is worth it for your child's joy, development, and Spanish fluency.",
+        "es": "South Slope Montessori has been perfect for our kids and all the other lovely families we have known there. The teachers are loving, playful, creative, thoughtful, and patient with the kids, and communicative and flexible with the parents. If you can afford it over public 3/Pre-K, by all means it is worth it for your child's joy, development, and Spanish fluency."
+      },
+      "posted": "2025-01-28"
+    },
+    {
+      "quote": {
+        "en": "We love this school beyond words.",
+        "es": "Amamos esta escuela más de lo que las palabras pueden decir."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2023-08-19",
+      "lang": "en",
+      "full": {
+        "en": "I have one child who completed three years at ISSM, and another who is beginning his third year (Pre-K) there this fall. We love this school beyond words. Edith, the director, truly connects with each child as an individual and strives to adapt to their needs. The assistant teachers have also been wonderful, nurturing, and creative. This is a Montessori school where the kids learn to make choices and exercise independence on what they work on. There is structure, but they work with each child's natural inquisitiveness rather than impose a strict plan. I found it to be a wonderful place for my kids, who have different temperaments and interests. Many families over the years have gone out of their way to stick with ISSM through multiple kids, even through changing life circumstances, which really speaks to what a special place it is. This is a single-classroom facility in BAX, but it's a wide open space, and the teachers rotate the materials throughout the week. For physical activity, there is a trampoline, a slide, a Pikler triangle and ramp, which get rotated in and out of the space as the days go on. They also go outside to JJ Byrne some days. The school has a music teacher visit once or twice a week, to sing and encourage the kids to stand up and dance. I got to participate in some of these lessons when everything was closed in 2020, and I could see for myself why the kids love them! The fact that it's a single classroom also means it is mixed-age, which I also found worked wonderfully for my kids. While sharing the classroom with kids of a different age, I found that it gave them a sense of perspective and empathy. In the older kids, they saw role models, and towards the younger kids, and I saw them develop a sense of nurturing that is very sweet. Their relationship to the classroom and their classmates changed every year as they got older. ISSM is a Spanish-immersion school, and I can also attest to the high quality of their instruction in Spanish. They do a great job maintaining the immersive quality while working with kids of various levels of proficiency. If you value a Montessori education, Spanish immersion, or both, you should definitely check out Imagine South Slope Montessori. Amenities: They visit a nearby playground with the kids some mornings. So they do not have private outdoor space, but they go outdoors nonetheless.",
+        "es": "I have one child who completed three years at ISSM, and another who is beginning his third year (Pre-K) there this fall. We love this school beyond words. Edith, the director, truly connects with each child as an individual and strives to adapt to their needs. The assistant teachers have also been wonderful, nurturing, and creative. This is a Montessori school where the kids learn to make choices and exercise independence on what they work on. There is structure, but they work with each child's natural inquisitiveness rather than impose a strict plan. I found it to be a wonderful place for my kids, who have different temperaments and interests. Many families over the years have gone out of their way to stick with ISSM through multiple kids, even through changing life circumstances, which really speaks to what a special place it is. This is a single-classroom facility in BAX, but it's a wide open space, and the teachers rotate the materials throughout the week. For physical activity, there is a trampoline, a slide, a Pikler triangle and ramp, which get rotated in and out of the space as the days go on. They also go outside to JJ Byrne some days. The school has a music teacher visit once or twice a week, to sing and encourage the kids to stand up and dance. I got to participate in some of these lessons when everything was closed in 2020, and I could see for myself why the kids love them! The fact that it's a single classroom also means it is mixed-age, which I also found worked wonderfully for my kids. While sharing the classroom with kids of a different age, I found that it gave them a sense of perspective and empathy. In the older kids, they saw role models, and towards the younger kids, and I saw them develop a sense of nurturing that is very sweet. Their relationship to the classroom and their classmates changed every year as they got older. ISSM is a Spanish-immersion school, and I can also attest to the high quality of their instruction in Spanish. They do a great job maintaining the immersive quality while working with kids of various levels of proficiency. If you value a Montessori education, Spanish immersion, or both, you should definitely check out Imagine South Slope Montessori. Amenities: They visit a nearby playground with the kids some mornings. So they do not have private outdoor space, but they go outdoors nonetheless."
+      },
+      "posted": "2023-08-19"
+    },
+    {
+      "quote": {
+        "en": "My daughter now reads and writes in Spanish.",
+        "es": "Mi hija ahora lee y escribe en español."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2024-05-21",
+      "lang": "en",
+      "full": {
+        "en": "Imagine South Slope Montessori is run by Edith who has incredible passion and talent for nurturing children. She has 2 teaching aids (so 3 teachers total) and a class size max of only 10 children. All teachers speak exclusively in Spanish so your child (like mine) will become fluent in Spanish. My daughter now reads and writes in Spanish. Fantastic facility, very reasonable price, cannot recommend enough.",
+        "es": "Imagine South Slope Montessori is run by Edith who has incredible passion and talent for nurturing children. She has 2 teaching aids (so 3 teachers total) and a class size max of only 10 children. All teachers speak exclusively in Spanish so your child (like mine) will become fluent in Spanish. My daughter now reads and writes in Spanish. Fantastic facility, very reasonable price, cannot recommend enough."
+      },
+      "posted": "2024-05-21"
+    },
+    {
+      "quote": {
+        "en": "I recommend it without hesitation! It is truly a hidden gem.",
+        "es": "¡La recomiendo sin dudarlo! Es una verdadera joya escondida."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2025-01-08",
+      "lang": "en",
+      "full": {
+        "en": "My two kids, now in second grade and kindergarten, each spent 3 years at Imagine South Slope Montessori. I recommend it without hesitation! It is truly a hidden gem. To answer your specific questions based on our family's experience: 1) Did you also find that your child seemed to have enough time in creative activities and/or just play more generally? My oldest came home each day with several paintings, my youngest not so much. It turned out he just much more enjoyed leafing through books on his own, at age 2. He developed into an early reader, and became more inspired to draw and paint during Pre-K. Meanwhile my oldest took longer to read confidently, but was very craftsy. They both now read above grade-level in English and Spanish, and are as imaginative and creative as can be. I guess this is my long-winded way of saying, yes, each child seemed to get the amount and type of creative activities that they needed, when they were ready to learn from them. I liked that about the Montessori approach, especially at such a young age. 2) Given that so much of Montessori work time is independent, did you also find that your child got a good balance of social / group play and development? During my classroom visits, I observed that although the kids independently choose what to work on, you'll often see 2 or more kids working together (or at least in parallel, for the younger ones) on a given activity. It seems like kids naturally like to do what they see other kids doing, so it worked out that way. As my kids got older, sometimes I would see them helping the younger kids on an activity--so incredibly sweet. This was great for both kids, but especially my youngest, since he got a chance to be the leader and the older kid for a change. They both made great friends there. Just to add a couple of other points that might be interesting for you or others: - For extended hours (past 3pm), it is possible to coordinate drop-off at a nearby Beansprouts (but most families have a nanny or a parent pick up) - Many families depart for Pre-K, partly for the cost savings, but also because they expect their kids would be more challenged if they're around older kids. I am glad I kept both of my kids there until they were ready for Kindergarten. Edith always kept them challenged and engaged, and they each got to be the big kid on campus for a year. They were both beyond ready for Kindergarten.",
+        "es": "My two kids, now in second grade and kindergarten, each spent 3 years at Imagine South Slope Montessori. I recommend it without hesitation! It is truly a hidden gem. To answer your specific questions based on our family's experience: 1) Did you also find that your child seemed to have enough time in creative activities and/or just play more generally? My oldest came home each day with several paintings, my youngest not so much. It turned out he just much more enjoyed leafing through books on his own, at age 2. He developed into an early reader, and became more inspired to draw and paint during Pre-K. Meanwhile my oldest took longer to read confidently, but was very craftsy. They both now read above grade-level in English and Spanish, and are as imaginative and creative as can be. I guess this is my long-winded way of saying, yes, each child seemed to get the amount and type of creative activities that they needed, when they were ready to learn from them. I liked that about the Montessori approach, especially at such a young age. 2) Given that so much of Montessori work time is independent, did you also find that your child got a good balance of social / group play and development? During my classroom visits, I observed that although the kids independently choose what to work on, you'll often see 2 or more kids working together (or at least in parallel, for the younger ones) on a given activity. It seems like kids naturally like to do what they see other kids doing, so it worked out that way. As my kids got older, sometimes I would see them helping the younger kids on an activity--so incredibly sweet. This was great for both kids, but especially my youngest, since he got a chance to be the leader and the older kid for a change. They both made great friends there. Just to add a couple of other points that might be interesting for you or others: - For extended hours (past 3pm), it is possible to coordinate drop-off at a nearby Beansprouts (but most families have a nanny or a parent pick up) - Many families depart for Pre-K, partly for the cost savings, but also because they expect their kids would be more challenged if they're around older kids. I am glad I kept both of my kids there until they were ready for Kindergarten. Edith always kept them challenged and engaged, and they each got to be the big kid on campus for a year. They were both beyond ready for Kindergarten."
+      },
+      "posted": "2025-01-08"
     },
     {
       "quote": {
@@ -1461,32 +1616,172 @@
         "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2026-05-31",
+      "lang": "en",
+      "full": {
+        "en": "I would also like to sing the praises of ISSM. The part-time scheduling options and mixed age group format drew us here. The space itself is a beautiful dance studio with wood floors, full light and big windows. Edith sets the mood with classical music. The teachers set up very cute and fun stations and rotate the materials frequently. Our daughter's Spanish comprehension has really grown from attending just two days a week, on nice days they get lots of playground time, and there's a music teacher who comes once a week. But I think what I appreciate most is the loving teachers. First of all, sometimes at pickup it's like, 4 or 5 kids total with 3 teachers. The smallness really gives the kids a good chance to bond with each other and with the teachers. And it makes possible the little moments of tenderness that I observe, like when I pick up my daughter and her hair is braided, because her ponytail had come loose and one of her teachers took the time to secure her hair back. It also seems like they appreciate her for who she is and encourage her interests. At parent-teacher conference, Edith told us our daughter likes to dance throughout the day and she recognizes it being her form of self-expression. So they don't redirect her or anything like that, they let her do her thing and encourage her. And they've had like 4 piñatas this year for special occasions!",
+        "es": "I would also like to sing the praises of ISSM. The part-time scheduling options and mixed age group format drew us here. The space itself is a beautiful dance studio with wood floors, full light and big windows. Edith sets the mood with classical music. The teachers set up very cute and fun stations and rotate the materials frequently. Our daughter's Spanish comprehension has really grown from attending just two days a week, on nice days they get lots of playground time, and there's a music teacher who comes once a week. But I think what I appreciate most is the loving teachers. First of all, sometimes at pickup it's like, 4 or 5 kids total with 3 teachers. The smallness really gives the kids a good chance to bond with each other and with the teachers. And it makes possible the little moments of tenderness that I observe, like when I pick up my daughter and her hair is braided, because her ponytail had come loose and one of her teachers took the time to secure her hair back. It also seems like they appreciate her for who she is and encourage her interests. At parent-teacher conference, Edith told us our daughter likes to dance throughout the day and she recognizes it being her form of self-expression. So they don't redirect her or anything like that, they let her do her thing and encourage her. And they've had like 4 piñatas this year for special occasions!"
+      },
+      "posted": "2026-05-31"
     },
     {
       "quote": {
-        "en": "A hidden gem. A special place with the sweetest people, where our kids learned Spanish even though we don't speak it at home.",
-        "es": "Una joya escondida. Un lugar especial con la gente más dulce, donde nuestros hijos aprendieron español aunque no lo hablamos en casa."
+        "en": "Socially, it was incredible.",
+        "es": "En lo social, fue increíble."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2025-01-08",
+      "lang": "en",
+      "full": {
+        "en": "My two kids, who are now 8 & 10, each spent 3 years with Edith at Imagine. Socially, it was incredible. So much that our kids are still friends with kids from two separate families we met there. Both of my kids are very creative, so much that our 10 year old is currently applying to by audition only arts middle school. They both had a great time and remember Edith and their time there fondly. They were both doing so well that we opted to skip pre-k and keep them there until they were ready for Kindergarten. In school now, they're both doing well socially, are able to work independently, and are both performing academically above grade level.",
+        "es": "My two kids, who are now 8 & 10, each spent 3 years with Edith at Imagine. Socially, it was incredible. So much that our kids are still friends with kids from two separate families we met there. Both of my kids are very creative, so much that our 10 year old is currently applying to by audition only arts middle school. They both had a great time and remember Edith and their time there fondly. They were both doing so well that we opted to skip pre-k and keep them there until they were ready for Kindergarten. In school now, they're both doing well socially, are able to work independently, and are both performing academically above grade level."
+      },
+      "posted": "2025-01-08"
     },
     {
       "quote": {
-        "en": "My daughter's Spanish comprehension has really grown from attending just two days a week.",
-        "es": "La comprensión del español de mi hija ha crecido muchísimo con solo dos días por semana."
+        "en": "Edith, the owner & head teacher, has been so wonderful with our daughter and caring for all of us.",
+        "es": "Edith, la dueña y maestra principal, ha sido maravillosa con nuestra hija y nos ha cuidado a todos."
       },
       "by": {
-        "en": "Parent review, Park Slope Parents",
-        "es": "Reseña de una familia, Park Slope Parents"
-      }
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2022-08-23",
+      "lang": "en",
+      "full": {
+        "en": "I wanted to share the incredibly positive experience we've had as a family with Imagine South Slope Montessori (in the BAX building on 5th Ave & 8th St). We moved back to the US from my home country in February. It was the first time our 3 year old daughter was being cared for in a setting outside her home and none of us speak Spanish so there was a lot of change to navigate. We have been so lucky. Edith, the owner & head teacher, has been so wonderful with our daughter and caring for all of us. [Our daughter] has been learning Spanish and is really thriving at the school. She's happy, she's making friends & she asks me everyday if she can go to school today, being disappointed when the answer is no on weekends. The environment & setting is wonderful with large dual aspect windows. My daughter loves to do painting and comes home proudly showing me the artwork she's done everyday. The other parents are lovely and we've found a real sense of community. If you're looking for a Montessori setting, I cannot recommend Edith & her school enough.",
+        "es": "I wanted to share the incredibly positive experience we've had as a family with Imagine South Slope Montessori (in the BAX building on 5th Ave & 8th St). We moved back to the US from my home country in February. It was the first time our 3 year old daughter was being cared for in a setting outside her home and none of us speak Spanish so there was a lot of change to navigate. We have been so lucky. Edith, the owner & head teacher, has been so wonderful with our daughter and caring for all of us. [Our daughter] has been learning Spanish and is really thriving at the school. She's happy, she's making friends & she asks me everyday if she can go to school today, being disappointed when the answer is no on weekends. The environment & setting is wonderful with large dual aspect windows. My daughter loves to do painting and comes home proudly showing me the artwork she's done everyday. The other parents are lovely and we've found a real sense of community. If you're looking for a Montessori setting, I cannot recommend Edith & her school enough."
+      },
+      "posted": "2022-08-23"
+    },
+    {
+      "quote": {
+        "en": "They teach empathy and caring for one another. Such a warm environment.",
+        "es": "Enseñan empatía y a cuidarse unos a otros. Un ambiente muy cálido."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2023-08-16",
+      "lang": "en",
+      "full": {
+        "en": "Our first child spent 3.5 years going here and they loved it so much! They were always very excited for each day and missed her classmates and teachers during the summer. They worked on reading, writing, maths, art etc. It being a montessori place it was whatever activity your kid was into. They teach empathy and caring for one another. Such a warm environment. The owner, edith is such a special person, she really cares for the children and is such a pleasure to work with. We couldn’t have asked for a better experience! It’s also Spanish immersion which means they only speak Spanish with the children. We don’t speak it at home but it was still easy to communicate with the teachers. And our kid has learned so much of the language and is excited to keep learning more. Children are language sensitive when very young so if you want them to learn, this is the time! We loved it so much that we’re sending out second child there. It really is a beautiful environment. Amenities: Visits to the playground/park",
+        "es": "Our first child spent 3.5 years going here and they loved it so much! They were always very excited for each day and missed her classmates and teachers during the summer. They worked on reading, writing, maths, art etc. It being a montessori place it was whatever activity your kid was into. They teach empathy and caring for one another. Such a warm environment. The owner, edith is such a special person, she really cares for the children and is such a pleasure to work with. We couldn’t have asked for a better experience! It’s also Spanish immersion which means they only speak Spanish with the children. We don’t speak it at home but it was still easy to communicate with the teachers. And our kid has learned so much of the language and is excited to keep learning more. Children are language sensitive when very young so if you want them to learn, this is the time! We loved it so much that we’re sending out second child there. It really is a beautiful environment. Amenities: Visits to the playground/park"
+      },
+      "posted": "2023-08-16"
+    },
+    {
+      "quote": {
+        "en": "The teachers are very dedicated and adapt to the needs, interests, and abilities of each child.",
+        "es": "Las maestras son muy dedicadas y se adaptan a las necesidades, intereses, y aptitudes de cada niño."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2023-01-21",
+      "lang": "es",
+      "full": {
+        "en": "I second the recommendation of Imagine South Slope Montessori. My older daughter was there for 3 years, from when she turned two until she finished pre-K. My younger son is still there. The teachers are very dedicated and adapt to the needs, interests, and abilities of each child.",
+        "es": "reitero la recomendación de Imagine South Slope Montessori. Mi hija mayor estuvo 3 años, desde que cumplió dos años hasta que completó pre-K. Mi hijo menor sigue allí. Las maestras son muy dedicadas y se adaptan a las necesidades, intereses, y aptitudes de cada niño."
+      },
+      "posted": "2023-01-21"
+    },
+    {
+      "quote": {
+        "en": "The educators speak Spanish natively and professionally.",
+        "es": "Las educadoras hablan español como lengua materna y de forma profesional."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2022-10-06",
+      "lang": "en",
+      "full": {
+        "en": "Imagine South Slope Montessori might be a little far for you (5th Ave near 8th St), but it is truly wonderful. It’s a small school, so they have one mixed-ages classroom. The educators speak Spanish natively and professionally. They get a good school-ready pre-education there. They visit the playground (weather permitting) and have music class weekly. We’ve also found a great sense of community there. I sent my two kids there since they turned 2. One has moved on to Kindergarten and the other still attended. Before they were 2, we had a nanny. And we’ve continued to work with our nanny since this helps us cover the times they’re not in school.",
+        "es": "Imagine South Slope Montessori might be a little far for you (5th Ave near 8th St), but it is truly wonderful. It’s a small school, so they have one mixed-ages classroom. The educators speak Spanish natively and professionally. They get a good school-ready pre-education there. They visit the playground (weather permitting) and have music class weekly. We’ve also found a great sense of community there. I sent my two kids there since they turned 2. One has moved on to Kindergarten and the other still attended. Before they were 2, we had a nanny. And we’ve continued to work with our nanny since this helps us cover the times they’re not in school."
+      },
+      "posted": "2022-10-06"
+    },
+    {
+      "quote": {
+        "en": "It is such a special place … My daughter loves it there.",
+        "es": "Es un lugar muy especial… A mi hija le encanta."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2019-12-21",
+      "lang": "en",
+      "full": {
+        "en": "I’ll add that I’ve found it to be an incredibly warm place that understands the changing needs of individual families and children. I really love how responsive they are to each student’s interests and needs from moment to moment. It is such a special place and as someone who was extremely hesitant about sending my daughter to any program I can say that it’s been 100 percent the right choice. My daughter loves it there. They were very sensitive to the fact that this was her first time in any kind of program without me. She’s learning a lot and is happy to go. Im happy to share any more info if it’s helpful. Good luck with your search.",
+        "es": "I’ll add that I’ve found it to be an incredibly warm place that understands the changing needs of individual families and children. I really love how responsive they are to each student’s interests and needs from moment to moment. It is such a special place and as someone who was extremely hesitant about sending my daughter to any program I can say that it’s been 100 percent the right choice. My daughter loves it there. They were very sensitive to the fact that this was her first time in any kind of program without me. She’s learning a lot and is happy to go. Im happy to share any more info if it’s helpful. Good luck with your search."
+      },
+      "posted": "2019-12-21"
+    },
+    {
+      "quote": {
+        "en": "We’re so happy! It’s a very small group of children … and they have 3 teachers with them.",
+        "es": "Estamos súper felices! Es un grupo súper pequeño de niños … y tienen 3 maestras con ellos."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2023-01-21",
+      "lang": "es",
+      "full": {
+        "en": "We send our son (22 months) to Imagine South Slope Montessori. It's a preschool entirely in Spanish at 5th Ave and 8th Street (Park Slope). We're so happy! It's a very small group of children, 19 months to 4 years old, and they have 3 teachers with them.",
+        "es": "Nosotros enviamos a nuestro hijo (22meses) a Imaginé South Slope Montessori. Es un preschool enteramente en castellano en 5th ave y 8th street (park slope). Estamos súper felices! Es un grupo súper pequeño de niños de 19meses-4 años y tienen 3 maestras con ellos."
+      },
+      "posted": "2023-01-21"
+    },
+    {
+      "quote": {
+        "en": "Edith, the director, is wonderful. I recommend it.",
+        "es": "Edith la directora es maravillosa. Lo recomiendo."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2023-01-21",
+      "lang": "es",
+      "full": {
+        "en": "Both of my children went to Imagine South Slope Montessori https://southslopemontessori.com/ on 5th Ave at 8th St in Park Slope. Edith, the director, is wonderful. I recommend it.",
+        "es": "Mis dos hijos fueron a Imagine South Slope Montessori https://southslopemontessori.com/ en la 5 av con 8 st en Park Slope. Edith la directora es maravillosa. Lo recomiendo."
+      },
+      "posted": "2023-01-21"
+    },
+    {
+      "quote": {
+        "en": "It’s a teeny little Spanish immersion school … and we LOVE it.",
+        "es": "Es una escuelita de inmersión en español … y nos ENCANTA."
+      },
+      "by": {
+        "en": "Park Slope Parents",
+        "es": "Park Slope Parents"
+      },
+      "iso": "2020-12-20",
+      "lang": "en",
+      "full": {
+        "en": "[Our son] was going to Imagine South Slope Montessori before the pandemic started; it’s a teeny little Spanish immersion school in the BAX building ([one of us] is from Argentina so we’re a bilingual household) and we LOVE it. They closed in March but reopened this fall and we started sending him back a few weeks ago, a hard choice but they are doing a great job with ventilation and safety and all the kids wear their masks all day, which really surprised me.",
+        "es": "[Our son] was going to Imagine South Slope Montessori before the pandemic started; it’s a teeny little Spanish immersion school in the BAX building ([one of us] is from Argentina so we’re a bilingual household) and we LOVE it. They closed in March but reopened this fall and we started sending him back a few weeks ago, a hard choice but they are doing a great job with ventilation and safety and all the kids wear their masks all day, which really surprised me."
+      },
+      "posted": "2020-12-20"
     }
   ],
-  "_testimonialsConfirm": "These are excerpts from public reviews on Park Slope Parents. Confirm you are comfortable quoting them, or replace them with quotes from current families (with their permission).",
+  "_testimonialsConfirm": "Ordered best-first. Card quotes are short excerpts; 'Read the full review' opens the whole review as posted on Park Slope Parents (Sergio's screenshots, Oct 2026). Full reviews appear in their original language; the three Spanish reviews also have English translations on the English page. Children's names and a parent's first name are replaced with [brackets]. The Jan 8, 2025 review about a child's diagnosis stays excluded. Note: the May 2024 review says 'max of only 10' (true then; now 12), and one Jan 2025 review mentions coordinating extended hours at a nearby Beansprouts.",
   "photos": [
     {
       "file": "hero.jpg",

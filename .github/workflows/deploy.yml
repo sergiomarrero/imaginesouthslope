@@ -1,11 +1,12 @@
 name: Build and publish to GitHub Pages
 
-# Builds the site and pushes it to the gh-pages branch, which GitHub Pages serves.
-# Nothing to configure: if Pages is off, turn it on under Settings > Pages and pick "gh-pages" as the branch.
+# Builds the live site from main, and a review copy of the working branch at /review/,
+# then pushes both to the gh-pages branch, which GitHub Pages serves.
+# If Pages is off, turn it on under Settings > Pages and pick "gh-pages" as the branch.
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/website-remake-dynamic-f6up20]
   workflow_dispatch:
 
 permissions:
@@ -13,24 +14,44 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+env:
+  BASE: https://sergiomarrero.github.io/imaginesouthslope
+  REVIEW_BRANCH: claude/website-remake-dynamic-f6up20
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: live
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.REVIEW_BRANCH }}
+          path: review
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm run check
-      - run: npm run build
-        env:
-          SITE_BASE_URL: https://sergiomarrero.github.io/imaginesouthslope
-      - run: npm run bundle
-      - name: Publish dist/ to the gh-pages branch
+      - name: Build the live site (main)
+        working-directory: live
         run: |
-          cd dist
+          npm run check
+          SITE_BASE_URL=$BASE npm run build
+          npm run bundle
+      - name: Build the review copy (working branch) into /review/
+        working-directory: review
+        run: |
+          npm run check
+          SITE_BASE_URL=$BASE/review npm run build
+          # Keep the review copy out of search results.
+          find dist -name '*.html' -exec sed -i 's#<meta charset="utf-8">#<meta charset="utf-8">\n<meta name="robots" content="noindex">#' {} +
+          rm -rf ../live/dist/review && cp -r dist ../live/dist/review
+      - name: Publish to the gh-pages branch
+        working-directory: live/dist
+        run: |
           git init -q
           git checkout -q -b gh-pages
           git add -A
