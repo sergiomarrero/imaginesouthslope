@@ -372,7 +372,7 @@ ${pageHero(ctx, { eyebrow: p.hero.eyebrow, title: p.hero.title, intro: p.hero.in
   <div class="wrap">
     ${secHead(ctx, { n: 3, eyebrow: p.schedules.eyebrow, title: p.schedules.title, text: p.schedules.text })}
     <ul class="plans">
-      ${p.schedules.options.map((o, i) => `<li class="plan" data-reveal style="--i:${i}"><span class="plan__days">${esc(o.days)}</span><span class="plan__label">${esc(t(o.label))}</span><p class="plan__note">${esc(t(o.note))}</p></li>`).join('')}
+      ${p.schedules.options.map((o, i) => `<li class="plan" data-reveal style="--i:${i}"><span class="plan__days">${esc(o.days)}</span><span class="plan__label">${esc(t(o.label))}</span>${o.note ? `<p class="plan__note">${esc(t(o.note))}</p>` : ''}</li>`).join('')}
     </ul>
     <div class="tuition" data-reveal>
       <div class="tuition__main">
@@ -380,10 +380,6 @@ ${pageHero(ctx, { eyebrow: p.hero.eyebrow, title: p.hero.title, intro: p.hero.in
         <p>${esc(t(p.tuition.text))}</p>
         <p class="tuition__fee">${esc(t(p.tuition.fee))}</p>
         ${tourBtn(ctx)}
-      </div>
-      <div class="tuition__bring">
-        <h3 class="h-mid">${esc(t(p.bring.title))}</h3>
-        <ul class="dashes">${p.bring.items.map((b) => `<li>${esc(t(b))}</li>`).join('')}</ul>
       </div>
     </div>
   </div>

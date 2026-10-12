@@ -42,8 +42,7 @@
     },
     "social": {
       "facebook": "https://www.facebook.com/montessorisouthslope/",
-      "instagram": "",
-      "youtube": "https://www.youtube.com/channel/UC7OSJEDwHC9Qro1v52xVMyQ"
+      "instagram": ""
     },
     "formAction": "",
     "tourUrl": "",
@@ -374,16 +373,16 @@
     ],
     "why": {
       "eyebrow": {
-        "en": "For families raising kids in Spanish",
-        "es": "Para familias que crían en español"
+        "en": "For families who want Spanish fluency",
+        "es": "Para familias que buscan fluidez en español"
       },
       "title": {
         "en": "English will come on its own. Spanish needs a place to grow.",
         "es": "El inglés llegará solo. El español necesita un lugar donde crecer."
       },
       "intro": {
-        "en": "If Spanish is spoken at home, you already know the worry: once school starts, English takes over. Between 2 and 5, the language a child hears all day is the one that sticks. Here, that language is Spanish.",
-        "es": "Si en casa se habla español, ya conoces la preocupación: en cuanto empieza la escuela, el inglés se apodera de todo. Entre los 2 y los 5 años, el idioma que un niño escucha todo el día es el que se queda. Aquí, ese idioma es el español."
+        "en": "Between 2 and 5, the language a child hears all day is the one that sticks. Everywhere else, that language is English. Here, it's Spanish, giving your child the setting to grow up truly bilingual.",
+        "es": "Entre los 2 y los 5 años, el idioma que un niño escucha todo el día es el que se queda. Afuera, ese idioma casi siempre es el inglés. Aquí es el español, y eso le da a tu hijo o hija el entorno para crecer siendo verdaderamente bilingüe."
       },
       "items": [
         {
@@ -400,12 +399,12 @@
         {
           "icon": "heart",
           "title": {
-            "en": "Confident with abuela",
-            "es": "Sin timidez con la abuela"
+            "en": "Speaking with confidence",
+            "es": "Hablar con confianza"
           },
           "text": {
-            "en": "Children who use Spanish all day speak it without shyness: on the phone with grandparents, on the next trip home, at the dinner table. The language stays a bridge to family, not a school subject.",
-            "es": "Los niños que usan el español todo el día lo hablan sin timidez: por teléfono con los abuelos, en el próximo viaje a casa, en la mesa. El idioma sigue siendo un puente con la familia, no una materia escolar."
+            "en": "Children who use Spanish all day speak it without shyness: on the phone with grandparents, at the dinner table, on the next trip. The language stays a bridge to connect with others, not a school subject.",
+            "es": "Los niños que usan el español todo el día lo hablan sin timidez: por teléfono con los abuelos, en la mesa, en el próximo viaje. El idioma sigue siendo un puente para conectar con los demás, no una materia escolar."
           }
         },
         {
@@ -465,8 +464,8 @@
         "es": "Montessori de verdad. Pequeña a propósito. Todo en español."
       },
       "text": {
-        "en": "Montessori classrooms are calm, orderly, and full of real work: pouring, sweeping, counting, tracing letters, caring for plants. Children choose their activity and repeat it until they've mastered it, with a teacher nearby to show the next step. With three teachers for at most twelve children, nobody is a face in the crowd. And every one of those moments happens in Spanish.",
-        "es": "Los salones Montessori son tranquilos, ordenados y llenos de trabajo real: verter, barrer, contar, trazar letras, cuidar plantas. Cada niño elige su actividad y la repite hasta dominarla, con una maestra cerca para mostrarle el siguiente paso. Con tres maestras para máximo doce niños, nadie es una cara más en el grupo. Y cada uno de esos momentos ocurre en español."
+        "en": "Montessori classrooms are calm, orderly, and full of real work: pouring, sweeping, counting, tracing letters, caring for plants. Children choose their activity and repeat it until they've mastered it, with a teacher nearby to show the next step. With three teachers for at most twelve children, no child gets lost in the crowd. And every one of those moments happens in Spanish.",
+        "es": "Los salones Montessori son tranquilos, ordenados y llenos de trabajo real: verter, barrer, contar, trazar letras, cuidar plantas. Cada niño elige su actividad y la repite hasta dominarla, con una maestra cerca para mostrarle el siguiente paso. Con tres maestras para máximo doce niños, ningún niño se pierde en el grupo. Y cada uno de esos momentos ocurre en español."
       },
       "quote": {
         "en": "We strive to create a program which minimizes stress in a child's life and maximizes balance, self-respect, and inborn aptitudes.",
@@ -492,10 +491,6 @@
         {
           "en": "Outside at JJ Byrne Playground whenever the weather allows",
           "es": "Al aire libre en JJ Byrne Playground siempre que el clima lo permite"
-        },
-        {
-          "en": "A calm room with classical music, never a crowd",
-          "es": "Un salón tranquilo con música clásica, nunca una multitud"
         }
       ]
     },
@@ -643,8 +638,8 @@
             "es": "Con las manos"
           },
           "text": {
-            "en": "Real materials, real work. Pouring water, slicing bananas, matching sounds to letters, building the pink tower.",
-            "es": "Materiales reales, trabajo real. Verter agua, cortar plátanos, unir sonidos con letras, construir la torre rosa."
+            "en": "Real materials, real work. Pouring water, slicing bananas, matching sounds to letters, building, sorting, solving puzzles.",
+            "es": "Materiales reales, trabajo real. Verter agua, cortar plátanos, unir sonidos con letras, construir, clasificar, resolver rompecabezas."
           }
         },
         {
@@ -665,15 +660,15 @@
             "es": "Pequeña a propósito"
           },
           "text": {
-            "en": "At most twelve children and three adults. Every child is known, every parent gets a real update at pickup.",
-            "es": "Máximo doce niños y tres adultas. Cada niño es conocido y cada familia recibe noticias reales a la salida."
+            "en": "At most twelve children and three adults. Every child is known, seen, and nurtured.",
+            "es": "Máximo doce niños y tres adultas. Cada niño es conocido, visto y cuidado."
           }
         },
         {
           "icon": "sun",
           "title": {
-            "en": "Outdoors often",
-            "es": "Al aire libre seguido"
+            "en": "Movement for growing bodies",
+            "es": "Movimiento para cuerpos en crecimiento"
           },
           "text": {
             "en": "On nice days we walk to JJ Byrne Playground. On wet days we move, dance and do yoga in the studio.",
@@ -687,8 +682,8 @@
             "es": "Familias como aliadas"
           },
           "text": {
-            "en": "Flexible schedules, quick replies, and honest conversations about how your child is doing.",
-            "es": "Horarios flexibles, respuestas rápidas y conversaciones honestas sobre cómo va tu hijo o hija."
+            "en": "Quick replies and honest conversations about how your child is doing.",
+            "es": "Respuestas rápidas y conversaciones honestas sobre cómo va tu hijo o hija."
           }
         }
       ]
@@ -945,8 +940,8 @@
         {
           "icon": "sun",
           "title": {
-            "en": "Outdoor play",
-            "es": "Juego al aire libre"
+            "en": "Gross motor play",
+            "es": "Juego de motricidad gruesa"
           },
           "text": {
             "en": "JJ Byrne Playground on nice days, and big movement indoors when the weather says no.",
@@ -1020,8 +1015,8 @@
             "es": "Almuerzo juntos"
           },
           "text": {
-            "en": "Packed from home, eaten together at the table, in Spanish.",
-            "es": "Traído de casa y compartido en la mesa, en español."
+            "en": "Packed from home, eaten together.",
+            "es": "Traído de casa y comido juntos."
           }
         },
         {
@@ -1090,10 +1085,6 @@
           "label": {
             "en": "days a week",
             "es": "días por semana"
-          },
-          "note": {
-            "en": "Our most popular schedule",
-            "es": "Nuestro horario más popular"
           }
         },
         {
@@ -1124,31 +1115,6 @@
         "es": "Cuota de inscripción de $125, no reembolsable, con tu solicitud."
       },
       "_confirm": "Add actual monthly or annual tuition per schedule if you want it public. Listing prices tends to increase inquiries."
-    },
-    "bring": {
-      "title": {
-        "en": "What to bring",
-        "es": "Qué traer"
-      },
-      "items": [
-        {
-          "en": "A packed lunch and a water bottle",
-          "es": "Almuerzo de casa y una botella de agua"
-        },
-        {
-          "en": "A full change of clothes",
-          "es": "Una muda completa de ropa"
-        },
-        {
-          "en": "Comfortable indoor shoes",
-          "es": "Zapatos cómodos para adentro"
-        },
-        {
-          "en": "Diapers or pull-ups if your child still uses them",
-          "es": "Pañales si tu hijo o hija todavía los usa"
-        }
-      ],
-      "_confirm": "Confirm this list with the real welcome packet."
     }
   },
   "admissions": {
@@ -1337,8 +1303,8 @@
         "es": "Hablamos español en casa. ¿Qué aporta Imagine?"
       },
       "a": {
-        "en": "A whole day in Spanish, with other children, at the age when it matters most. At home your child hears Spanish from one or two people; here they hear it from three teachers and eleven friends, in songs, stories, negotiations over the pink tower, and the words for everything in the room. Most children's Spanish jumps within a few months, and it stays theirs once English arrives.",
-        "es": "Un día completo en español, con otros niños, a la edad en que más importa. En casa tu hijo escucha español de una o dos personas; aquí lo escucha de tres maestras y once amigos, en canciones, cuentos, negociaciones por la torre rosa y las palabras de todo lo que hay en el salón. El español de la mayoría de los niños da un salto en pocos meses, y sigue siendo suyo cuando llega el inglés."
+        "en": "A whole day in Spanish, with other children, at the age when it matters most. At home your child hears Spanish from one or two people; here they hear it from three teachers and eleven friends, in songs, stories, negotiations over the pink tower, and the words for everything in the room. Most children's Spanish jumps within a few months, and it stays theirs.",
+        "es": "Un día completo en español, con otros niños, a la edad en que más importa. En casa tu hijo escucha español de una o dos personas; aquí lo escucha de tres maestras y once amigos, en canciones, cuentos, negociaciones por la torre rosa y las palabras de todo lo que hay en el salón. El español de la mayoría de los niños da un salto en pocos meses, y sigue siendo suyo."
       },
       "home": true
     },
@@ -1370,10 +1336,10 @@
         "es": "¿Ofrecen entrada temprana o salida tarde?"
       },
       "a": {
-        "en": "Not right now. Our day is 9:00 AM to 3:00 PM, Monday to Friday. If your family needs longer hours, tell us on the tour and we'll talk through what could work.",
-        "es": "Por ahora no. Nuestro día es de 9:00 AM a 3:00 PM, de lunes a viernes. Si tu familia necesita más horas, cuéntanos en la visita y conversamos qué podría funcionar."
+        "en": "Not right now. Our day is 9:00 AM to 3:00 PM, Monday to Friday. If your family needs longer hours, tell us on the tour and we can share the solutions and after-school programs other families have used.",
+        "es": "Por ahora no. Nuestro día es de 9:00 AM a 3:00 PM, de lunes a viernes. Si tu familia necesita más horas, cuéntanos en la visita y te compartimos las soluciones y los programas para después de la escuela que han usado otras familias."
       },
-      "home": true,
+      "home": false,
       "_confirm": "Confirm there is no early drop-off or extended day, and whether Edith wants to offer it."
     },
     {
@@ -1416,8 +1382,8 @@
         "es": "¿Salen al aire libre?"
       },
       "a": {
-        "en": "Yes, as often as the weather allows. We walk to JJ Byrne Playground in Washington Park, a few minutes away, and on rainy days we dance, move and do yoga in our big studio.",
-        "es": "Sí, siempre que el clima lo permite. Caminamos a JJ Byrne Playground en Washington Park, a unos minutos, y cuando llueve bailamos, nos movemos y hacemos yoga en nuestro amplio estudio."
+        "en": "Yes, as often as the weather allows. We walk to JJ Byrne Playground, a few minutes away, and on rainy days we dance, move and do yoga in our big studio.",
+        "es": "Sí, siempre que el clima lo permite. Caminamos a JJ Byrne Playground, a unos minutos, y cuando llueve bailamos, nos movemos y hacemos yoga en nuestro amplio estudio."
       },
       "home": false
     },
@@ -1484,8 +1450,8 @@
         "es": "¿Qué pasa después de Imagine?"
       },
       "a": {
-        "en": "Our children go on to public, dual-language and independent kindergartens across Brooklyn. They arrive confident, independent, and comfortable in two languages.",
-        "es": "Nuestros niños continúan en kínders públicos, de doble idioma e independientes por todo Brooklyn. Llegan seguros, independientes y cómodos en dos idiomas."
+        "en": "Our children go on to a variety of kindergartens across Brooklyn, including public, independent and dual-language programs. They arrive confident, independent, and comfortable in two languages.",
+        "es": "Nuestros niños continúan en una variedad de kínders por todo Brooklyn, incluidos programas públicos, independientes y de doble idioma. Llegan seguros, independientes y cómodos en dos idiomas."
       },
       "home": false
     }
@@ -1524,23 +1490,6 @@
         "es": "Edith’s Spanish Immersion Montessori is incredible. Our daughter just got accepted into Hunter College Elementary for kindergarten and I credited Edith a lot for this. Edith and her teachers are caring, intelligent, warm and focused on each child’s individual needs. Edith nurtured our daughter’s intellectual curiosity and desire to be challenged academically. Our daughter is also fluent in Spanish, which is amazing given we don’t speak any ourselves. The space is wonderful and light filled with dual aspect windows. It is a mixed aged class, which we love as allows for different roles as your child ages. It’s a small school with maximum 12 kids across 3 teachers and very flexible on scheduling. We did full time 5 days a week, which worked for us and really maximized the benefits for our daughter. We’ve also found a wonderful community of other parents. It really flies under the radar as a school and it deserves more recognition given how incredible it is. It was one of the best decisions we’ve ever made for our family."
       },
       "posted": "2024-02-25"
-    },
-    {
-      "quote": {
-        "en": "We don't speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school.",
-        "es": "No hablamos español en casa, pero nuestros hijos sí lo hablan después de ir a esta escuela, y uno de ellos ahora va a una escuela pública de doble idioma."
-      },
-      "by": {
-        "en": "Park Slope Parents",
-        "es": "Park Slope Parents"
-      },
-      "iso": "2026-02-18",
-      "lang": "en",
-      "full": {
-        "en": "We also sent our kids here! Such a true hidden gem. We don’t speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school. It’s truly a special place with the sweetest people. The environment is so clam and caring. They balance some educational play with fun imaginative stuff. I can’t recommend this place enough!",
-        "es": "We also sent our kids here! Such a true hidden gem. We don’t speak Spanish at home but our kids do after attending this school and one of them now goes to a dual language public school. It’s truly a special place with the sweetest people. The environment is so clam and caring. They balance some educational play with fun imaginative stuff. I can’t recommend this place enough!"
-      },
-      "posted": "2026-02-18"
     },
     {
       "quote": {
@@ -1612,23 +1561,6 @@
     },
     {
       "quote": {
-        "en": "The smallness really gives the kids a good chance to bond with each other and with the teachers.",
-        "es": "Que sea tan pequeña les da a los niños una verdadera oportunidad de conectar entre ellos y con las maestras."
-      },
-      "by": {
-        "en": "Park Slope Parents",
-        "es": "Park Slope Parents"
-      },
-      "iso": "2026-05-31",
-      "lang": "en",
-      "full": {
-        "en": "I would also like to sing the praises of ISSM. The part-time scheduling options and mixed age group format drew us here. The space itself is a beautiful dance studio with wood floors, full light and big windows. Edith sets the mood with classical music. The teachers set up very cute and fun stations and rotate the materials frequently. Our daughter's Spanish comprehension has really grown from attending just two days a week, on nice days they get lots of playground time, and there's a music teacher who comes once a week. But I think what I appreciate most is the loving teachers. First of all, sometimes at pickup it's like, 4 or 5 kids total with 3 teachers. The smallness really gives the kids a good chance to bond with each other and with the teachers. And it makes possible the little moments of tenderness that I observe, like when I pick up my daughter and her hair is braided, because her ponytail had come loose and one of her teachers took the time to secure her hair back. It also seems like they appreciate her for who she is and encourage her interests. At parent-teacher conference, Edith told us our daughter likes to dance throughout the day and she recognizes it being her form of self-expression. So they don't redirect her or anything like that, they let her do her thing and encourage her. And they've had like 4 piñatas this year for special occasions!",
-        "es": "I would also like to sing the praises of ISSM. The part-time scheduling options and mixed age group format drew us here. The space itself is a beautiful dance studio with wood floors, full light and big windows. Edith sets the mood with classical music. The teachers set up very cute and fun stations and rotate the materials frequently. Our daughter's Spanish comprehension has really grown from attending just two days a week, on nice days they get lots of playground time, and there's a music teacher who comes once a week. But I think what I appreciate most is the loving teachers. First of all, sometimes at pickup it's like, 4 or 5 kids total with 3 teachers. The smallness really gives the kids a good chance to bond with each other and with the teachers. And it makes possible the little moments of tenderness that I observe, like when I pick up my daughter and her hair is braided, because her ponytail had come loose and one of her teachers took the time to secure her hair back. It also seems like they appreciate her for who she is and encourage her interests. At parent-teacher conference, Edith told us our daughter likes to dance throughout the day and she recognizes it being her form of self-expression. So they don't redirect her or anything like that, they let her do her thing and encourage her. And they've had like 4 piñatas this year for special occasions!"
-      },
-      "posted": "2026-05-31"
-    },
-    {
-      "quote": {
         "en": "Socially, it was incredible. So much that our kids are still friends with kids from two separate families we met there.",
         "es": "En lo social, fue increíble. Tanto que nuestros hijos todavía son amigos de niños de dos familias que conocimos allí."
       },
@@ -1680,40 +1612,6 @@
     },
     {
       "quote": {
-        "en": "The teachers are very dedicated and adapt to the needs, interests, and abilities of each child.",
-        "es": "Las maestras son muy dedicadas y se adaptan a las necesidades, intereses, y aptitudes de cada niño."
-      },
-      "by": {
-        "en": "Park Slope Parents",
-        "es": "Park Slope Parents"
-      },
-      "iso": "2023-01-21",
-      "lang": "es",
-      "full": {
-        "en": "I second the recommendation of Imagine South Slope Montessori. My older daughter was there for 3 years, from when she turned two until she finished pre-K. My younger son is still there. The teachers are very dedicated and adapt to the needs, interests, and abilities of each child.",
-        "es": "reitero la recomendación de Imagine South Slope Montessori. Mi hija mayor estuvo 3 años, desde que cumplió dos años hasta que completó pre-K. Mi hijo menor sigue allí. Las maestras son muy dedicadas y se adaptan a las necesidades, intereses, y aptitudes de cada niño."
-      },
-      "posted": "2023-01-21"
-    },
-    {
-      "quote": {
-        "en": "The educators speak Spanish natively and professionally. They get a good school-ready pre-education there.",
-        "es": "Las educadoras hablan español como lengua materna y de forma profesional. Allí reciben una buena preparación para la escuela."
-      },
-      "by": {
-        "en": "Park Slope Parents",
-        "es": "Park Slope Parents"
-      },
-      "iso": "2022-10-06",
-      "lang": "en",
-      "full": {
-        "en": "Imagine South Slope Montessori might be a little far for you (5th Ave near 8th St), but it is truly wonderful. It’s a small school, so they have one mixed-ages classroom. The educators speak Spanish natively and professionally. They get a good school-ready pre-education there. They visit the playground (weather permitting) and have music class weekly. We’ve also found a great sense of community there. I sent my two kids there since they turned 2. One has moved on to Kindergarten and the other still attended. Before they were 2, we had a nanny. And we’ve continued to work with our nanny since this helps us cover the times they’re not in school.",
-        "es": "Imagine South Slope Montessori might be a little far for you (5th Ave near 8th St), but it is truly wonderful. It’s a small school, so they have one mixed-ages classroom. The educators speak Spanish natively and professionally. They get a good school-ready pre-education there. They visit the playground (weather permitting) and have music class weekly. We’ve also found a great sense of community there. I sent my two kids there since they turned 2. One has moved on to Kindergarten and the other still attended. Before they were 2, we had a nanny. And we’ve continued to work with our nanny since this helps us cover the times they’re not in school."
-      },
-      "posted": "2022-10-06"
-    },
-    {
-      "quote": {
         "en": "I've found it to be an incredibly warm place that understands the changing needs of individual families and children.",
         "es": "Me ha parecido un lugar increíblemente cálido, que entiende las necesidades cambiantes de cada familia y cada niño."
       },
@@ -1728,23 +1626,6 @@
         "es": "I’ll add that I’ve found it to be an incredibly warm place that understands the changing needs of individual families and children. I really love how responsive they are to each student’s interests and needs from moment to moment. It is such a special place and as someone who was extremely hesitant about sending my daughter to any program I can say that it’s been 100 percent the right choice. My daughter loves it there. They were very sensitive to the fact that this was her first time in any kind of program without me. She’s learning a lot and is happy to go. Im happy to share any more info if it’s helpful. Good luck with your search."
       },
       "posted": "2019-12-21"
-    },
-    {
-      "quote": {
-        "en": "We're so happy! It's a very small group of children, 19 months to 4 years old, and they have 3 teachers with them.",
-        "es": "Estamos súper felices! Es un grupo súper pequeño de niños de 19meses-4 años y tienen 3 maestras con ellos."
-      },
-      "by": {
-        "en": "Park Slope Parents",
-        "es": "Park Slope Parents"
-      },
-      "iso": "2023-01-21",
-      "lang": "es",
-      "full": {
-        "en": "We send our son (22 months) to Imagine South Slope Montessori. It's a preschool entirely in Spanish at 5th Ave and 8th Street (Park Slope). We're so happy! It's a very small group of children, 19 months to 4 years old, and they have 3 teachers with them.",
-        "es": "Nosotros enviamos a nuestro hijo (22meses) a Imaginé South Slope Montessori. Es un preschool enteramente en castellano en 5th ave y 8th street (park slope). Estamos súper felices! Es un grupo súper pequeño de niños de 19meses-4 años y tienen 3 maestras con ellos."
-      },
-      "posted": "2023-01-21"
     },
     {
       "quote": {
