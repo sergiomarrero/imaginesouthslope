@@ -111,7 +111,6 @@ const existingFirst = (ctx, files) => [...files].sort((a, b) => Number(ctx.hasIm
 function home(ctx) {
   const { t, site, school, ui } = ctx;
   const h = site.home;
-  const day = site.program.day;
   const rv = h.reviews;
   const reviews = site.testimonials;
   const reviewCount = (n) => t(ui.reviews.counter).replace('{n}', n).replace('{total}', reviews.length);
@@ -174,35 +173,7 @@ ${wave('wave--sand wave--flip')}
     <div class="why__grid">
       ${h.why.items.map((it, i) => `<article class="why__card" data-reveal style="--i:${i}"><span class="why__icon">${icon(it.icon)}</span><h3 class="why__title">${esc(t(it.title))}</h3><p>${esc(t(it.text))}</p></article>`).join('')}
     </div>
-  </div>
-</section>
-
-<section class="sec day" id="day">
-  <div class="wrap">
-    ${sectionHead(ctx, { eyebrow: h.dayPreview.eyebrow, title: h.dayPreview.title, text: h.dayPreview.text })}
-  </div>
-  <div class="carousel" data-carousel>
-    <div class="wrap carousel__bar">
-      <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous">${icon('chevron-left')}</button>
-      <div class="carousel__dots" data-carousel-dots></div>
-      <button class="carousel__btn" type="button" data-carousel-next aria-label="Next">${icon('chevron-right')}</button>
-    </div>
-    <ol class="carousel__track day__track" data-carousel-track>
-      ${day.items.map((d) => `<li class="day__card"><span class="day__time">${esc(d.time)}</span><h3 class="day__title">${esc(t(d.title))}</h3><p>${esc(t(d.text))}</p></li>`).join('')}
-    </ol>
-  </div>
-  <div class="wrap day__more" data-reveal><a class="btn btn--secondary" href="${ctx.href('program', 'day')}">${esc(t(ui.cta.seeProgram))}${icon('arrow-right', 'btn__icon')}</a></div>
-</section>
-
-<section class="sec edith">
-  <div class="wrap edith__grid">
-    <figure class="edith__photo blob" data-reveal>${ctx.img('edith.jpg')}</figure>
-    <div class="edith__copy" data-reveal>
-      <p class="eyebrow">${esc(t(h.edithTeaser.eyebrow))}</p>
-      <h2 class="sec__title">${esc(t(h.edithTeaser.title))}</h2>
-      <p class="sec__text">${esc(t(h.edithTeaser.text))}</p>
-      <a class="btn btn--ghost" href="${ctx.href('about')}#edith">${esc(t(ui.cta.meetEdith))}${icon('arrow-right', 'btn__icon')}</a>
-    </div>
+    <div class="why__more" data-reveal><a class="btn btn--secondary" href="${ctx.href('program')}">${esc(t(ui.cta.seeProgram))}${icon('arrow-right', 'btn__icon')}</a></div>
   </div>
 </section>
 
@@ -417,7 +388,7 @@ ${wave('wave--sand wave--flip')}
   <div class="wrap">
     ${sectionHead(ctx, { eyebrow: p.schedules.eyebrow, title: p.schedules.title, text: p.schedules.text })}
     <ul class="sched__grid">
-      ${p.schedules.options.map((o, i) => `<li class="plan" data-reveal style="--i:${i}"><strong class="plan__days">${esc(o.days)}</strong><span class="plan__label">${esc(t(o.label))}</span><p class="plan__note">${esc(t(o.note))}</p></li>`).join('')}
+      ${p.schedules.options.map((o, i) => `<li class="plan${o.note ? '' : ' plan--solo'}" data-reveal style="--i:${i}"><strong class="plan__days">${esc(o.days)}</strong><span class="plan__label">${esc(t(o.label))}</span>${o.note ? `<p class="plan__note">${esc(t(o.note))}</p>` : ''}</li>`).join('')}
     </ul>
     <div class="tuition" data-reveal>
       <div class="tuition__main">
@@ -425,10 +396,6 @@ ${wave('wave--sand wave--flip')}
         <p>${esc(t(p.tuition.text))}</p>
         <p class="tuition__fee">${icon('dollar')}<span>${esc(t(p.tuition.fee))}</span></p>
         ${tourBtn(ctx, 'btn btn--primary')}
-      </div>
-      <div class="tuition__bring">
-        <h3>${esc(t(p.bring.title))}</h3>
-        <ul class="checks">${p.bring.items.map((b) => `<li>${icon('check')}<span>${esc(t(b))}</span></li>`).join('')}</ul>
       </div>
     </div>
   </div>

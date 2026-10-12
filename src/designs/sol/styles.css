@@ -150,6 +150,7 @@ button { font: inherit; color: inherit; }
 .why__card:nth-child(5n+5) .why__icon { background: var(--plum); color: #fff; }
 .why__title { font-size: 1.25rem; text-wrap: balance; }
 .why__card p { margin: 0; color: var(--cocoa); }
+.why__more { margin-top: 1.5rem; text-align: center; }
 
 /* Montessori */
 .mont { background: var(--sand); }
@@ -175,13 +176,6 @@ button { font: inherit; color: inherit; }
 .carousel__dots { display: flex; gap: 6px; }
 .carousel__dot { width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0; background: var(--line); cursor: pointer; }
 .carousel__dot.is-active { background: var(--cobalt); width: 22px; border-radius: 999px; }
-
-/* Day cards */
-.day__card { background: var(--paper); border: 2px solid var(--line); border-radius: var(--r); padding: 1.2rem; min-height: 190px; }
-.day__time { display: inline-block; background: var(--ink); color: var(--cream); font-weight: 800; border-radius: 999px; padding: .2rem .7rem; font-size: .85rem; margin-bottom: .7rem; }
-.day__title { font-size: 1.2rem; margin-bottom: .3rem; }
-.day__card p { margin: 0; color: var(--cocoa); font-size: .97rem; }
-.day__more { margin-top: .75rem; }
 
 /* Edith */
 .edith__grid { display: grid; gap: 1.5rem; align-items: center; }
@@ -357,11 +351,10 @@ button { font: inherit; color: inherit; }
 .plan__days { font-family: var(--font-display); font-size: 3rem; line-height: 1; color: var(--cobalt-2); grid-row: span 2; font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 144; }
 .plan__label { font-weight: 800; }
 .plan__note { margin: 0; color: var(--cocoa); font-size: .95rem; }
-.plan:nth-child(2) { border-color: var(--marigold); background: #fff6df; }
+.plan--solo .plan__days { grid-row: auto; }
 .tuition { margin-top: 1.5rem; display: grid; gap: 1rem; }
-.tuition__main, .tuition__bring { background: var(--paper); border-radius: var(--r-lg); padding: 1.5rem; border: 2px solid var(--line); }
+.tuition__main { background: var(--paper); border-radius: var(--r-lg); padding: 1.5rem; border: 2px solid var(--line); }
 .tuition__fee { display: flex; gap: .5rem; align-items: center; font-weight: 800; color: var(--sage-2); }
-.tuition__bring .checks { margin-bottom: 0; }
 
 /* Admissions */
 .req { background: var(--sand); }
@@ -426,7 +419,6 @@ a.ccard:hover { border-color: var(--cobalt); }
   .plan__days { grid-row: auto; }
   .form__grid { grid-template-columns: 1fr 1fr; }
   .form__field--wide { grid-column: span 2; }
-  .tuition { grid-template-columns: 3fr 2fr; }
   .req__grid { grid-template-columns: 3fr 2fr; }
   .contact__cards { grid-template-columns: 1fr 1fr; }
 }
