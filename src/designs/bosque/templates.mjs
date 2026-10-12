@@ -372,7 +372,7 @@ ${pageHero(ctx, { eyebrow: p.hero.eyebrow, title: p.hero.title, intro: p.hero.in
   <div class="wrap">
     ${secHead(ctx, { n: 3, eyebrow: p.schedules.eyebrow, title: p.schedules.title, text: p.schedules.text })}
     <ul class="plans">
-      ${p.schedules.options.map((o, i) => `<li class="plan" data-reveal style="--i:${i}"><span class="plan__days">${esc(o.days)}</span><span class="plan__label">${esc(t(o.label))}</span><p class="plan__note">${o.note ? esc(t(o.note)) : ''}</p></li>`).join('')}
+      ${p.schedules.options.map((o, i) => `<li class="plan" data-reveal style="--i:${i}"><span class="plan__days">${esc(o.days)}</span><span class="plan__label">${esc(t(o.label))}</span>${o.note ? `<p class="plan__note">${esc(t(o.note))}</p>` : ''}</li>`).join('')}
     </ul>
     <div class="tuition" data-reveal>
       <div class="tuition__main">
