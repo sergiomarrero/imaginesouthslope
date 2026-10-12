@@ -382,7 +382,7 @@
       },
       "intro": {
         "en": "Between 2 and 5, the language a child hears all day is the one that sticks. Everywhere else, that language is English. Here, it's Spanish, giving your child the setting to grow up truly bilingual.",
-        "es": "Entre los 2 y los 5 años, el idioma que un niño escucha todo el día es el que se queda. En todas partes, ese idioma es el inglés. Aquí es el español, y eso le da a tu hijo o hija el entorno para crecer verdaderamente bilingüe."
+        "es": "Entre los 2 y los 5 años, el idioma que un niño escucha todo el día es el que se queda. Afuera, ese idioma casi siempre es el inglés. Aquí es el español, y eso le da a tu hijo o hija el entorno para crecer siendo verdaderamente bilingüe."
       },
       "items": [
         {
@@ -400,7 +400,7 @@
           "icon": "heart",
           "title": {
             "en": "Speaking with confidence",
-            "es": "Hablan con confianza"
+            "es": "Hablar con confianza"
           },
           "text": {
             "en": "Children who use Spanish all day speak it without shyness: on the phone with grandparents, at the dinner table, on the next trip. The language stays a bridge to connect with others, not a school subject.",
@@ -668,7 +668,7 @@
           "icon": "sun",
           "title": {
             "en": "Movement for growing bodies",
-            "es": "Movimiento para cuerpos que crecen"
+            "es": "Movimiento para cuerpos en crecimiento"
           },
           "text": {
             "en": "On nice days we walk to JJ Byrne Playground. On wet days we move, dance and do yoga in the studio.",
@@ -1016,7 +1016,7 @@
           },
           "text": {
             "en": "Packed from home, eaten together.",
-            "es": "Traído de casa y compartido."
+            "es": "Traído de casa y comido juntos."
           }
         },
         {
@@ -1337,7 +1337,7 @@
       },
       "a": {
         "en": "Not right now. Our day is 9:00 AM to 3:00 PM, Monday to Friday. If your family needs longer hours, tell us on the tour and we can share the solutions and after-school programs other families have used.",
-        "es": "Por ahora no. Nuestro día es de 9:00 AM a 3:00 PM, de lunes a viernes. Si tu familia necesita más horas, cuéntanos en la visita y te compartimos las soluciones y los programas extraescolares que han usado otras familias."
+        "es": "Por ahora no. Nuestro día es de 9:00 AM a 3:00 PM, de lunes a viernes. Si tu familia necesita más horas, cuéntanos en la visita y te compartimos las soluciones y los programas para después de la escuela que han usado otras familias."
       },
       "home": false,
       "_confirm": "Confirm there is no early drop-off or extended day, and whether Edith wants to offer it."
