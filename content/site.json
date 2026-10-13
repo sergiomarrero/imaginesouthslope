@@ -32,8 +32,8 @@
     "phoneAlt": "917-765-8376",
     "email": "info@southslopemontessori.com",
     "hours": {
-      "en": "Monday to Friday, 9:00 AM to 3:00 PM",
-      "es": "Lunes a viernes, 9:00 AM a 3:00 PM"
+      "en": "Monday to Friday, 9:00 AM to 3:00 PM",
+      "es": "Lunes a viernes, 9:00 AM a 3:00 PM"
     },
     "hoursSchema": "Mo-Fr 09:00-15:00",
     "ages": {
@@ -261,8 +261,8 @@
         "es": "Se abrirá tu aplicación de correo con todo listo. Solo presiona enviar."
       },
       "required": {
-        "en": "Required",
-        "es": "Obligatorio"
+        "en": "Please fill out this field.",
+        "es": "Completa este campo."
       },
       "subject": {
         "en": "Tour request",

@@ -477,7 +477,7 @@ function contact(ctx) {
   <div class="wrap contact__grid">
     <div class="contact__cards">
       <a class="ccard" href="${ctx.telHref()}" data-reveal><span class="ccard__icon">${icon('phone')}</span><span class="ccard__label">${esc(t(c.labels.phone))}</span><strong>${esc(ctx.phoneDisplay())}</strong>${school.phoneAlt ? `<small>${esc(t(c.labels.phoneAlt))}: ${esc(ctx.phoneDisplay(school.phoneAlt))}</small>` : ''}</a>
-      <a class="ccard" href="${ctx.mailHref()}" data-reveal><span class="ccard__icon">${icon('mail')}</span><span class="ccard__label">${esc(t(c.labels.email))}</span><strong class="ccard__break">${esc(school.email)}</strong></a>
+      <a class="ccard" href="${ctx.mailHref()}" data-reveal><span class="ccard__icon">${icon('mail')}</span><span class="ccard__label">${esc(t(c.labels.email))}</span><strong class="ccard__break">${esc(school.email).replace('@', '@<wbr>')}</strong></a>
       <div class="ccard" data-reveal><span class="ccard__icon">${icon('clock')}</span><span class="ccard__label">${esc(t(c.labels.hours))}</span><strong>${esc(t(school.hours))}</strong></div>
       <a class="ccard" href="${esc(school.address.mapsUrl)}" target="_blank" rel="noopener" data-reveal><span class="ccard__icon">${icon('pin')}</span><span class="ccard__label">${esc(t(c.labels.address))}</span><strong>${esc(school.address.venue)}<br>${esc(school.address.street)}<br>${esc(school.address.city)}, ${esc(school.address.state)} ${esc(school.address.zip)}</strong><small>${esc(t(ui.cta.directions))} ↗</small></a>
     </div>
