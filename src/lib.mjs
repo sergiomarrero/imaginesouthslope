@@ -70,7 +70,8 @@ export function makeCtx({ site, design, lang, page, imageFiles, baseUrl, urlPref
     photo: (key) => site.photos.find((p) => p.file === key) || site.photos.find((p) => p.slot === key) || null,
     hasImage: (f) => imageFiles.has(f),
     nav: () => PAGES.map((p) => ({ page: p, label: t(site.ui.nav[p]), href: PAGE_FILE[p], active: p === page })),
-    absUrl: (p = page, l = lang) => (baseUrl ? `${baseUrl}/${urlPrefix}${l === 'es' ? 'es/' : ''}${PAGE_FILE[p]}` : ''),
+    // Home is linked as the folder (".../", ".../es/"), which is how GitHub Pages serves it.
+    absUrl: (p = page, l = lang) => (baseUrl ? `${baseUrl}/${urlPrefix}${l === 'es' ? 'es/' : ''}${PAGE_FILE[p] === 'index.html' ? '' : PAGE_FILE[p]}` : ''),
     faqForHome: () => site.faq.filter((f) => f.home),
   };
   ctx.img = (key, opts = {}) => {
@@ -97,7 +98,7 @@ export function jsonLd(ctx) {
   const { school: s, t } = ctx;
   const data = {
     '@context': 'https://schema.org',
-    '@type': 'Preschool',
+    '@type': ['Preschool', 'ChildCare'],
     name: s.name,
     description: t(s.description),
     telephone: `+1-${formatPhone(s.phone).replace(/[()]/g, '').replace(' ', '-')}`,
@@ -115,12 +116,14 @@ export function jsonLd(ctx) {
     foundingDate: String(s.founded),
     founder: { '@type': 'Person', name: ctx.site.about.edith.name },
     areaServed: 'Brooklyn, NY',
-    inLanguage: ['es', 'en'],
+    knowsLanguage: ['es', 'en'],
     sameAs: Object.values(s.social).filter(Boolean),
   };
-  if (ctx.absUrl()) data.url = ctx.absUrl();
-  else if (s.siteUrl) data.url = s.siteUrl;
-  return JSON.stringify(data);
+  const home = ctx.absUrl('home', 'en') || s.siteUrl;
+  if (home) data.url = home;
+  if (ctx.baseUrl && ctx.hasImage('room.jpg')) data.image = `${ctx.baseUrl}/${ctx.urlPrefix}images/room.jpg`;
+  // Escape "<" so no text can close the surrounding <script> tag.
+  return JSON.stringify(data).replace(/</g, '\\u003c');
 }
 
 export function headHtml(ctx, { title, description }) {
@@ -128,7 +131,10 @@ export function headHtml(ctx, { title, description }) {
   const fullTitle = `${title} | ${site.school.name}`;
   const canonical = ctx.absUrl();
   const alt = { en: ctx.absUrl(ctx.page, 'en'), es: ctx.absUrl(ctx.page, 'es') };
-  const ogImage = ctx.hasImage('hero.jpg') && ctx.baseUrl ? `${ctx.baseUrl}/${ctx.urlPrefix}images/hero.jpg` : '';
+  // Link previews are landscape, so prefer the wide classroom photo over the tall hero.
+  const ogFile = ['room.jpg', 'hero.jpg'].find((f) => ctx.hasImage(f));
+  const ogImage = ogFile && ctx.baseUrl ? `${ctx.baseUrl}/${ctx.urlPrefix}images/${ogFile}` : '';
+  const ogPhoto = ogFile ? ctx.photo(ogFile) : null;
   return [
     '<meta charset="utf-8">',
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
@@ -143,8 +149,13 @@ export function headHtml(ctx, { title, description }) {
     '<meta property="og:type" content="website">',
     `<meta property="og:title" content="${esc(fullTitle)}">`,
     `<meta property="og:description" content="${esc(description)}">`,
+    `<meta property="og:site_name" content="${esc(site.school.name)}">`,
+    canonical ? `<meta property="og:url" content="${canonical}">` : '',
     `<meta property="og:locale" content="${lang === 'es' ? 'es_US' : 'en_US'}">`,
+    `<meta property="og:locale:alternate" content="${lang === 'es' ? 'en_US' : 'es_US'}">`,
     ogImage ? `<meta property="og:image" content="${ogImage}">` : '',
+    ogImage && ogPhoto ? `<meta property="og:image:alt" content="${esc(ctx.t(ogPhoto.alt))}">` : '',
+    '<meta name="twitter:card" content="summary_large_image">',
     `<link rel="icon" href="${ctx.asset('favicon.svg')}" type="image/svg+xml">`,
     '<link rel="preconnect" href="https://fonts.googleapis.com">',
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
@@ -174,7 +185,7 @@ export function formHtml(ctx) {
         ${options.map((o) => `<option value="${e(t(o))}">${e(t(o))}</option>`).join('')}
       </select>
     </div>`;
-  return `<form class="form" id="tour" data-form data-action="${e(s.formAction)}" data-mailto="${e(s.email)}" method="POST" action="${e(action)}"${enctype} novalidate>
+  return `<form class="form" id="tour" data-form data-action="${e(s.formAction)}" data-mailto="${e(s.email)}" data-subject="${e(t(f.subject))}" data-required="${e(t(f.required))}" data-invalid-email="${e(t(f.invalidEmail))}" method="POST" action="${e(action)}"${enctype}>
     <div class="visually-hidden" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
     <input type="hidden" name="_subject" value="Tour request from the website">
     <div class="form__grid">
@@ -192,7 +203,7 @@ export function formHtml(ctx) {
     </div>
     <p class="form__note">${s.formAction ? '' : e(t(f.mailtoNote))}</p>
     <button class="btn btn--primary btn--block" type="submit" data-form-submit data-sending="${e(t(f.sending))}">${e(t(f.submit))}</button>
-    <p class="form__status" role="status" aria-live="polite" data-form-status data-success="${e(t(f.success))}" data-error="${e(t(f.error))}"></p>
+    <p class="form__status" role="status" aria-live="polite" data-form-status data-success="${e(t(f.success))}" data-mailto-done="${e(t(f.mailtoOpened))}" data-error="${e(t(f.error))}"></p>
   </form>`;
 }
 

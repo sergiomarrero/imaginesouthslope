@@ -12,20 +12,30 @@
     var navToggle = $('[data-nav-toggle]');
     var nav = $('[data-nav]');
     if (navToggle && nav && once(navToggle, 'boundNav')) {
+      // While the full-screen menu is open, the page behind it is inert so Tab stays inside the menu.
+      var behind = function () { return $$('main, footer, .dock'); };
       var open = function () {
         document.body.classList.add('nav-open');
         navToggle.setAttribute('aria-expanded', 'true');
+        behind().forEach(function (el) { el.inert = true; });
         var first = nav.querySelector('a');
         if (first) first.focus({ preventScroll: true });
       };
-      var close = function () {
+      var close = function (refocus) {
+        if (!document.body.classList.contains('nav-open')) return;
         document.body.classList.remove('nav-open');
         navToggle.setAttribute('aria-expanded', 'false');
+        behind().forEach(function (el) { el.inert = false; });
+        if (refocus === true) navToggle.focus({ preventScroll: true });
       };
       navToggle.addEventListener('click', function () { document.body.classList.contains('nav-open') ? close() : open(); });
       $$('[data-nav-close]').forEach(function (el) { el.addEventListener('click', close); });
       nav.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
-      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(true); });
+      // Widening the window past the menu breakpoint hides the menu; unlock the page too.
+      var wide = window.matchMedia('(min-width: 1180px)');
+      var onWide = function (e) { if (e.matches) close(); };
+      if (wide.addEventListener) wide.addEventListener('change', onWide); else if (wide.addListener) wide.addListener(onWide);
     }
 
     /* Header shadow and floating buttons after scrolling */
@@ -96,6 +106,8 @@
         var setCount = function () {
           var text = tpl.replace('{n}', String(Math.min(current() + 1, items.length))).replace('{total}', String(items.length));
           if (counter.textContent !== text) counter.textContent = text;
+          // Only the visible slide is reachable by Tab and screen readers.
+          if (loop) items.forEach(function (it, j) { it.inert = j !== current(); });
         };
         track.addEventListener('scroll', setCount, { passive: true });
         setCount();
@@ -121,24 +133,34 @@
     /* Lightbox for gallery images */
     var lightboxImgs = $$('[data-lightbox]').filter(function (el) { return once(el, 'boundLightbox'); });
     if (lightboxImgs.length) {
+      var es = document.documentElement.lang === 'es';
       var dlg = $('dialog.lightbox');
+      var lastPhoto = null;
       if (!dlg) {
         dlg = document.createElement('dialog');
         dlg.className = 'lightbox';
-        dlg.innerHTML = '<button class="lightbox__close" type="button" aria-label="Close">&times;</button><img class="lightbox__img" alt=""><p class="lightbox__caption"></p>';
+        dlg.setAttribute('aria-label', es ? 'Foto ampliada' : 'Enlarged photo');
+        dlg.innerHTML = '<button class="lightbox__close" type="button" aria-label="' + (es ? 'Cerrar' : 'Close') + '">&times;</button><img class="lightbox__img" alt=""><p class="lightbox__caption"></p>';
         document.body.appendChild(dlg);
         $('.lightbox__close', dlg).addEventListener('click', function () { dlg.close(); });
         dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+        dlg.addEventListener('close', function () { if (lastPhoto) lastPhoto.focus({ preventScroll: true }); lastPhoto = null; });
       }
       lightboxImgs.forEach(function (el) {
-        el.addEventListener('click', function () {
-          var target = el.tagName === 'IMG' ? el : el.querySelector('img');
-          if (!target) return;
+        var target = el.tagName === 'IMG' ? el : el.querySelector('img');
+        if (!target) return;
+        var show = function () {
+          lastPhoto = el;
           $('.lightbox__img', dlg).src = target.currentSrc || target.src;
           $('.lightbox__img', dlg).alt = target.alt || '';
           $('.lightbox__caption', dlg).textContent = target.alt || '';
           if (typeof dlg.showModal === 'function') dlg.showModal();
-        });
+        };
+        el.tabIndex = 0;
+        el.setAttribute('role', 'button');
+        if (target.alt) el.setAttribute('aria-label', target.alt);
+        el.addEventListener('click', show);
+        el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } });
       });
     }
 
@@ -155,6 +177,14 @@
         status.classList.remove('is-success', 'is-error');
         if (kind) status.classList.add(kind === 'success' ? 'is-success' : 'is-error');
       };
+      // Validation messages in the page's language rather than the browser's.
+      form.noValidate = true;
+      $$('input, select, textarea', form).forEach(function (f) {
+        f.addEventListener('invalid', function () {
+          f.setCustomValidity(f.validity.valueMissing ? form.getAttribute('data-required') || '' : f.validity.typeMismatch ? form.getAttribute('data-invalid-email') || '' : '');
+        });
+        f.addEventListener('input', function () { f.setCustomValidity(''); });
+      });
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (!form.reportValidity()) return;
@@ -176,9 +206,10 @@
           return lab ? lab.textContent.replace('*', '').trim() : name;
         };
         var body = entries.map(function (kv) { return label(kv[0]) + ': ' + kv[1]; }).join('\n');
-        var subject = 'Tour request: ' + (data.get('name') || '');
+        var subject = (form.getAttribute('data-subject') || 'Tour request') + ': ' + (data.get('name') || '');
         window.location.href = 'mailto:' + mailto + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        setStatus('success', status.getAttribute('data-success'));
+        // Nothing is sent until the parent presses send in their email app, so say that instead of "thank you".
+        setStatus('success', status.getAttribute('data-mailto-done') || status.getAttribute('data-success'));
       });
     });
 
@@ -195,7 +226,12 @@
         }
         var c = e.target.closest('[data-dialog-close]');
         if (c) { var cd = c.closest('dialog'); if (cd) cd.close(); return; }
-        if (e.target.tagName === 'DIALOG' && e.target.open && !e.target.classList.contains('lightbox')) e.target.close();
+        var d = e.target;
+        if (d.tagName === 'DIALOG' && d.open && !d.classList.contains('lightbox')) {
+          // Close only for clicks outside the dialog box (the backdrop), not on its padding or scrollbar.
+          var r = d.getBoundingClientRect();
+          if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close();
+        }
       });
       document.addEventListener('close', function (e) { if (opener && e.target.tagName === 'DIALOG') { opener.focus({ preventScroll: true }); opener = null; } }, true);
     }

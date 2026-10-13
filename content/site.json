@@ -10,8 +10,8 @@
       "es": "La escuela Montessori donde el español de tu hijo sigue creciendo."
     },
     "description": {
-      "en": "Imagine South Slope Montessori is a small Montessori preschool in Park Slope, Brooklyn, taught entirely in Spanish. Ages 2 to 5, twelve children max, three teachers. Made for families raising children in Spanish. Book a tour.",
-      "es": "Imagine South Slope Montessori es un preescolar Montessori pequeño en Park Slope, Brooklyn, enseñado completamente en español. De 2 a 5 años, máximo doce niños, tres maestras. Hecho para familias que crían a sus hijos en español. Agenda una visita."
+      "en": "A small Montessori preschool in Park Slope, Brooklyn, taught entirely in Spanish. Ages 2 to 5, twelve children max, three teachers. Book a tour.",
+      "es": "Un preescolar Montessori pequeño en Park Slope, Brooklyn, enseñado completamente en español. De 2 a 5 años, máximo doce niños, tres maestras. Agenda una visita."
     },
     "address": {
       "venue": "Brooklyn Arts Exchange (BAX)",
@@ -32,8 +32,8 @@
     "phoneAlt": "917-765-8376",
     "email": "info@southslopemontessori.com",
     "hours": {
-      "en": "Monday to Friday, 9:00 AM to 3:00 PM",
-      "es": "Lunes a viernes, 9:00 AM a 3:00 PM"
+      "en": "Monday to Friday, 9:00 AM to 3:00 PM",
+      "es": "Lunes a viernes, 9:00 AM a 3:00 PM"
     },
     "hoursSchema": "Mo-Fr 09:00-15:00",
     "ages": {
@@ -261,8 +261,20 @@
         "es": "Se abrirá tu aplicación de correo con todo listo. Solo presiona enviar."
       },
       "required": {
-        "en": "Required",
-        "es": "Obligatorio"
+        "en": "Please fill out this field.",
+        "es": "Completa este campo."
+      },
+      "subject": {
+        "en": "Tour request",
+        "es": "Solicitud de visita"
+      },
+      "invalidEmail": {
+        "en": "Please enter a valid email, like name@example.com.",
+        "es": "Escribe un correo válido, por ejemplo nombre@ejemplo.com."
+      },
+      "mailtoOpened": {
+        "en": "Your email app should now be open with your request. Press send to finish. Nothing opened? Email us at info@southslopemontessori.com or call (718) 619-2285.",
+        "es": "Tu aplicación de correo debería estar abierta con tu solicitud. Presiona enviar para terminar. ¿No se abrió nada? Escríbenos a info@southslopemontessori.com o llama al (718) 619-2285."
       }
     },
     "photoPlaceholder": {
@@ -314,13 +326,25 @@
         "en": "Close",
         "es": "Cerrar"
       }
+    },
+    "navLabel": {
+      "en": "Main",
+      "es": "Principal"
+    },
+    "mapTitle": {
+      "en": "Map to Imagine South Slope Montessori",
+      "es": "Mapa para llegar a Imagine South Slope Montessori"
+    },
+    "faqLabel": {
+      "en": "FAQ",
+      "es": "Preguntas frecuentes"
     }
   },
   "home": {
     "meta": {
       "title": {
-        "en": "Spanish Montessori Preschool in Park Slope for Families Raising Bilingual Kids",
-        "es": "Preescolar Montessori en español en Park Slope para familias bilingües"
+        "en": "Spanish Immersion Montessori Preschool in Park Slope",
+        "es": "Preescolar Montessori en español en Park Slope"
       }
     },
     "hero": {
@@ -333,8 +357,8 @@
         "es": "La escuela Montessori donde el español de tu hijo sigue creciendo."
       },
       "subtitle": {
-        "en": "Imagine South Slope Montessori is a small preschool in Park Slope for ages 2 to 5, taught entirely in Spanish. Twelve children at most, three teachers, real Montessori work, and a sunlit studio where the language you speak at home is the language of the whole day. Families new to Spanish are welcome too.",
-        "es": "Imagine South Slope Montessori es un preescolar pequeño en Park Slope para niños de 2 a 5 años, enseñado completamente en español. Máximo doce niños, tres maestras, trabajo Montessori de verdad y un estudio lleno de luz donde el idioma que hablan en casa es el idioma de todo el día. Las familias que apenas empiezan con el español también son bienvenidas."
+        "en": "Imagine South Slope Montessori is a small preschool in Park Slope for ages 2 to 5, taught entirely in Spanish. Twelve children at most, three teachers, real Montessori work, and a sunlit studio where Spanish is the language of the whole day.",
+        "es": "Imagine South Slope Montessori es un preescolar pequeño en Park Slope para niños de 2 a 5 años, enseñado completamente en español. Máximo doce niños, tres maestras, trabajo Montessori de verdad y un estudio lleno de luz donde el español es el idioma de todo el día."
       },
       "note": {
         "en": "Now enrolling · Monday to Friday, 9 to 3",
@@ -393,7 +417,7 @@
           },
           "text": {
             "en": "Not a Spanish class. Songs, stories, jokes, the words for pouring and counting and making up after a squabble. Everything a two-year-old needs to say, said in Spanish by teachers who speak it with them from arrival to hasta mañana.",
-            "es": "No es una clase de español. Canciones, cuentos, chistes, las palabras para verter, contar y reconciliarse después de una pelea. Todo lo que un niño de dos años necesita decir, dicho en español por maestras que lo hablan con ellos desde la llegada hasta el hasta mañana."
+            "es": "No es una clase de español. Canciones, cuentos, chistes, las palabras para verter, contar y reconciliarse después de una pelea. Todo lo que un niño de dos años necesita decir, dicho en español por maestras que lo hablan con ellos desde la llegada hasta el “hasta mañana”."
           }
         },
         {
@@ -414,8 +438,8 @@
             "es": "Amigos que también lo hablan"
           },
           "text": {
-            "en": "Most of our families speak Spanish at home. Your child grows up with playmates who do the same, and you gain a small community of parents raising bilingual kids in the Slope.",
-            "es": "La mayoría de nuestras familias hablan español en casa. Tu hijo o hija crece con amigos que hacen lo mismo, y tú ganas una pequeña comunidad de padres que crían niños bilingües en el Slope."
+            "en": "Your child spends the day with friends who play, sing and make up in Spanish, and you join a small community of Park Slope parents raising bilingual kids.",
+            "es": "Tu hijo pasa el día con amigos que juegan, cantan y se reconcilian en español, y tú te unes a una pequeña comunidad de familias del Slope que crían niños bilingües."
           }
         },
         {
@@ -443,16 +467,15 @@
         {
           "icon": "home",
           "title": {
-            "en": "New to Spanish at home? You're welcome here.",
-            "es": "¿El español es nuevo en casa? Aquí son bienvenidos."
+            "en": "Whatever you speak at home, you're welcome.",
+            "es": "Se hable lo que se hable en casa, aquí son bienvenidos."
           },
           "text": {
-            "en": "A few of our families don't speak Spanish at home. Children understand their teachers within weeks and start answering in Spanish within months, and we keep you in the loop in English.",
-            "es": "Algunas de nuestras familias no hablan español en casa. Los niños entienden a sus maestras en semanas y empiezan a responder en español en pocos meses, y a ti te mantenemos al tanto en inglés."
+            "en": "Children understand their teachers within weeks and start answering in Spanish within months. With parents, we speak English or Spanish.",
+            "es": "Los niños entienden a sus maestras en semanas y empiezan a responder en español en pocos meses. Con las familias hablamos en inglés o en español."
           }
         }
-      ],
-      "_confirm": "The claim that most families speak Spanish at home comes from Sergio's conversation on Sep 8; confirm it matches the current class before launch."
+      ]
     },
     "montessori": {
       "eyebrow": {
@@ -550,7 +573,7 @@
         "es": "Encuéntranos en Park Slope"
       },
       "text": {
-        "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street, third floor, Studio C. A few blocks from the 4th Ave–9th St station (F, G, R) and on the B63 bus line.",
+        "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue (at 8th Street), third floor, Studio C. A few blocks from the 4th Ave–9th St station (F, G, R) and on the B63 bus line.",
         "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8, tercer piso, Studio C. A pocas cuadras de la estación 4th Ave–9th St (F, G, R) y sobre la ruta del autobús B63."
       }
     },
@@ -568,8 +591,12 @@
   "about": {
     "meta": {
       "title": {
-        "en": "About Imagine South Slope Montessori",
-        "es": "Sobre Imagine South Slope Montessori"
+        "en": "About Us",
+        "es": "Nosotros"
+      },
+      "description": {
+        "en": "Since 2015, one small Montessori classroom in Park Slope taught entirely in Spanish, led every day by founder Edith Villanueva. At most twelve children.",
+        "es": "Desde 2015, un pequeño salón Montessori en Park Slope, todo en español, guiado cada día por su fundadora, Edith Villanueva. Máximo doce niños."
       }
     },
     "hero": {
@@ -582,8 +609,8 @@
         "es": "Pequeña, cálida y completamente en español."
       },
       "intro": {
-        "en": "Imagine South Slope Montessori opened in 2015 as the first Montessori preschool in New York taught entirely in Spanish. Ten years on, we're still one mixed-age classroom of at most twelve children, led by our founder every single day. Most of our families speak Spanish at home; some are just beginning. All of them wanted a small, warm, real Montessori classroom where the whole day happens in Spanish.",
-        "es": "Imagine South Slope Montessori abrió en 2015 como el primer preescolar Montessori de Nueva York enseñado completamente en español. Diez años después, seguimos siendo un solo salón de edades mixtas con máximo doce niños, guiado por nuestra fundadora todos los días. La mayoría de nuestras familias hablan español en casa; algunas apenas empiezan. Todas querían un salón Montessori pequeño, cálido y de verdad, donde todo el día transcurre en español."
+        "en": "Imagine South Slope Montessori opened in 2015 as the first Montessori preschool in New York taught entirely in Spanish. More than a decade on, we're still one mixed-age classroom of at most twelve children, led by our founder every single day. Our families wanted a small, warm, real Montessori classroom where the whole day happens in Spanish.",
+        "es": "Imagine South Slope Montessori abrió en 2015 como el primer preescolar Montessori de Nueva York enseñado completamente en español. Más de una década después, seguimos siendo un solo salón de edades mixtas con máximo doce niños, guiado por nuestra fundadora todos los días. Nuestras familias querían un salón Montessori pequeño, cálido y de verdad, donde todo el día transcurre en español."
       }
     },
     "philosophy": {
@@ -769,8 +796,12 @@
   "program": {
     "meta": {
       "title": {
-        "en": "Our Program: Spanish Immersion Montessori for Ages 2 to 5",
-        "es": "Nuestro programa: Montessori en español para niños de 2 a 5 años"
+        "en": "Our Program: Spanish Immersion Montessori",
+        "es": "Nuestro programa: Montessori en español"
+      },
+      "description": {
+        "en": "Mixed-age Montessori for ages 2 to 5, taught entirely in Spanish. 9 to 3, two, three or five days a week. Twelve children max, three teachers.",
+        "es": "Montessori de edades mixtas para niños de 2 a 5 años, todo en español. De 9 a 3, dos, tres o cinco días por semana. Máximo doce niños, tres maestras."
       }
     },
     "hero": {
@@ -1048,8 +1079,8 @@
             "es": "Cuento y hasta mañana"
           },
           "text": {
-            "en": "A last story, then pickup at 3:00 with a real update for parents.",
-            "es": "Un último cuento y salida a las 3:00 con noticias reales para las familias."
+            "en": "A last story, then pickup at 3:00.",
+            "es": "Un último cuento y salida a las 3:00."
           }
         }
       ],
@@ -1170,8 +1201,8 @@
             "es": "Conócenos"
           },
           "text": {
-            "en": "Once your completed application and fee are received, our admission office will contact you to set up a child interview and classroom observation.",
-            "es": "Cuando recibamos tu solicitud completa y la cuota, nuestra oficina de admisiones te contactará para programar una entrevista con tu hijo o hija y una observación en el salón."
+            "en": "Once we receive your application and fee, we'll set up a child interview and classroom observation.",
+            "es": "Cuando recibamos tu solicitud y la cuota, coordinamos una entrevista con tu hijo y una observación en el salón."
           }
         },
         {
@@ -1315,7 +1346,7 @@
       },
       "a": {
         "en": "Yes, all day, from buenos días to hasta mañana. Updates to parents come in Spanish or English, whichever you prefer.",
-        "es": "Sí, todo el día, desde buenos días hasta hasta mañana. Las noticias para las familias llegan en español o en inglés, como prefieras."
+        "es": "Sí, todo el día, desde el “buenos días” hasta el “hasta mañana”. Las noticias para las familias llegan en español o en inglés, como prefieras."
       },
       "home": true
     },
@@ -1344,12 +1375,12 @@
     },
     {
       "q": {
-        "en": "We don't speak Spanish at home. Will my child be lost?",
-        "es": "No hablamos español en casa. ¿Mi hijo se va a perder?"
+        "en": "We don't speak Spanish at home. Will my child feel lost?",
+        "es": "No hablamos español en casa. ¿Mi hijo se sentirá perdido?"
       },
       "a": {
-        "en": "No. Most of our families speak only English at home. Teachers use routines, songs, gestures and pictures so a brand-new child understands from day one, and comprehension grows within weeks. You'll get updates in English (or Spanish, if you prefer).",
-        "es": "No. La mayoría de nuestras familias solo hablan inglés en casa. Las maestras usan rutinas, canciones, gestos e imágenes para que un niño recién llegado entienda desde el primer día, y la comprensión crece en semanas. Recibirás noticias en inglés (o en español, si prefieres)."
+        "en": "No. Many children start with no Spanish at all. Teachers use routines, songs, gestures and pictures so a new child can follow the day, and understanding grows within weeks. With parents, we speak English or Spanish, whichever you prefer.",
+        "es": "No. Muchos niños llegan sin nada de español. Las maestras usan rutinas, canciones, gestos e imágenes para que un niño nuevo pueda seguir el día, y la comprensión crece en semanas. Con las familias hablamos en inglés o en español, como prefieras."
       },
       "home": false
     },
@@ -1439,7 +1470,7 @@
         "es": "¿Dónde están exactamente?"
       },
       "a": {
-        "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue and 8th Street in Park Slope, third floor, Studio C. The 4th Ave–9th St station (F, G, R) is a few blocks away and the B63 bus stops outside.",
+        "en": "Inside Brooklyn Arts Exchange at 421 5th Avenue (at 8th Street) in Park Slope, third floor, Studio C. The 4th Ave–9th St station (F, G, R) is a few blocks away and the B63 bus stops outside.",
         "es": "Dentro de Brooklyn Arts Exchange, en 421 5th Avenue con la calle 8 en Park Slope, tercer piso, Studio C. La estación 4th Ave–9th St (F, G, R) está a pocas cuadras y el autobús B63 para afuera."
       },
       "home": false

@@ -46,7 +46,7 @@ ${headHtml(ctx, { title, description })}
 <header class="hdr" data-header>
   <div class="wrap hdr__in">
     <a class="brand" href="${ctx.href('home')}">${sunMark}<span class="brand__name">Imagine <em>South Slope</em> Montessori</span></a>
-    <nav class="hdr__nav" aria-label="Primary">${navLinks('hdr__link')}</nav>
+    <nav class="hdr__nav" aria-label="${esc(t(ui.navLabel))}">${navLinks('hdr__link')}</nav>
     <div class="hdr__actions">
       ${langLink(ctx, 'lang hdr__lang')}
       ${tourBtn(ctx, 'btn btn--primary btn--sm hdr__cta')}
@@ -71,7 +71,7 @@ ${body}
     <div class="ftr__brand">
       <a class="brand brand--ftr" href="${ctx.href('home')}">${sunMark}<span class="brand__name">Imagine <em>South Slope</em> Montessori</span></a>
       <p>${esc(t(ui.footer.blurb))}</p>
-      <p class="ftr__since">${esc(t(ui.sinceLabel))} · ${esc(t(ui.sePablaEspanol))}</p>
+      <p class="ftr__since">${esc(t(ui.sinceLabel))} · <span lang="${lang === 'es' ? 'en' : 'es'}">${esc(t(ui.sePablaEspanol))}</span></p>
     </div>
     <div>
       <h3 class="ftr__h">${esc(t(ui.footer.visit))}</h3>
@@ -91,7 +91,7 @@ ${body}
     </div>
   </div>
   <div class="wrap ftr__bottom">
-    <p>© ${ctx.year} ${esc(school.legalName)}. ${esc(t(ui.footer.rights))}</p>
+    <p>© ${ctx.year} ${esc(school.legalName)}${school.legalName.endsWith('.') ? '' : '.'} ${esc(t(ui.footer.rights))}</p>
     <p>${esc(t(ui.footer.privacy))}</p>
   </div>
 </footer>
@@ -132,7 +132,7 @@ function home(ctx) {
       </div>
       <p class="hero__note"><span class="pulse" aria-hidden="true"></span>${esc(t(h.hero.note))}</p>
     </div>
-    <div class="collage" aria-hidden="false">
+    <div class="collage">
       <figure class="polaroid polaroid--a">${ctx.img(collage[0], { loading: 'eager' })}</figure>
       <figure class="polaroid polaroid--b">${ctx.img(collage[1])}</figure>
       <figure class="polaroid polaroid--c">${ctx.img(collage[2])}</figure>
@@ -223,7 +223,7 @@ ${wave('wave--sand wave--flip')}
 <section class="sec faq-sec">
   <div class="wrap faq-sec__grid">
     <div data-reveal>
-      <p class="eyebrow">FAQ</p>
+      <p class="eyebrow">${esc(t(ui.faqLabel))}</p>
       <h2 class="sec__title">${esc(t(site.admissions.faqTitle))}</h2>
       <a class="btn btn--ghost" href="${ctx.href('admissions', 'faq')}">${esc(t(ui.cta.readFaq))}${icon('arrow-right', 'btn__icon')}</a>
     </div>
@@ -245,7 +245,7 @@ ${ctaBand(ctx)}
     </div>
     <div class="map" data-reveal>
       <div class="map__fallback" aria-hidden="true">${icon('pin')}<span>${esc(school.address.street)}</span></div>
-      <iframe class="map__frame" src="${esc(school.address.mapsEmbed)}" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map__frame" src="${esc(school.address.mapsEmbed)}" loading="lazy" title="${esc(t(ui.mapTitle))}" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>`;
@@ -330,7 +330,7 @@ ${wave('wave--sand wave--flip')}
 </section>
 
 ${ctaBand(ctx)}`;
-  return layout(ctx, { title: t(a.meta.title), description: t(a.hero.intro), body });
+  return layout(ctx, { title: t(a.meta.title), description: t(a.meta.description || a.hero.intro), body });
 }
 
 /* ---------- Program ---------- */
@@ -402,7 +402,7 @@ ${wave('wave--sand wave--flip')}
 </section>
 
 ${ctaBand(ctx)}`;
-  return layout(ctx, { title: t(p.meta.title), description: t(p.hero.intro), body });
+  return layout(ctx, { title: t(p.meta.title), description: t(p.meta.description || p.hero.intro), body });
 }
 
 /* ---------- Admissions ---------- */
@@ -450,7 +450,7 @@ ${wave('wave--sand wave--flip')}
 
 <section class="sec" id="faq">
   <div class="wrap faq-page">
-    ${sectionHead(ctx, { eyebrow: 'FAQ', title: ad.faqTitle })}
+    ${sectionHead(ctx, { eyebrow: ui.faqLabel, title: ad.faqTitle })}
     <div data-reveal>${faqHtml(ctx, site.faq)}</div>
   </div>
 </section>
@@ -477,7 +477,7 @@ function contact(ctx) {
   <div class="wrap contact__grid">
     <div class="contact__cards">
       <a class="ccard" href="${ctx.telHref()}" data-reveal><span class="ccard__icon">${icon('phone')}</span><span class="ccard__label">${esc(t(c.labels.phone))}</span><strong>${esc(ctx.phoneDisplay())}</strong>${school.phoneAlt ? `<small>${esc(t(c.labels.phoneAlt))}: ${esc(ctx.phoneDisplay(school.phoneAlt))}</small>` : ''}</a>
-      <a class="ccard" href="${ctx.mailHref()}" data-reveal><span class="ccard__icon">${icon('mail')}</span><span class="ccard__label">${esc(t(c.labels.email))}</span><strong class="ccard__break">${esc(school.email)}</strong></a>
+      <a class="ccard" href="${ctx.mailHref()}" data-reveal><span class="ccard__icon">${icon('mail')}</span><span class="ccard__label">${esc(t(c.labels.email))}</span><strong class="ccard__break">${esc(school.email).replace('@', '@<wbr>')}</strong></a>
       <div class="ccard" data-reveal><span class="ccard__icon">${icon('clock')}</span><span class="ccard__label">${esc(t(c.labels.hours))}</span><strong>${esc(t(school.hours))}</strong></div>
       <a class="ccard" href="${esc(school.address.mapsUrl)}" target="_blank" rel="noopener" data-reveal><span class="ccard__icon">${icon('pin')}</span><span class="ccard__label">${esc(t(c.labels.address))}</span><strong>${esc(school.address.venue)}<br>${esc(school.address.street)}<br>${esc(school.address.city)}, ${esc(school.address.state)} ${esc(school.address.zip)}</strong><small>${esc(t(ui.cta.directions))} ↗</small></a>
     </div>
@@ -497,7 +497,7 @@ function contact(ctx) {
     </div>
     <div class="map" data-reveal>
       <div class="map__fallback" aria-hidden="true">${icon('pin')}<span>${esc(school.address.street)}</span></div>
-      <iframe class="map__frame" src="${esc(school.address.mapsEmbed)}" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map__frame" src="${esc(school.address.mapsEmbed)}" loading="lazy" title="${esc(t(ui.mapTitle))}" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>`;
