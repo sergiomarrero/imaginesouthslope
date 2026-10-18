@@ -4,7 +4,7 @@ A mobile-first, bilingual website for [Imagine South Slope Montessori](https://s
 the Montessori preschool taught entirely in Spanish at Brooklyn Arts Exchange in Park Slope.
 One content file drives every page in English and Spanish, and nothing beyond Node is needed to build it.
 
-**Live preview:** https://sergiomarrero.github.io/imaginesouthslope/ (Spanish: `/es/`)
+**Live preview:** https://sergiomarrero.github.io/imaginesouthslope/ (Spanish: `/es/`). It moves to the new address if the repository is transferred or put on its own domain (see Publishing).
 
 The site uses the **Sol** design: sunny and playful, butter-yellow paper, a marigold sun, cobalt buttons.
 A second direction, **Bosque** (calm, forest green, grotesk headlines), is kept in `src/designs/bosque`
@@ -65,17 +65,33 @@ slot names, then rebuild.
 
 ## Publishing
 
-The included GitHub Actions workflow (`.github/workflows/deploy.yml`) builds
-the site on every push to `main` and publishes `dist/` to the `gh-pages`
-branch, which GitHub Pages serves at
-https://sergiomarrero.github.io/imaginesouthslope/. If the page is not live,
-open the repository's Settings, choose Pages, and pick the `gh-pages` branch
-as the source. The workflow sets `SITE_BASE_URL` so canonical and hreflang
-links are absolute; change it there if the site moves to its own domain.
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the site on
+every push to `main` and publishes `dist/` to the `gh-pages` branch, which
+GitHub Pages serves at `https://<owner>.github.io/<repo>/`. If the page is not
+live, open the repository's Settings, choose Pages, and pick the `gh-pages`
+branch (folder `/ (root)`) as the source.
 
-To put the site live on the school's own domain, deploy the contents of
-`dist/` to any static host (Netlify, Vercel, Cloudflare Pages, GoDaddy static
-hosting) and change `SITE_BASE_URL` in the workflow to the new address.
+### Using the school's own domain
+
+1. At the domain registrar (GoDaddy), point the domain at GitHub Pages. Leave
+   the MX and TXT records alone so email keeps working.
+   - `A` records for `@`: `185.199.108.153`, `185.199.109.153`,
+     `185.199.110.153`, `185.199.111.153` (delete the old `@` A records).
+   - `CNAME` for `www`: `<owner>.github.io`
+2. In the repository, add the variable `CUSTOM_DOMAIN` (Settings > Secrets and
+   variables > Actions > Variables), e.g. `southslopemontessori.com`, then run
+   the workflow (Actions > Build and publish > Run workflow). The build writes
+   the `CNAME` file and uses the domain for canonical and share links.
+3. Settings > Pages: check the custom domain shows, and turn on
+   "Enforce HTTPS" once GitHub has issued the certificate.
+
+## Editing from GitHub
+
+Open `content/site.json`, click the pencil icon, change the `"en"` / `"es"`
+text, and commit to `main`. The site rebuilds in about a minute. To replace a
+photo, upload a file with the same name to `images/`. If a change breaks the
+build, the Actions tab shows a red mark and the live site keeps the last good
+version.
 
 ## Project layout
 

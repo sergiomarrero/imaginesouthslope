@@ -1,12 +1,16 @@
 name: Build and publish to GitHub Pages
 
-# Builds the live site from main, and a review copy of the working branch at /review/,
-# then pushes both to the gh-pages branch, which GitHub Pages serves.
-# If Pages is off, turn it on under Settings > Pages and pick "gh-pages" as the branch.
+# Builds the site from main and pushes it to the gh-pages branch, which GitHub Pages serves.
+# First time in a new repository: Settings > Pages > "Deploy from a branch" > gh-pages, / (root).
+#
+# Own domain: add a repository variable CUSTOM_DOMAIN (Settings > Secrets and variables >
+# Actions > Variables), e.g. southslopemontessori.com. The build then writes the CNAME file
+# GitHub Pages needs and uses https://<domain> for canonical and share links. Without it,
+# the site is published at https://<owner>.github.io/<repo>/.
 
 on:
   push:
-    branches: [main, claude/website-remake-dynamic-f6up20]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,41 +20,31 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  BASE: https://sergiomarrero.github.io/imaginesouthslope
-  REVIEW_BRANCH: claude/website-remake-dynamic-f6up20
-
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    env:
+      CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
-          path: live
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ env.REVIEW_BRANCH }}
-          path: review
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Build the live site (main)
-        working-directory: live
+      - name: Build
         run: |
+          if [ -n "$CUSTOM_DOMAIN" ]; then
+            BASE="https://$CUSTOM_DOMAIN"
+          else
+            BASE="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          fi
+          echo "Publishing for $BASE"
           npm run check
-          SITE_BASE_URL=$BASE npm run build
+          SITE_BASE_URL="$BASE" npm run build
           npm run bundle
-      - name: Build the review copy (working branch) into /review/
-        working-directory: review
-        run: |
-          npm run check
-          SITE_BASE_URL=$BASE/review npm run build
-          # Keep the review copy out of search results.
-          find dist -name '*.html' -exec sed -i 's#<meta charset="utf-8">#<meta charset="utf-8">\n<meta name="robots" content="noindex">#' {} +
-          rm -rf ../live/dist/review && cp -r dist ../live/dist/review
+          # Pages reads the custom domain from this file; without it every publish would clear the domain.
+          if [ -n "$CUSTOM_DOMAIN" ]; then echo "$CUSTOM_DOMAIN" > dist/CNAME; fi
       - name: Publish to the gh-pages branch
-        working-directory: live/dist
+        working-directory: dist
         run: |
           git init -q
           git checkout -q -b gh-pages
